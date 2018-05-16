@@ -14,6 +14,7 @@ public class PeopleBean {
         public String birthday;
         public String local;
         public Family family;
+        public String marriage;
         public List<Friend> friend;
         public List<Like> like;
         public List<MyCalendar> calendar;

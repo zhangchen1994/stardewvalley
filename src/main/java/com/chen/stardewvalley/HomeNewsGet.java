@@ -49,7 +49,9 @@ public class HomeNewsGet {
                         document = Jsoup.parse(SpUtils.getSpString(context,URL_KEY));
                     }
                 } catch (IOException e) {
-                    document = Jsoup.parse(SpUtils.getSpString(context,URL_KEY));
+                    if(SpUtils.getSpString(context,URL_KEY) != null){
+                        document = Jsoup.parse(SpUtils.getSpString(context,URL_KEY));
+                    }
                     e.printStackTrace();
                 }
                 if (document == null){

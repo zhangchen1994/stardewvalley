@@ -26,4 +26,6 @@
     <string name="man">男性</string>
     <string name="women">女性</string>
     <string name="name">姓名</string>
+    <string name="profile">人物简介</string>
+    <string name="people_details">详细信息</string>
 </resources>

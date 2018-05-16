@@ -4,6 +4,7 @@
             "name": "亚历克斯",
             "birthday": "夏季 13",
             "local": "鹈鹕镇",
+            "marriage":"单身可攻略",
             "family": {
                 "father": "",
                 "mather": "",
@@ -202,8 +203,8 @@
                 },
                 {
                     "condition": "亚历克斯给你一封信，让你在天黑之后到酒吧门前去见他。玩家需要在收到信后的7pm至10pm间来到酒吧。",
-                    "things": "亚历克斯给你一封信，让你在天黑之后到酒吧门前去见他。玩家需要在收到信后的7pm至10pm间来到酒吧。亚历克斯为了你们的晚餐预定了一个包厢。 格斯将为你们演奏小提琴，而艾米丽将会为你们上菜。如果玩家是女性，亚历克斯会承认他对你一见钟情，虽然他以前也对其他人有过这样的感觉，然而这种迷恋的感觉很快就消失了，但是他对你的感情却与日俱增。如果玩家是男性，亚历克斯承认见到你第一眼就被你吸引了，虽然刚开始他一直否认这种感觉，但是现在他决定跟随自己心。 ",
-                    "result": " (我也这么觉得。)不会影响 好感度|(抱歉......我对你没有任何感觉。)不会影响 好感度"
+                    "things": "亚历克斯给你一封信，让你在天黑之后到酒吧门前去见他。玩家需要在收到信后的7pm至10pm间来到酒吧。亚历克斯为了你们的晚餐预定了一个包厢。 格斯将为你们演奏小提琴，而艾米丽将会为你们上菜。如果玩家是女性，亚历克斯会承认他对你一见钟情，虽然他以前也对其他人有过这样的感觉，然而这种迷恋的感觉很快就消失了，但是他对你的感情却与日俱增。如果玩家是男性，亚历克斯承认见到你第一眼就被你吸引了，虽然刚开始他一直否认这种感觉，但是现在他决定跟随自己心。 ",
+                    "result": " (我也这么觉得。)不会影响 好感度|(抱歉......我对你没有任何感觉。)不会影响 好感度"
                 }
             ],
             "likes": {
@@ -231,22 +232,189 @@
                     {
                         "name": "石榴",
                         "en": "pomegranate"
-                    },{
+                    },
+                    {
                         "name": "樱桃",
                         "en": "cherry"
-                    },{
+                    },
+                    {
                         "name": "枫糖浆",
                         "en": "maple_syrup"
                     }
                 ],
                 "likes_2": [
-                    {}
+                    {
+                        "name": "煎鸡蛋",
+                        "en": "fried_egg"
+                    },
+                    {
+                        "name": "面包",
+                        "en": "bread"
+                    },
+                    {
+                        "name": "小麦",
+                        "en": "wheat"
+                    },
+                    {
+                        "name": "啤酒花",
+                        "en": "hops"
+                    }
                 ],
                 "likes_3": [
-                    {}
+                    {
+                        "name": "野山葵",
+                        "en": "wild_horseradish"
+                    },
+                    {
+                        "name": "山洞萝卜",
+                        "en": "cave_carrot"
+                    },
+                    {
+                        "name": "浮木",
+                        "en": "driftwood"
+                    },
+                    {
+                        "name": "大麦粉",
+                        "en": "wheat_flour"
+                    },
+                    {
+                        "name": "油",
+                        "en": "oil"
+                    },
+                    {
+                        "name": "虚空蛋",
+                        "en": "void_egg"
+                    },
+                    {
+                        "name": "工作小食",
+                        "en": "field_snack"
+                    },
+                    {
+                        "name": "大米",
+                        "en": "rice"
+                    },
+                    {
+                        "name": "醋",
+                        "en": "vinegar"
+                    },
+                    {
+                        "name": "晶洞",
+                        "en": "geode"
+                    },
+                    {
+                        "name": "冰封晶洞",
+                        "en": "frozen_geode"
+                    },
+                    {
+                        "name": "巨大晶洞",
+                        "en": "magma_geode"
+                    },
+                    {
+                        "name": "橡树树脂",
+                        "en": "oak_resin"
+                    },
+                    {
+                        "name": "松焦油",
+                        "en": "pine_tar"
+                    },
+                    {
+                        "name": "万象晶石",
+                        "en": "omni_geode"
+                    }
                 ],
                 "likes_4": [
-                    {}
+                    {
+                        "name": "石英",
+                        "en": "quartz"
+                    },
+                    {
+                        "name": "树液",
+                        "en": "sap"
+                    },
+                    {
+                        "name": "生锈的汤匙",
+                        "en": "rusty_spoon"
+                    },
+                    {
+                        "name": "生锈的靴刺",
+                        "en": "rusty_spur"
+                    },
+                    {
+                        "name": "生锈的齿轮",
+                        "en": "rusty_spur"
+                    },
+                    {
+                        "name": "鲤鱼",
+                        "en": "carp"
+                    },
+                    {
+                        "name": "海草",
+                        "en": "seaweed"
+                    },
+                    {
+                        "name": "绿藻",
+                        "en": "green_algae"
+                    },
+                    {
+                        "name": "白藻",
+                        "en": "white_algae"
+                    },
+                    {
+                        "name": "干草",
+                        "en": "hay"
+                    },
+                    {
+                        "name": "咀嚼洁齿棒",
+                        "en": "chewing_stick"
+                    },
+                    {
+                        "name": "罂粟",
+                        "en": "poppy"
+                    },
+                    {
+                        "name": "铜矿石",
+                        "en": "copper_ore"
+                    },
+                    {
+                        "name": "铁矿石",
+                        "en": "iron_ore"
+                    },
+                    {
+                        "name": "海胆",
+                        "en": "sea_urchin"
+                    },
+                    {
+                        "name": "红蘑菇",
+                        "en": "red_mushroom"
+                    },
+                    {
+                        "name": "虫肉",
+                        "en": "bug_meat"
+                    },
+                    {
+                        "name": "蜗牛",
+                        "en": "snail"
+                    },
+                    {
+                        "name": "史莱姆",
+                        "en": "slime"
+                    },
+                    {
+                        "name": "蝙蝠翅膀",
+                        "en": "bat_wing"
+                    },
+                    {
+                        "name": "蒜油",
+                        "en": "oil_of_garlic"
+                    },
+                    {
+                        "name": "奇怪的小面包",
+                        "en": "strange_bun"
+                    },
+                    {
+                        "name": "虚空蛋黄酱",
+                        "en": "void_mayonnaise"
+                    }
                 ]
             }
         }

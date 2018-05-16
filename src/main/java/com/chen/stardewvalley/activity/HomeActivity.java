@@ -76,6 +76,7 @@ public class HomeActivity extends AppCompatActivity{
     private static final int NEWS_NUMBER = 5;
     private GvAdapter gvAdapter = new GvAdapter();
     private DrawerLayout drawerLayout;
+    private boolean isHaveFocus = false;
     private int[] gvStringId = new int[]{
             R.string.home_people,R.string.home_tools,
             R.string.home_farm,R.string.home_offer,
@@ -101,7 +102,9 @@ public class HomeActivity extends AppCompatActivity{
             }else if(msg.what ==1){
                 newsViewPagerAdapter = new NewsViewPageAdapter();
                 vpHomeNews.setAdapter(newsViewPagerAdapter);
-                timer.schedule(newTimerTask,8000,8000);
+                if (newTimerTask != null){
+                    timer.schedule(newTimerTask,8000,8000);
+                }
             }else if(msg.what == 2){
                 setNesViewPagerPosition();
             }
@@ -169,6 +172,7 @@ public class HomeActivity extends AppCompatActivity{
     @Override
     protected void onResume() {
         super.onResume();
+        isHaveFocus = true;
         timerTask = new TimerTask() {
             @Override
             public void run() {
@@ -189,6 +193,7 @@ public class HomeActivity extends AppCompatActivity{
     @Override
     protected void onPause() {
         super.onPause();
+        isHaveFocus = false;
         timerTask.cancel();
         newTimerTask.cancel();
     }
@@ -199,7 +204,9 @@ public class HomeActivity extends AppCompatActivity{
             @Override
             public void onFinishedLoading(ArrayList<NewsBean> newsList) {
                 HomeActivity.this.newsList = newsList;
-                handler.sendEmptyMessage(1);
+                if (isHaveFocus){
+                    handler.sendEmptyMessage(1);
+                }
             }
         });
     }
