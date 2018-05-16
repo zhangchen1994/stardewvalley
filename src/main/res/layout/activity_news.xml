@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/news_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/action_bar_bacground">
+        <ImageButton
+            android:id="@+id/im_but_menu_news"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            android:background="@drawable/action_menu"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="@string/home_news"/>
+        <ImageButton
+            android:id="@+id/im_but_house"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"/>
+    </android.support.v7.widget.Toolbar>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/news_toolbar"
+        app:srlHeaderHeight="80dp">
+    <ListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

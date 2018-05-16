@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item android:id="@+id/people_menu"
+            android:icon="@drawable/home_people"
+            app:showAsAction="ifRoom"
+            android:title="@string/home_people" />
+        <item android:id="@+id/tools_menu"
+            android:icon="@drawable/home_tools"
+            android:title="@string/home_tools"
+            app:showAsAction="ifRoom"/>
+        <item android:id="@+id/fram_menu"
+            android:icon="@drawable/home_fram"
+            android:title="@string/home_farm"
+            app:showAsAction="ifRoom"/>
+        <item android:id="@+id/offer_menu"
+            android:icon="@drawable/home_offer"
+            app:showAsAction="ifRoom"
+            android:title="@string/home_offer" />
+        <item android:id="@+id/valley_menu"
+            android:icon="@drawable/home_vallyr"
+            android:title="@string/home_valley"
+            app:showAsAction="ifRoom"/>
+        <item android:id="@+id/news_menu"
+            android:icon="@drawable/home_news"
+            android:title="@string/home_news"
+            app:showAsAction="ifRoom"/>
+</menu>

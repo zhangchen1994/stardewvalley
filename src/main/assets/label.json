@@ -1,0 +1,51 @@
+{
+  "links": [
+    {
+      "name": "东方网",
+      "label": "div.txt.mt15"
+    },
+    {
+      "name": "PconLine",
+      "label": "div.art-content"
+    },
+    {
+      "name": "游迅网",
+      "label": "div.news"
+    },
+    {
+      "name": "中关村在线",
+      "label": "div.article-cont.clearfix"
+    },
+    {
+      "name": "游民星空",
+      "label": "div.Mid2_L"
+    },
+    {
+      "name": "凤凰网",
+      "label": "div.js_selection_area",
+      "id": "main_content"
+    },
+    {
+      "name": "九游网",
+      "label": "div.post-content"
+    },
+    {
+      "name": "游戏部落",
+      "label": "div.article_nr_content"
+    },
+    {
+      "name": "斑马网",
+      "label": "div.ctn"
+    },
+    {
+      "name": "太平洋电脑网",
+      "label": "div.content",
+      "id": "JCmtImg"
+    },
+    {
+      "name": "游侠网",
+      "label": "div.n_show",
+      "id": "Content"
+    }
+  ]
+}

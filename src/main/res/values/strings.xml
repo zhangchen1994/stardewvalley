@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">攻略助手for星露谷物语</string>
+    <string name="home_page">首页</string>
+    <string name="home_people">人物介绍</string>
+    <string name="home_tools">工具武器</string>
+    <string name="home_farm">农场牧场</string>
+    <string name="home_offer">献祭任务</string>
+    <string name="home_valley">山谷环境</string>
+    <string name="home_news">最新资讯</string>
+    <string name="spring">春季</string>
+    <string name="summer">夏季</string>
+    <string name="autumn">秋季</string>
+    <string name="winter">冬季</string>
+    <string name="fail">刷新失败,请检查网络是否正常</string>
+    <string name="no_news">没有新的内容</string>
+    <string name="news_content">内容详情</string>
+    <string name="news_house">我的收藏</string>
+    <string name="no_news_house">暂无收藏</string>
+    <string name="house_ok">已收藏</string>
+    <string name="house_cancel">取消收藏</string>
+    <string name="total">所有</string>
+    <string name="marriage">婚姻</string>
+    <string name="marriage_ok">已婚</string>
+    <string name="marriage_no">未婚</string>
+    <string name="sex">性别</string>
+    <string name="man">男性</string>
+    <string name="women">女性</string>
+    <string name="name">姓名</string>
+</resources>
