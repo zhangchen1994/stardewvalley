@@ -54,6 +54,9 @@ public class PeopleActivity extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 isShowDetails = true;
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",i);
+                peopleDetailsFragment.setArguments(bundle);
                 fragmentManager.beginTransaction().setCustomAnimations(R.anim.animator_enter,
                         R.anim.animator_back_2)
                         .replace(R.id.ll_people, peopleDetailsFragment).commit();

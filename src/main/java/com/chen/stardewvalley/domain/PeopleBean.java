@@ -13,33 +13,28 @@ public class PeopleBean {
         public String name;
         public String birthday;
         public String local;
-        public Family family;
+        public List<Family> family;
         public String marriage;
         public List<Friend> friend;
         public List<Like> like;
         public List<MyCalendar> calendar;
-//        public List<Love_thing> love_thing;
-//        public List<Likes>likes;
+        public List<Love_thing> love_thing;
+        public Likes likes;
     }
     public class Family{
-        public String father;
-        public String mather;
-        public String grandfather;
-        public String grandmather;
-        public String sister;
-        public String younger_sister;
-        public String brother;
-        public String younger_brother;
+        public String name;
+        public String en;
     }
     public class Friend{
         public String name;
+        public String en;
     }
     public class Like{
         public String name;
         public String name_en;
     }
     public class MyCalendar{
-        public List<MyWeek> week;
+        public List<MyWeek> weeks;
     }
     public class Love_thing{
         public String condition;
@@ -55,6 +50,7 @@ public class PeopleBean {
     }
     public class MyWeek{
         public String action;
+        public String week;
     }
     public class MyLikes{
         public String name;

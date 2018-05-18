@@ -79,9 +79,6 @@ public class PeopleListFragment extends Fragment{
         String gsonStr = inToString(inputStream);
         Gson gson = new Gson();
         peopleBean = gson.fromJson(gsonStr,PeopleBean.class);
-        for (int i=0;i<peopleBean.links.size();i++){
-            System.out.println(peopleBean.links.get(i).family.grandfather);
-        }
     }
     private String inToString(InputStream in){
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));

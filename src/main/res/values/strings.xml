@@ -28,4 +28,27 @@
     <string name="name">姓名</string>
     <string name="profile">人物简介</string>
     <string name="people_details">详细信息</string>
+    <string name="like_0">最爱</string>
+    <string name="like_1">喜欢</string>
+    <string name="like_2">普通</string>
+    <string name="like_3">不喜欢</string>
+    <string name="like_4">讨厌</string>
+    <string name="love_things_0">2心事件</string>
+    <string name="love_things_1">4心事件</string>
+    <string name="love_things_2">6心事件</string>
+    <string name="love_things_3">8心事件</string>
+    <string name="love_things_4">10心事件</string>
+    <string name="distance_of_run">行程</string>
+    <string name="favorite_items">喜爱物品</string>
+    <string name="love_things">红心事件</string>
+    <string name="marry_end">婚后</string>
+    <string name="condition">触发条件</string>
+    <string name="process">事件过程</string>
+    <string name="things_result">结果</string>
+    <string name="information">个人信息</string>
+    <string name="birthday">生日</string>
+    <string name="local">位置</string>
+    <string name="relatives">亲属</string>
+    <string name="friend">朋友</string>
+    <string name="like">喜好</string>
 </resources>
