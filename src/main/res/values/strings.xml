@@ -51,4 +51,8 @@
     <string name="relatives">亲属</string>
     <string name="friend">朋友</string>
     <string name="like">喜好</string>
+    <string name="local_name">地点名称</string>
+    <string name="people_name">居住人员</string>
+    <string name="describe">地点描述</string>
+    <string name="open_time">开放时间</string>
 </resources>

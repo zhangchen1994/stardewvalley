@@ -34,8 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_people_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/alex" />
+        android:layout_marginTop="15dp" />
 
     <LinearLayout
         android:id="@+id/ll_people_information"

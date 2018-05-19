@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_valley"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/valley_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/action_bar_bacground">
+        <ImageButton
+            android:id="@+id/im_but_menu"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            android:background="@drawable/action_menu"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="@string/home_valley"/>
+    </android.support.v7.widget.Toolbar>
+    <com.chen.stardewvalley.TouchImageView
+        android:id="@+id/my_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/stardew_valley"/>
+
+</LinearLayout>

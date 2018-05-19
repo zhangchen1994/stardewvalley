@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_popup_region"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dialog_box"
+        android:gravity="center">
+     <TextView
+         android:id="@+id/tv_popup_region"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#000"
+         android:padding="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

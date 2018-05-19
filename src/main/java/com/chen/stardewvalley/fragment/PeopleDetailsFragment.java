@@ -27,6 +27,7 @@ import com.chen.stardewvalley.DistanceOfRunListView;
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.domain.PeopleBean;
 import com.chen.stardewvalley.utils.GetImageIdByName;
+import com.chen.stardewvalley.utils.PeopleNameToEn;
 import com.google.gson.Gson;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -148,7 +149,15 @@ public class PeopleDetailsFragment extends Fragment{
                 LinearLayout ll_friend = view.findViewById(R.id.ll_friend);
                 LinearLayout ll_like = view.findViewById(R.id.ll_like);
 
-                imageView.setImageResource(GetImageIdByName.getImageId("alex",getActivity()));
+                TextView textViewBigTitle = view.findViewById(R.id.tv_people_name);
+                textViewBigTitle.setText(peopleBean.links.get(listPosition).name);
+
+                String imageName = PeopleNameToEn.getNameEn(peopleBean.links.get(listPosition)
+                               .name);
+                imageView.setImageResource(GetImageIdByName.getImageId(imageName,getActivity()));
+
+                TextView tvNameEn = view.findViewById(R.id.tv_people_name_en);
+                tvNameEn.setText(PeopleNameToEn.getNameEnUp(peopleBean.links.get(listPosition).name));
 
                 View v1 = View.inflate(getActivity(),R.layout.infomation_view,null);
                 TextView tv1 = v1.findViewById(R.id.tv_information_content);
@@ -165,11 +174,14 @@ public class PeopleDetailsFragment extends Fragment{
                     TextView tvContent = v.findViewById(R.id.tv_information_content);
                     tvContent.setText(peopleBean.links.get(listPosition).family.get(i).name);
                     Resources res = getResources();
-                    Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
-                            peopleBean.links.get(listPosition).family.get(i).en,getActivity()
-                    ));
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tvContent.setCompoundDrawables(drawable,null,null,null);
+                    String imageNameEn = peopleBean.links.get(listPosition).family.get(i).en;
+                    if(imageNameEn != null){
+                        Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
+                                peopleBean.links.get(listPosition).family.get(i).en,getActivity()
+                        ));
+                        drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                        tvContent.setCompoundDrawables(drawable,null,null,null);
+                    }
 
                     ll_relatives.addView(v);
 

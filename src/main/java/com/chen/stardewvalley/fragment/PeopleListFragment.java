@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.domain.PeopleBean;
 import com.chen.stardewvalley.utils.GetImageIdByName;
+import com.chen.stardewvalley.utils.PeopleNameToEn;
 import com.google.gson.Gson;
 import com.yyydjk.library.DropDownMenu;
 
@@ -134,7 +135,7 @@ public class PeopleListFragment extends Fragment{
 
         @Override
         public int getCount() {
-            return 20;
+            return peopleBean.links.size();
         }
 
         @Override
@@ -162,11 +163,13 @@ public class PeopleListFragment extends Fragment{
             }else{
                 viewHolder = (ViewHolder) view.getTag();
             }
-            String imageName = "alex";
+            String imageName = PeopleNameToEn.getNameEn(peopleBean.links.get(i).name);
             viewHolder.ivPeople.setImageResource(GetImageIdByName.getImageId(imageName,getContext()));
-            viewHolder.tvName.setText(peopleBean.links.get(0).name);
-            viewHolder.tvNameEn.setText("alex");
-            viewHolder.tvMarry.setText(peopleBean.links.get(0).marriage);
+            viewHolder.tvName.setText(peopleBean.links.get(i).name);
+            viewHolder.tvNameEn.setText(
+                    PeopleNameToEn.getNameEnUp(peopleBean.links.get(i).name)
+            );
+            viewHolder.tvMarry.setText(peopleBean.links.get(i).marriage);
             return view;
         }
     }

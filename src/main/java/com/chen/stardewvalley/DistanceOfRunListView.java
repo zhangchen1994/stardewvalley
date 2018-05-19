@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class DistanceOfRunListView extends ListView{
     private String title;
     private ArrayList<String> timeList;
     private ArrayList<String> actionList;
+    private ArrayList<Integer> imageIds;
 
     public DistanceOfRunListView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -51,6 +53,9 @@ public class DistanceOfRunListView extends ListView{
     }
     public void setActionList(ArrayList<String> list){
         actionList = list;
+    }
+    public void setImageIds(ArrayList<Integer> list){
+        imageIds = list;
     }
     public void setMyAdapter(){
         setAdapter(new MyAdapter());
@@ -81,6 +86,7 @@ public class DistanceOfRunListView extends ListView{
                 viewHolder.tv_1 = view.findViewById(R.id.tv_v_l_dor);
                 viewHolder.tv_2 = view.findViewById(R.id.tv_v_time);
                 viewHolder.tv_3 = view.findViewById(R.id.tv_v_content);
+                viewHolder.iv = view.findViewById(R.id.iv_dis_of_run);
 
                 view.setTag(viewHolder);
             }else{
@@ -90,11 +96,17 @@ public class DistanceOfRunListView extends ListView{
                 viewHolder.tv_1.setVisibility(VISIBLE);
                 viewHolder.tv_2.setVisibility(GONE);
                 viewHolder.tv_3.setVisibility(GONE);
+                viewHolder.iv.setVisibility(GONE);
                 viewHolder.tv_1.setText(title);
             }else{
                 viewHolder.tv_1.setVisibility(GONE);
                 viewHolder.tv_2.setVisibility(VISIBLE);
                 viewHolder.tv_3.setVisibility(VISIBLE);
+                if(imageIds != null ){
+                    System.out.println("imageis = "+imageIds.get(i-1));
+                    viewHolder.iv.setVisibility(VISIBLE);
+                    viewHolder.iv.setImageResource(imageIds.get(i-1));
+                }
                 if(timeList !=null){
                     viewHolder.tv_2.setText(timeList.get(i-1));
                 }
@@ -103,7 +115,13 @@ public class DistanceOfRunListView extends ListView{
                         ||getContext().getString(R.string.things_result).equals(title))
                     viewHolder.tv_2.setVisibility(GONE);
                 viewHolder.tv_3.setText(actionList.get(i-1));
-                if(actionList.get(i-1).length() > 40){
+                if(actionList.get(i-1).length() > 300){
+                    viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),
+                            actionList.get(i-1).length()-20));
+                } else if(actionList.get(i-1).length() > 100){
+                    viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),
+                            actionList.get(i-1).length()));
+                }else if(actionList.get(i-1).length() > 25){
                     System.out.println(actionList.get(i-1).length());
                     viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),actionList.get(i-1).length()+20));
                 }
@@ -115,5 +133,6 @@ public class DistanceOfRunListView extends ListView{
         TextView tv_1;
         TextView tv_2;
         TextView tv_3;
+        ImageView iv;
     }
 }

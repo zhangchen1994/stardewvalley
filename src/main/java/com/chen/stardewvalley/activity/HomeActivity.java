@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity{
             }else if(msg.what ==1){
                 newsViewPagerAdapter = new NewsViewPageAdapter();
                 vpHomeNews.setAdapter(newsViewPagerAdapter);
-                if (newTimerTask != null){
+                if (newTimerTask != null && isHaveFocus){
                     timer.schedule(newTimerTask,8000,8000);
                 }
             }else if(msg.what == 2){
@@ -158,6 +158,7 @@ public class HomeActivity extends AppCompatActivity{
                     case OFFER_PAGE :
                         break;
                     case VALLEY_PAGE :
+                        intent = new Intent(HomeActivity.this,ValleyActivity.class);
                         break;
                     case NEWS_PAGE :
                         intent = new Intent(HomeActivity.this,NewsActivity.class);
