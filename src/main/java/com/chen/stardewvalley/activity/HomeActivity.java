@@ -152,8 +152,10 @@ public class HomeActivity extends AppCompatActivity{
                         intent = new Intent(HomeActivity.this,PeopleActivity.class);
                         break;
                     case TOOLS_PAGE :
+                        intent = new Intent(HomeActivity.this,ToolsActivity.class);
                         break;
                     case FRAME_PAGE :
+                        intent = new Intent(HomeActivity.this,FarmActivity.class);
                         break;
                     case OFFER_PAGE :
                         break;

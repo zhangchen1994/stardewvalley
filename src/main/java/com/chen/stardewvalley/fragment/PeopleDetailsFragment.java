@@ -215,11 +215,16 @@ public class PeopleDetailsFragment extends Fragment{
                     TextView tvContent = v.findViewById(R.id.tv_information_content);
                     tvContent.setText(peopleBean.links.get(listPosition).like.get(i).name);
                     Resources res = getResources();
-                    Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
+                    int imageId = GetImageIdByName.getImageId(
                             peopleBean.links.get(listPosition).like.get(i).name_en,getActivity()
-                    ));
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tvContent.setCompoundDrawables(drawable,null,null,null);
+                    );
+                    if(imageId != 0){
+                        Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
+                                peopleBean.links.get(listPosition).like.get(i).name_en,getActivity()
+                        ));
+                        drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                        tvContent.setCompoundDrawables(drawable,null,null,null);
+                    }
 
                     ll_like.addView(v);
 

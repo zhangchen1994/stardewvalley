@@ -21,6 +21,8 @@
         <activity android:name=".activity.NewsContentActivity"/>
         <activity android:name=".activity.PeopleActivity"/>
         <activity android:name=".activity.ValleyActivity"/>
+        <activity android:name=".activity.FarmActivity"/>
+        <activity android:name=".activity.ToolsActivity"/>
     </application>
     <uses-permission  android:name="android.permission.INTERNET"/>
 </manifest>

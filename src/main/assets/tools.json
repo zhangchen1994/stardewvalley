@@ -1,0 +1,3414 @@
+﻿{
+  "tools": {
+    "tool": {
+      "name": "农具",
+      "content": [
+        {
+          "name": "锄头",
+          "describe": "可以使用锄头挖土及耕种。锄头升级后，长按左键蓄力可以一次锄一片地，锄地的面积大小取决于你你锄头的等级以及蓄力时间的长短。锄头可以用来挖远古斑点从而得到隐藏的物品。玩家不能在铺着瓷砖地或是马路的地格上使用锄头",
+          "links": [
+            {
+              "name": "锄头",
+              "image": "hoe",
+              "spend": "无",
+              "raw_material": "无",
+              "promote": "无"
+            },
+            {
+              "name": "铜锄头",
+              "image": "copper_hoe",
+              "spend": "2000g",
+              "raw_material": "铜锭X5",
+              "promote": "单次锄地最大面积会直线延伸至三格"
+            },
+            {
+              "name": "钢锄",
+              "image": "steel_hoe",
+              "spend": "5000g",
+              "raw_material": "铁锭X5",
+              "promote": "单次锄地最大面积会直线延伸至五格"
+            },
+            {
+              "name": "金锄",
+              "image": "gold_hoe",
+              "spend": "10000g",
+              "raw_material": "金锭X5",
+              "promote": "单次锄地最大面积会增至3x3格"
+            },
+            {
+              "name": "铱锄",
+              "image": "iridium_hoe",
+              "spend": "25000g",
+              "raw_material": "铱锭X5",
+              "promote": "单次锄地最大面积会增至6x3格"
+            }
+          ]
+        },
+        {
+          "name": "镐",
+          "describe": "主要用来敲碎石头，也可以用作回收放置的设备或家具。还可以用它来恢复锄头锄过的地格。升级都会减少敲碎石块所需的次数，并允许玩家敲碎更为坚硬和巨大的岩石。和怪物战斗时镐也能造成轻微的伤害，作用和武器类似。",
+          "links": [
+            {
+              "name": "十字镐",
+              "image": "pickaxe",
+              "spend": "无",
+              "raw_material": "无",
+              "promote": "无"
+            },
+            {
+              "name": "铜镐",
+              "image": "copper_pickaxe",
+              "spend": "2000g",
+              "raw_material": "铜锭X5",
+              "promote": "可以凿开矿洞的大石头（2x2大小的石头）。"
+            },
+            {
+              "name": "钢镐",
+              "image": "steel_pickaxe",
+              "spend": "5000g",
+              "raw_material": "铁锭X5",
+              "promote": "可以凿开农场的大石头（2x2大小的石头）。可以移除矿山中阻碍与矮人交谈的障碍物。"
+            },
+            {
+              "name": "金镐",
+              "image": "gold_pickaxe",
+              "spend": "10000g",
+              "raw_material": "金锭X5",
+              "promote": "可以打破陨石。对于大部分的石头只需敲打几次就可以敲碎，而小石头现在只需要敲打一次。"
+            },
+            {
+              "name": "铱镐",
+              "image": "iridium_pickaxe",
+              "spend": "25000g",
+              "raw_material": "铱锭X5",
+              "promote": "使用铱金镐敲碎石头，次数明显减少。（在头骨山洞也一样）"
+            }
+          ]
+        },
+        {
+          "name": "斧",
+          "describe": "用于砍伐树木以获得木材和树液，也可以用来从大树桩或者是圆木中收集硬木。像挥舞其它工具一样，挥舞斧头会轻微伤及敌人。每升级一级，砍树时都会少砍2次，砍树桩时会少砍1次。斧头还可以被用来收获巨大农作物。",
+          "links": [
+            {
+              "name": "斧",
+              "image": "axe",
+              "spend": "无",
+              "raw_material": "无",
+              "promote": "无"
+            },
+            {
+              "name": "铜斧",
+              "image": "copper_axe",
+              "spend": "2000g",
+              "raw_material": "铜锭X5",
+              "promote": "可以砍大树桩。砍倒整颗树共需要挥动8次，砍倒小树桩挥动4次。"
+            },
+            {
+              "name": "钢斧",
+              "image": "steel_axe",
+              "spend": "5000g",
+              "raw_material": "铁锭X5",
+              "promote": "可以砍圆木。砍倒整颗树需要挥动6次，砍倒小树桩需挥动3次"
+            },
+            {
+              "name": "金斧",
+              "image": "gold_axe",
+              "spend": "10000g",
+              "raw_material": "金锭X5",
+              "promote": "砍倒整颗树需要挥动4次，砍倒小树桩需挥动2次。"
+            },
+            {
+              "name": "铱斧",
+              "image": "iridium_axe",
+              "spend": "25000g",
+              "raw_material": "铱锭X5",
+              "promote": "砍倒树需要挥动2次，砍倒小树桩需要挥动1次。"
+            }
+          ]
+        },
+        {
+          "name": "喷壶",
+          "describe": "可以用来给作物浇水。它可以装任何类型的水，也可取井水。如果你一天没有浇水的话，农作物将会延迟生长甚至开始枯萎。但若赶上雨天则不需要给农作物浇水。",
+          "links": [
+            {
+              "name": "喷壶",
+              "image": "watering_can",
+              "spend": "无",
+              "raw_material": "无",
+              "promote": "无"
+            },
+            {
+              "name": "铜喷壶",
+              "image": "copper_watering_can",
+              "spend": "2000g",
+              "raw_material": "铜锭X5",
+              "promote": "可以浇地55次，为玩家面前1x3区域内的地格浇水。"
+            },
+            {
+              "name": "钢喷壶",
+              "image": "steel_watering_can",
+              "spend": "5000g",
+              "raw_material": "钢锭X5",
+              "promote": "可以浇地70次，为玩家面前1x5区域内的地格浇水。"
+            },
+            {
+              "name": "金喷壶",
+              "image": "gold_watering_can",
+              "spend": "10000g",
+              "raw_material": "金锭X5",
+              "promote": "可以浇地85次，为玩家面前3x3区域内的地格浇水。"
+            },
+            {
+              "name": "铱喷壶",
+              "image": "iridium_watering_can",
+              "spend": "25000g",
+              "raw_material": "铱锭X5",
+              "promote": "可以浇地100次，为玩家面前6x3区域内的地格浇水。"
+            }
+          ]
+        },
+        {
+          "name": "其他工具",
+          "describe": "",
+          "links": [
+            {
+              "name": "24格背包",
+              "image": "backpack",
+              "spend": "2000g",
+              "raw_material": "在皮埃尔的杂货店购买",
+              "promote": "解锁背包的第二排格子（多出12格）"
+            },
+            {
+              "name": "36格背包",
+              "image": "backpack_36",
+              "spend": "10000g",
+              "raw_material": "在皮埃尔的杂货店购买",
+              "promote": "解锁背包的第三排格子（再次多出12格）"
+            },
+            {
+              "name": "镰刀",
+              "image": "scythe",
+              "spend": "无",
+              "raw_material": "初始工具",
+              "promote": "用来割草，当筒仓未存满时，收割青草可储存在其中变成干草。"
+            },
+            {
+              "name": "挤奶桶",
+              "image": "milk_pail",
+              "spend": "1000g",
+              "raw_material": "在玛妮的牧场购买",
+              "promote": "用来收集从动物那获得的牛奶、羊奶。"
+            },
+            {
+              "name": "大剪刀",
+              "image": "shears",
+              "spend": "1000g",
+              "raw_material": "在玛妮的牧场购买",
+              "promote": "用来收集绵羊身上的羊毛。"
+            },
+            {
+              "name": "取暖器",
+              "image": "heater",
+              "spend": "2000g",
+              "raw_material": "在玛妮的牧场购买",
+              "promote": "用冬季时能让动物保持温暖和好心情。"
+            },
+            {
+              "name": "淘盘",
+              "image": "copper_pan",
+              "spend": "无",
+              "raw_material": "完成社区中心的钓鱼收集包或者升级Joja的任务之后自动解锁。",
+              "promote": "用于收集水中的矿石"
+            }
+          ]
+        }
+      ]
+    },
+    "weapon": {
+      "name": "武器",
+      "conten": [
+        {
+          "name": "剑",
+          "describe": "剑通常都属于武器。他们挥舞速度很快，而且攻击时延迟很小。剑可以防御反击，可以格挡敌人的伤害并且给予敌人伤害。",
+          "links": [
+            {
+              "name": "生锈的剑",
+              "image": "rusty_sword",
+              "lenvel": "1级",
+              "local": "在矿井的入口被赠与。",
+              "damage": "02-05",
+              "addition": "无"
+            },
+            {
+              "name": "木剑",
+              "image": "wooden_blade",
+              "lenvel": "2级",
+              "local": "最早在探险家公会可得到。",
+              "damage": "03-07",
+              "addition": "无"
+            },
+            {
+              "name": "精钢短剑",
+              "image": "steel_smallsword",
+              "lenvel": "2级",
+              "local": "在矿山20层的宝箱里可以找到。",
+              "damage": "04-08",
+              "addition": "速度+2"
+            },
+            {
+              "name": "镀银军刀",
+              "image": "silver_saber",
+              "lenvel": "3级",
+              "local": "玩家到达矿山20层之后，可以在探险家公会买到。",
+              "damage": "08-15",
+              "addition": "防御+1"
+            },
+            {
+              "name": "海盗之剑",
+              "image": "pirate_sword",
+              "lenvel": "4级",
+              "local": "在矿山20层以下可以找到，或者玩家到达矿山30层之后，可以在探险家公会买到",
+              "damage": "08-14",
+              "addition": "速度+2"
+            },
+            {
+              "name": "弯刀",
+              "image": "cutlass",
+              "lenvel": "4级",
+              "local": "玩家到达矿山25层之后，可以在探险家公会买到。",
+              "damage": "09-17",
+              "addition": "速度+2"
+            },
+            {
+              "name": "森林之剑",
+              "image": "forest_sword",
+              "lenvel": "5级",
+              "local": "矿山20层-60层小概率掉落",
+              "damage": "08-18",
+              "addition": "速度+2,防御+1"
+            },
+            {
+              "name": "虫脑袋",
+              "image": "insect_head",
+              "lenvel": "6级",
+              "local": "虫子小概率掉落，或者杀死125只虫子之后的奖品。",
+              "damage": "10-20",
+              "addition": "速度+2"
+            },
+            {
+              "name": "铁之锋",
+              "image": "iron_edge",
+              "lenvel": "4级",
+              "local": "在矿井的入口被赠与。",
+              "damage": "12-25",
+              "addition": "可以在矿山40层以下可以找到"
+            },
+            {
+              "name": "黑暗之剑",
+              "image": "dark_sword",
+              "lenvel": "7级",
+              "local": "在矿山60层以下可以找到。",
+              "damage": "10-30",
+              "addition": "重击力量+25"
+            },
+            {
+              "name": "神圣之刃",
+              "image": "holy_blade",
+              "lenvel": "5级",
+              "local": "在矿山60层以下可以找到。",
+              "damage": "18-24",
+              "addition": "重量+3"
+            },
+            {
+              "name": "双刃大剑",
+              "image": "claymore",
+              "lenvel": "6级",
+              "local": "当在矿山中到达45层之后可在探险家公会购买。",
+              "damage": "20-32",
+              "addition": "速度-4,防御+2,重量+3"
+            },
+            {
+              "name": "圣堂之刃",
+              "image": "templar_blade",
+              "lenvel": "6级",
+              "local": "当在矿山中到达55层之后可以在探险家公会中购买。",
+              "damage": "22-29",
+              "addition": "防御+1"
+            },
+            {
+              "name": "海神阔剑",
+              "image": "neptune_glaive",
+              "lenvel": "7级",
+              "local": "小概率在钓鱼时掉落。查看冒泡的水池或（河/海/高山湖泊）钓鱼藏宝箱。",
+              "damage": "18-35",
+              "addition": "速度(-)1,防御+2,重量+4"
+            },
+            {
+              "name": "黑曜石之锋",
+              "image": "obsidian_edge",
+              "lenvel": "9级",
+              "local": "在矿山90层以上的宝箱里可以找到。",
+              "damage": "30-45",
+              "addition": "速度(-)1,重击力量+10"
+            },
+            {
+              "name": "骨剑",
+              "image": "bone_sword",
+              "lenvel": "10级",
+              "local": "当在矿山中到达75层之后可以在探险家公会中购买。",
+              "damage": "20-30",
+              "addition": "速度+4,重量+2"
+            },
+            {
+              "name": "钢刀",
+              "image": "steel_falchion",
+              "lenvel": "14级",
+              "local": "当在矿山中到达90层之后可以在探险家公会中购买。",
+              "damage": "26-38",
+              "addition": "速度+4,重击力量+20"
+            },
+            {
+              "name": "熔岩武士刀",
+              "image": "lava_katana",
+              "lenvel": "15级",
+              "local": "当到达矿山的底部后可以在探险家公会中购买。",
+              "damage": "55-64",
+              "addition": "防御+3,重击力量+25,重量+3"
+            },
+            {
+              "name": "银河之剑",
+              "image": "galaxy_sword",
+              "lenvel": "26级",
+              "local": "带着彩虹碎片前往位于沙漠的三根石柱；拿着碎片，站到三根石柱的中心。  ",
+              "damage": "60-80",
+              "addition": "速度+4"
+            }
+          ]
+        },
+        {
+          "name": "匕首",
+          "describe": "匕首是最快的攻击性武器。但是，匕首的攻击范围小，目标只是玩家面前的区域，不像剑的攻击区域是个扇形。匕首的副技能允许玩家攻击敌人多次。",
+          "links": [
+            {
+              "name": "刻刀",
+              "image": "carving_knife",
+              "lenvel": "2级",
+              "local": "在矿山20层之前就可以被找到。",
+              "damage": "01-03",
+              "addition": "无"
+            },
+            {
+              "name": "铁制短剑",
+              "image": "iron_dirk",
+              "lenvel": "2级",
+              "local": "当在矿山中到达15层之后可以在冒険者协会购买。",
+              "damage": "02-04",
+              "addition": "无"
+            },
+            {
+              "name": "疾风利剑",
+              "image": "rusty_sword",
+              "lenvel": "3级",
+              "local": "在矿山中的40层之前就可以被找到。",
+              "damage": "01-05",
+              "addition": "重击力量+50,重量+5"
+            },
+            {
+              "name": "精灵之刃",
+              "image": "elf_blade",
+              "lenvel": "3级",
+              "local": "无",
+              "damage": "03-05",
+              "addition": "无"
+            },
+            {
+              "name": "水晶匕首",
+              "image": "crystal_dagger",
+              "lenvel": "9级",
+              "local": "在矿山的60层的百宝箱里。",
+              "damage": "04-10",
+              "addition": "重击力量+50，重量+5"
+            },
+            {
+              "name": "飞贼之胫",
+              "image": "burglar_shank",
+              "lenvel": "8级",
+              "local": "在骷髅洞穴的宝箱里，或者有巨蛇掉落。",
+              "damage": "07-12",
+              "addition": "攻击力量+25"
+            },
+            {
+              "name": "残破的三叉戟",
+              "image": "broken_trident",
+              "lenvel": "11级",
+              "local": "在钓上来的宝箱里可以找到。",
+              "damage": "15-26",
+              "addition": "无"
+            },
+            {
+              "name": "蛇形邪剑",
+              "image": "wicked_kris",
+              "lenvel": "15级",
+              "local": "在骷髅洞穴的宝箱下面。",
+              "damage": "24-30",
+              "addition": "无"
+            },
+            {
+              "name": "银河匕首",
+              "image": "galaxy_dagger",
+              "lenvel": "20级",
+              "local": "得到银河之剑后可在探险家公会购买",
+              "damage": "30-40",
+              "addition": "+1 速度，+5 重量"
+            },
+            {
+              "name": "淬火阔剑",
+              "image": "tempered_broadsword",
+              "lenvel": "8级",
+              "local": "骷髅洞穴",
+              "damage": "29-44",
+              "addition": "速度(-)3，防御+3，重量+3"
+            }
+          ]
+        },
+        {
+          "name": "棍棒",
+          "describe": "棍棒是重型武器，摆动起来往往比剑和匕首慢，但是攻击范围很广。副技能可以猛烈得敲击地面，攻击一大片区域。",
+          "links": [
+            {
+              "name": "大腿骨",
+              "image": "femur",
+              "lenvel": "1级",
+              "local": "当在矿山外面挖土时可以发现。",
+              "damage": "06-11",
+              "addition": "速度-2"
+            },
+            {
+              "name": "木棒",
+              "image": "wood_club",
+              "lenvel": "2级",
+              "local": "在矿山的40层以下。",
+              "damage": "09-16",
+              "addition": "无"
+            },
+            {
+              "name": "木锤",
+              "image": "wood_mallet",
+              "lenvel": "2级",
+              "local": "当在矿山中到达40层之后可以在探险家公会中购买。或者少量的分布在矿山的40层之下。",
+              "damage": "速度-2,重量+2",
+              "addition": "速度(-)3，防御+3，重量+3"
+            },
+            {
+              "name": "铅棒",
+              "image": "lead_rod",
+              "lenvel": "3级",
+              "local": "在矿山的60层以下就可以找到。一般分布在骷髅洞穴的下面。",
+              "damage": "18-27",
+              "addition": "速度-4"
+            },
+            {
+              "name": "巨锤",
+              "image": "the_slammer",
+              "lenvel": "5级",
+              "local": "在骷髅洞穴的40层以下。",
+              "damage": "40-55",
+              "addition": "速度-2"
+            },
+            {
+              "name": "银河之锤",
+              "image": "galaxy_hammer",
+              "lenvel": "9级",
+              "local": "得到银河之剑后可在探险家公会购买",
+              "damage": "70-90",
+              "addition": "-2 速度,+5 重量"
+            }
+          ]
+        },
+        {
+          "name": "弹弓",
+          "describe": "不同的弹弓和弹药可以造成不同的伤害量。若是使用最弱的弹药，一个弹弓可以造成1-3点的伤害，而大师弹弓则可以造成2-6点的伤害。若是使用最好的弹药铱黄金矿石，那么弹弓和大师弹弓则分别可以造成20-101点以及50-202点的伤害。",
+          "links": [
+            {
+              "name": "弹弓",
+              "image": "slingshot",
+              "lenvel": "无",
+              "local": "在矿山的40层以上的箱子里。",
+              "damage": "01-03",
+              "addition": "无"
+            },
+            {
+              "name": "大师弹弓",
+              "image": "master_slingshot",
+              "lenvel": "无",
+              "local": "在矿山的70层以上的箱子里。",
+              "damage": "02-06",
+              "addition": "-2 速度,+5 重量"
+            }
+          ]
+        }
+      ]
+    },
+    "fishing_gear": {
+      "name": "渔具",
+      "content": [
+        {
+          "name": "钓竿",
+          "describe": "可以用来钓鱼。单击左键并按住不放，是投掷鱼线，要想微调鱼钩的位置，可以使用WASD或者是方向键。",
+          "links": [
+            {
+              "name": "竹鱼竿",
+              "image": "bamboo_pole",
+              "spend": "500g",
+              "raw_material": "无",
+              "promote": "无"
+            },
+            {
+              "name": "玻璃纤维棒",
+              "image": "fiberglass_rod",
+              "spend": "1800g",
+              "raw_material": "无",
+              "promote": "可以使用鱼饵."
+            },
+            {
+              "name": "铱金钓竿",
+              "image": "iridium_rod",
+              "spend": "7500g",
+              "raw_material": "无",
+              "promote": "可以使用鱼饵和索具"
+            }
+          ]
+        },
+        {
+          "name": "鱼钩",
+          "describe": "连接到钓钓竿上使捕鱼更加容易。",
+          "links": [
+            {
+              "name": "旋式鱼饵",
+              "image": "spinner",
+              "spend": "500g",
+              "raw_material": "铁锭(2)",
+              "promote": "等待鱼上钩的时间最多能缩短3.75秒（0级捕鱼时最多能缩短22.5秒）"
+            },
+            {
+              "name": "倒刺钩",
+              "image": "barbed_hook",
+              "spend": "1000g",
+              "raw_material": "铜锭 (1),铁锭 (1),金锭 (1)",
+              "promote": "这个钩子能让钓鱼条跟着鱼走，自动随它上升或下沉并尽量让鱼保留在中间部分。只有当钓鱼条和鱼重合时它才会试图移动。玩家也可以手动操作，但会比较困难。这个索具使用在慢鱼身上效果最佳，不推荐使用在快鱼身上，因为它可能会随意运动使捕捉变得更加困难。"
+            },
+            {
+              "name": "精装旋式鱼饵",
+              "image": "dressed_spinner",
+              "spend": "1000g",
+              "raw_material": "铁锭 (2),布料 (1)",
+              "promote": "等待鱼上钩的时间最多能缩短7.5秒（0级捕鱼时最多能缩短22.5秒）"
+            },
+            {
+              "name": "陷阱浮标",
+              "image": "trap_bobber",
+              "spend": "500g",
+              "raw_material": "铜锭 (1),树液 (10)",
+              "promote": "捕捉条会减缓66%的速度，因用途广、作用明显而成为最好用的装备之一。"
+            },
+            {
+              "name": "软木塞浮标",
+              "image": "cork_bobber",
+              "spend": "750g",
+              "raw_material": "木材 (10),硬木 (5),史莱姆泥 (10)",
+              "promote": "一般来说，增加的尺寸并没有太大帮助。实际增长能达到24像素，即从13.6%到25%不等，这取决于你的钓鱼等级。"
+            },
+            {
+              "name": "铅制浮标",
+              "image": "lead_bobber",
+              "spend": "200g",
+              "raw_material": "无",
+              "promote": "玩家可以在钓鱼条下落前用鼠标点击以防止它反弹。"
+            },
+            {
+              "name": "寻宝者",
+              "image": "treasure_hunter",
+              "spend": "750g",
+              "raw_material": "金锭 (2)",
+              "promote": "找到宝箱的概率增加33%"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "mineral": {
+    "ore": {
+      "name": "矿石",
+      "content": [
+        {
+          "name": "可采集矿石",
+          "links": [
+            {
+              "name": "石英",
+              "image": "quartz",
+              "use": "地质学家收集包,精炼石英",
+              "local": "矿洞 (Levels 1-120)",
+              "describe": "一种在山洞和矿物质中十分常见的透明水晶。"
+            },
+            {
+              "name": "地晶",
+              "image": "earth_crystal",
+              "use": "地质学家收集包,蛋黄酱机,结实戒指",
+              "local": "矿洞 (Levels 1-39)",
+              "describe": "一种地表层常见的树脂类物质。"
+            },
+            {
+              "name": "泪晶",
+              "image": "frozen_tear",
+              "use": "地质学家收集包,战士戒指,塞巴斯蒂安最喜欢的礼物",
+              "local": "矿洞 (Levels 40-79)",
+              "describe": "一种传说由雪怪冰冻的眼泪凝结而成的水晶。"
+            },
+            {
+              "name": "火水晶",
+              "image": "fire_quartz",
+              "use": "地质学家收集包,史莱姆蛋压制机",
+              "local": "矿洞 (Levels 80-120)",
+              "describe": "一种火山岩附近常见的红色水晶。"
+            }
+          ]
+        },
+        {
+          "name": "晶洞",
+          "links": [
+            {
+              "name": "晶洞",
+              "image": "geode",
+              "use": "凿开石头会获得物品",
+              "local": "矿洞 (Levels 1-39)",
+              "describe": "铁匠可以帮你凿开这个石头。"
+            },
+            {
+              "name": "冰封晶洞",
+              "image": "frozen_geode",
+              "use": "凿开石头会获得物品",
+              "local": "矿洞 (Level 41-79)",
+              "describe": "铁匠可以帮你凿开这个石头。"
+            },
+            {
+              "name": "巨大晶洞",
+              "image": "magma_geode",
+              "use": "凿开石头会获得物品",
+              "local": "矿洞 (Level 81-120)",
+              "describe": "铁匠可以帮你凿开这个石头。"
+            },
+            {
+              "name": "万象晶石",
+              "image": "omni_geode",
+              "use": "凿开石头会获得物品",
+              "local": "矿洞 ",
+              "describe": "铁匠可以帮你凿开这个石头。"
+            }
+          ]
+        },
+        {
+          "name": "宝石",
+          "links": [
+            {
+              "name": "绿宝石",
+              "image": "emerald",
+              "use": " 克林特, 矮人, 艾米丽, 潘妮 （最爱的礼物）",
+              "local": "矿洞第80层以上,淘盘 , 钓鱼宝箱",
+              "describe": "一种泛着美丽绿光的贵重石头。"
+            },
+            {
+              "name": "海蓝宝石",
+              "image": "aquamarine",
+              "use": "染料收集包,克林特, 矮人, 艾米丽 （最爱的礼物）,大理石火炬",
+              "local": "矿洞第40层以上",
+              "describe": "一种闪闪发亮的蓝绿色宝石."
+            },
+            {
+              "name": "五彩碎片",
+              "image": "prismatic_shard",
+              "use": "所有 村民 除了 海莉 （最爱的礼物）,在沙漠换取银河之剑",
+              "local": "万象晶石 ,沙漠矿洞等",
+              "describe": "一种非常珍贵的物品，具有强大的力量，来源未知。"
+            },
+            {
+              "name": "红宝石",
+              "image": "ruby",
+              "use": " 克林特, 矮人, 艾米丽 （最爱的礼物）",
+              "local": "矿洞第80层以上，淘盘， 垃圾箱等",
+              "describe": "铁匠可以帮你凿开这个石头。"
+            },
+            {
+              "name": "紫水晶",
+              "image": "amethyst",
+              "use": "阿比盖尔, 克林特, 矮人, 艾米丽 （最爱的礼物）",
+              "local": "矿洞第80层以上，淘盘， 垃圾箱等",
+              "describe": "一种紫色形态的石英.\n"
+            },
+            {
+              "name": "黄水晶",
+              "image": "topaz",
+              "use": "克林特, 矮人, 艾米丽 （最爱的礼物）",
+              "local": "矿洞，淘盘， 垃圾箱等",
+              "describe": "较为常见，但因其美丽姿态依然颇具价值."
+            },
+            {
+              "name": "翡翠",
+              "image": "jade",
+              "use": "克林特, 矮人, 艾米丽 （最爱的礼物）",
+              "local": "矿洞40层以上，淘盘， 垃圾箱等",
+              "describe": "暗绿色的装饰性石头."
+            },
+            {
+              "name": "钻石",
+              "image": "diamond",
+              "use": "由巴的戒指,艾芙琳, 格斯, 乔迪, 科罗布斯, 玛妮, 玛鲁, 潘妮, 威利 （最爱的礼物）",
+              "local": "矿洞50层以上，淘盘， 垃圾箱等",
+              "describe": "一种稀有珍贵的宝石"
+            }
+          ]
+        },
+        {
+          "name": "资源原料",
+          "links": [
+            {
+              "name": "煤炭",
+              "image": "coal",
+              "use": "用来用来提炼矿物质。",
+              "local": "每一层的矿井中，或者在炭窑中制造。敌人小概率掉落。",
+              "describe": "一种可燃的岩石"
+            },
+            {
+              "name": "铜矿石",
+              "image": "copper_ore",
+              "use": "可炼成铜锭。",
+              "local": "每一层的矿井中",
+              "describe": "一种常见的矿石"
+            },
+            {
+              "name": "铁矿石",
+              "image": "iron_ore",
+              "use": "可炼成铁锭",
+              "local": "存在于矿井40层以上",
+              "describe": "一种少见的矿石"
+            },
+            {
+              "name": "黄金矿石",
+              "image": "gold_ore",
+              "use": "可炼成金锭",
+              "local": "存在于矿井80层以上",
+              "describe": "一种珍贵的矿石"
+            },
+            {
+              "name": "铱金矿石",
+              "image": "iridium_ore",
+              "use": "可炼成铱金锭",
+              "local": "陨石, 采石场, 头骨山洞, 万象晶石, 巨大晶洞, 完美雕像",
+              "describe": "一种奇特的矿石，有很多神奇的属性"
+            }
+          ]
+        },
+        {
+          "name": "提炼",
+          "links": [
+            {
+              "name": "精炼石英",
+              "image": "refined_quartz",
+              "use": "制作多种物品的原材料",
+              "local": "石英 (1),煤炭 (1)",
+              "describe": "纯度更高的石英。"
+            },
+            {
+              "name": "铜锭",
+              "image": "copper_bar",
+              "use": "制作多种物品的原材料",
+              "local": " 铜矿石 (5),煤炭 (1)",
+              "describe": "纯铜炼制成的金属锭。"
+            },
+            {
+              "name": "铁锭",
+              "image": "iron_bar",
+              "use": "制作多种物品的原材料",
+              "local": "铁矿石 (5),煤炭 (1)",
+              "describe": "纯铁炼制成的金属锭。"
+            },
+            {
+              "name": "金锭",
+              "image": "gold_bar",
+              "use": "可炼成铱金锭",
+              "local": "金矿石 (5),煤炭 (1)",
+              "describe": "纯金炼制成的金属锭。"
+            },
+            {
+              "name": "铱金锭",
+              "image": "iridium_bar",
+              "use": "制作多种物品的原材料",
+              "local": "铱矿石 (5),煤炭 (1)",
+              "describe": "纯铱炼制成的金属锭。"
+            }
+          ]
+        }
+      ]
+    },
+    "cultural_relic": {
+      "name": "文物",
+      "content": [
+        {
+          "name": "卷轴",
+          "links": [
+            {
+              "name": "矮人卷轴I",
+              "image": "dwarf_scroll_i",
+              "local": "矿山第1至120层,绿色史莱姆（秘密森林）",
+              "describe": "一张泛黄的羊皮纸上写满了用矮人语写的文本，并用红色的蝴蝶结将其系起来。"
+            },
+            {
+              "name": "矮人卷轴II",
+              "image": "dwarf_scroll_ii",
+              "local": "冰霜蝙蝠（矿井第40至65层）,灰尘精灵（矿井第40至79层）,蓝色史莱姆（秘密森林或矿井）",
+              "describe": "一张泛黄的羊皮纸上写满了用矮人语写的文本，并用绿色的丝带将其系起来。"
+            },
+            {
+              "name": "矮人卷轴III",
+              "image": "dwarf_scroll_iii",
+              "local": "矿井40层以上,冰霜蝙蝠 （矿井第40层至第65层）,岩浆蝙蝠 （矿井81层以上）,蓝色史莱姆 （秘密森林或矿井）,骷髅洞穴",
+              "describe": "一张泛黄的羊皮纸上写满了用矮人语写的文本，并用蓝色的绳子将其系起来。"
+            },
+            {
+              "name": "矮人卷轴IV",
+              "image": "dwarf_scroll_iv",
+              "local": "所有怪物（矿井）,用锄头锄地（矿井81层以上）",
+              "describe": "一张泛黄的羊皮纸上写满了用矮人语写的文本，并用金色的链条将其系起来。"
+            }
+          ]
+        },
+        {
+          "name": "工具",
+          "links": [
+            {
+              "name": "有缺口的土罐",
+              "image": "chipped_amphora",
+              "local": "小镇",
+              "describe": "一种由陶瓷制成的古老的容器，可以运输干/湿货物。"
+            },
+            {
+              "name": "箭头",
+              "image": "arrowhead",
+              "local": "山区,森林,车站 ",
+              "describe": "一种用于打猎的简陋的工具。"
+            },
+            {
+              "name": "咀嚼洁齿棒",
+              "image": "chewing_stick",
+              "local": "山区,森林,小镇,钓鱼宝箱",
+              "describe": "古代人不停地咬咀嚼洁齿棒来保持他们口腔的干净。"
+            },
+            {
+              "name": "古剑",
+              "image": "ancient_sword",
+              "local": "森林,山区,钓鱼宝箱",
+              "describe": "是古剑的遗骸。虽然大部分剑体都已经生锈，但是刀柄部分仍然很精美。"
+            },
+            {
+              "name": "史前工具",
+              "image": "prehistoric_tool",
+              "local": "车站,森林,山区,钓鱼宝箱",
+              "describe": "一些简陋的古老的挖掘工具。"
+            },
+            {
+              "name": "锚",
+              "image": "anchor",
+              "local": "海滩 ",
+              "describe": "可能属于古代的海盗。"
+            },
+            {
+              "name": "矮人小工具",
+              "image": "dwarf_gadget",
+              "local": "矿井,万象晶石",
+              "describe": "使用先进的技术制成的，这种技术曾经在矮人中很有名。它不仅可以发光，还可以发出嗡嗡的声音，但是你无法理解它是如何工作的。"
+            }
+          ]
+        },
+        {
+          "name": "生锈物品",
+          "links": [
+            {
+              "name": "生锈的汤匙",
+              "image": "rusty_spoon",
+              "local": "小镇,钓鱼宝箱，矿井",
+              "describe": "一个普通的旧勺子，大约有10年之久了。不是很有意思。"
+            },
+            {
+              "name": "生锈的靴刺",
+              "image": "rusty_spur",
+              "local": "钓鱼宝箱",
+              "describe": "一把旧的马刺，曾经是附在牛仔靴子上的。生活在这个地区的人们肯定饲养了很久的动物。"
+            },
+            {
+              "name": "生锈的齿轮",
+              "image": "rusty_cog",
+              "local": "山区，矿井 第1至14层，钓鱼宝箱",
+              "describe": "一个保存完好的齿轮，且这个齿轮很有可能是某个古老的机器的一部分。这可能是矮人的技术。"
+            }
+          ]
+        },
+        {
+          "name": "生物",
+          "links": [
+            {
+              "name": "恐龙蛋",
+              "image": "dinosaur_egg",
+              "local": "矿井,山区，钓鱼宝箱",
+              "describe": "一个巨大的恐龙蛋......且整个壳都完好无损！"
+            },
+            {
+              "name": "古代种子",
+              "image": "ancient_seed",
+              "local": "矿井,山区，钓鱼宝箱,怪物,森林，万象晶石",
+              "describe": "从一些古代的植物上获得的干燥的古代种子，显然，已经死很久了....."
+            },
+            {
+              "name": "干海星",
+              "image": "dried_starfish",
+              "local": "海滩，钓鱼宝箱",
+              "describe": "来自原始海洋的海星。这是一个与众不同的原始标本！"
+            }
+          ]
+        },
+        {
+          "name": "玩偶",
+          "links": [
+            {
+              "name": "古代玩偶",
+              "image": "ancient_doll",
+              "local": "车站,森林,山区,钓鱼宝箱,矿井，",
+              "describe": "一个浑身布满污垢的古代玩偶。这个人偶可以用作玩具，装饰，或者是某些仪式上的一个道具。"
+            },
+            {
+              "name": "鸡雕像",
+              "image": "chicken_statue",
+              "local": "钓鱼宝箱",
+              "describe": "是一个以青铜为底座的鸡雕像。生活在这个地区的古代人肯定很喜欢鸡。"
+            },
+            {
+              "name": "诡异玩偶1",
+              "image": "green_1",
+              "local": "任意地点",
+              "describe": "无"
+            },
+            {
+              "name": "诡异玩偶2",
+              "image": "green_2",
+              "local": "任意地点",
+              "describe": "无"
+            }
+          ]
+        },
+        {
+          "name": "装饰",
+          "links": [
+            {
+              "name": "黄金面具",
+              "image": "golden_mask",
+              "local": "沙漠",
+              "describe": "一个令人毛骨悚然的黄金面具，可能是在某个古老的魔法仪式上使用的。在前额上，放置着一个巨大的紫色宝石。"
+            },
+            {
+              "name": "黄金遗物",
+              "image": "golden_relic",
+              "local": "沙漠",
+              "describe": "是一个黄金板，它的正面刻绘着象形文字和图画。"
+            },
+            {
+              "name": "古代鼓",
+              "image": "ancient_drum",
+              "local": "矿井,车站，森林，小镇，万象晶石",
+              "describe": "是由木材和动物的皮制成的鼓。音调低沉，且可以回荡。"
+            },
+            {
+              "name": "矮人头盔",
+              "image": "dwarvish_helm",
+              "local": "矿井,万象晶石",
+              "describe": "矮人常戴的头盔。厚厚的金属镀层可以保护他们免受掉落的碎片和钟乳石的袭击。"
+            },
+            {
+              "name": "骨笛",
+              "image": "bone_flute",
+              "local": "矿井,山区，森林，小镇，钓鱼宝箱",
+              "describe": "一个使用动物的骨头制成的老旧的管弦乐器。它可以发出一种怪异的音调。"
+            },
+            {
+              "name": "玻璃碎片",
+              "image": "glass_shards",
+              "local": "海滩,钓鱼宝箱",
+              "describe": "无"
+            },
+            {
+              "name": "稀有圆盘",
+              "image": "rare_disc",
+              "local": "矿井,钓鱼宝箱",
+              "describe": "一个沉重的黑色圆盘，上面镶嵌着特有的红色石头。当你捧着它时，你会被一股恐惧的感觉所侵扰。"
+            },
+            {
+              "name": "装饰用扇子",
+              "image": "ornamental_fan",
+              "local": "海滩,森林,小镇,钓鱼宝箱",
+              "describe": "这个精致的扇子最有可能属于一个贵妇。历史学家认为在第六世纪，山谷是最受富人欢迎的度假胜地。"
+            },
+            {
+              "name": "精灵珠宝",
+              "image": "elvish_jewelry",
+              "local": "森林,钓鱼宝箱",
+              "describe": "虽然有点脏，但仍很漂亮。被一些人认为是精灵的古老的语言，但至今为止，都没有发现过精灵的尸体。"
+            }
+          ]
+        },
+        {
+          "name": "史前化石",
+          "links": [
+            {
+              "name": "史前肩胛骨",
+              "image": "prehistoric_scapula",
+              "local": "森林,小镇",
+              "describe": "经常称为“肩胛骨”......目前还不清楚属于什么物种。"
+            },
+            {
+              "name": "史前胫骨",
+              "image": "prehistoric_tibia",
+              "local": "森林,铁路",
+              "describe": "厚并且很坚硬的腿骨。"
+            },
+            {
+              "name": "史前头骨",
+              "image": "prehistoric_skull",
+              "local": "山区",
+              "describe": "这一定是一个哺乳动物的颅骨。"
+            },
+            {
+              "name": "手部骨骼",
+              "image": "skeletal_hand",
+              "local": "海滩 ",
+              "describe": "令人很诧异，这些古老的碎骸保存了那么久。"
+            },
+            {
+              "name": "史前肋骨",
+              "image": "prehistoric_rib",
+              "local": "小镇（",
+              "describe": "旁边的小凿痕说明这个肋骨曾经是某人的晚餐。"
+            },
+            {
+              "name": "史前脊骨",
+              "image": "prehistoric_vertebra",
+              "local": "车站",
+              "describe": "某些史前生物的脊柱的一部分。"
+            },
+            {
+              "name": "尾部骨骼",
+              "image": "skeletal_tail",
+              "local": "矿井,钓鱼宝箱",
+              "describe": "尾巴很短。"
+            },
+            {
+              "name": "鹦鹉螺化石",
+              "image": "nautilus_fossil",
+              "local": "海滩,钓鱼宝箱",
+              "describe": "这一定是很久之前从古老的珊瑚礁上冲上岸的。"
+            },
+            {
+              "name": "两栖动物化石",
+              "image": "amphibian_fossil",
+              "local": "森林,山区,钓鱼宝箱",
+              "describe": "稍短一些的后腿表明这是某种原始的蟾蜍。"
+            },
+            {
+              "name": "棕榈化石",
+              "image": "palm_fossil",
+              "local": "森林,海滩,沙漠",
+              "describe": "棕榈化石比较常见，而且是保存特别完好的标本。"
+            },
+            {
+              "name": "三叶虫",
+              "image": "trilobite",
+              "local": "森林,海滩，山区",
+              "describe": "螃蟹的近亲，灭绝很久了。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "decorate": {
+    "head": {
+      "name": "头部装饰",
+      "content": [
+        {
+          "name": "帽子",
+          "links": [
+            {
+              "name": "牛仔帽",
+              "image": "cowboy_hat",
+              "local": "完成博物馆收集",
+              "describe": "皮革虽残旧而且裂开了，但依然柔软。虽然味道不好闻。"
+            },
+            {
+              "name": "牛仔帽",
+              "image": "cowboy_hat",
+              "local": "完成博物馆收集",
+              "describe": "皮革虽残旧而且裂开了，但依然柔软。虽然味道不好闻。"
+            },
+            {
+              "name": "圆顶礼帽",
+              "image": "bowler_hat",
+              "local": "赚取1000000g",
+              "describe": "由柔滑的毛毡制成。"
+            },
+            {
+              "name": "大礼帽",
+              "image": "top_hat",
+              "local": "在赌场花8,000购买",
+              "describe": "绅士的经典。"
+            },
+            {
+              "name": "墨西哥帽",
+              "image": "sombrero",
+              "local": "赚取10000000g",
+              "describe": "节日性的装饰草帽。"
+            },
+            {
+              "name": "草帽",
+              "image": "straw_hat",
+              "local": "赢得复活节的彩蛋寻宝游戏",
+              "describe": "轻便凉爽的帽子，农夫最爱。"
+            },
+            {
+              "name": "大檐帽",
+              "image": "official_cap",
+              "local": "看起来是位邮差或者警察的帽子。无论如何，它仍然轻软，味道不臭",
+              "describe": "抓住24种不同的鱼"
+            },
+            {
+              "name": "蓝色软帽",
+              "image": "blue_bonnet",
+              "local": "向博物馆捐赠40种不同的物品",
+              "describe": "这顶草原之帽让人回忆起简简单单的旧时光"
+            },
+            {
+              "name": "紫红小帽",
+              "image": "plum_chapeau",
+              "local": "看上去不错。",
+              "describe": "做出25道不同的料理"
+            },
+            {
+              "name": "猎人帽",
+              "image": "hunter_cap",
+              "local": "动物毛线即使在森林深处都能保暖",
+              "describe": "做出25道不同的料理"
+            },
+            {
+              "name": "司机帽",
+              "image": "trucker_hat",
+              "local": "打造30个不同的物品",
+              "describe": "帽后带网孔以通风"
+            },
+            {
+              "name": "水手帽",
+              "image": "sailor_cap",
+              "local": "赢得冰雪节的钓鱼比赛",
+              "describe": "新鲜又古板"
+            },
+            {
+              "name": "软呢帽",
+              "image": "fedora",
+              "local": "在星露谷展览会上用500购买",
+              "describe": "城里人的标准"
+            },
+            {
+              "name": "老伙计帽",
+              "image": "good_cap",
+              "local": "赚取15,000g",
+              "describe": "一顶软塌塌的大礼帽，有一张皱巴巴的账单。看来是一顶有故事的帽子"
+            },
+            {
+              "name": "凉帽",
+              "image": "cool_cap",
+              "local": "赚取250,000g",
+              "describe": "褪色了很多，但曾经是鲜艳的蓝色"
+            },
+            {
+              "name": "圣诞帽",
+              "image": "santa_hat",
+              "local": "与10个人达到了5颗心的等级",
+              "describe": "圣诞来了"
+            },
+            {
+              "name": "三重冕",
+              "image": "tiara",
+              "local": "与10个人达到了5颗心的等级",
+              "describe": "一粒巨大的紫水晶，旁边围绕着黄金"
+            },
+            {
+              "name": "安全帽",
+              "image": "hard_hat",
+              "local": "杀死30个道基",
+              "describe": "保护你的脑袋"
+            },
+            {
+              "name": "防雨帽",
+              "image": "sou_wester",
+              "local": "抓住10种不同的鱼",
+              "describe": "让水手在暴风雨中不会淋湿"
+            },
+            {
+              "name": "牛仔女郎帽",
+              "image": "cowgal_hat",
+              "local": "卖出300份同一种农作物",
+              "describe": "镶嵌着钻石"
+            },
+            {
+              "name": "专业牛仔帽",
+              "image": "cowpoke_hat",
+              "local": "每种作物卖出15份",
+              "describe": "牛奶专家所戴"
+            },
+            {
+              "name": "射手帽",
+              "image": "archers_cap",
+              "local": "烹饪每种配方",
+              "describe": "无论你是否弓箭手，都适合佩戴"
+            }
+          ]
+        },
+        {
+          "name": "面具",
+          "links": [
+            {
+              "name": "骷髅面具",
+              "image": "skeleton_mask",
+              "local": "打败50个骷髅",
+              "describe": "红红的眼睛散发着神秘的亮光"
+            },
+            {
+              "name": "哥布林面具",
+              "image": "goblin_mask",
+              "local": "售卖每一种物品",
+              "describe": "此面具能够吓死左邻右舍。为了效果，耳朵接合处是用橡胶做的"
+            },
+            {
+              "name": "小鸡面具",
+              "image": "chicken_mask",
+              "local": "完成40个需要帮助任务",
+              "describe": "戴上它，你肯定会被笑死"
+            }
+          ]
+        },
+        {
+          "name": "护耳",
+          "links": [
+            {
+              "name": "护耳",
+              "image": "earmuffs",
+              "local": "与20个人达到了5颗心的等级",
+              "describe": "让你的耳朵暖烘烘的。装饰用的是城堡村的手工天鹅绒"
+            },
+            {
+              "name": "眼罩",
+              "image": "eye_patch",
+              "local": "抓住各种不同的鱼",
+              "describe": "难以看出是真的还是服装店买来的"
+            },
+            {
+              "name": "老鼠耳朵",
+              "image": "mouse_ears",
+              "local": "与某人达到了10颗心的等级",
+              "describe": "使用合成纤维打造"
+            },
+            {
+              "name": "猫耳",
+              "image": "cat_ears",
+              "local": "与8个人达到了10颗心的等级",
+              "describe": "包含猫须"
+            }
+          ]
+        },
+        {
+          "name": "蝴蝶结",
+          "links": [
+            {
+              "name": "精美蝴蝶结",
+              "image": "delicate_bow",
+              "local": "做出10道不同的料理",
+              "describe": "仔细一看，小小的粉色珍珠在闪闪发光"
+            },
+            {
+              "name": "热带风小发卡",
+              "image": "tropiclip",
+              "local": "升级你的房屋",
+              "describe": "形状像棕榈树"
+            },
+            {
+              "name": "蝴蝶结",
+              "image": "butterfly_bow",
+              "local": "与某人达到了5颗心的等级",
+              "describe": "非常柔软"
+            },
+            {
+              "name": "幸运蝴蝶结",
+              "image": "lucky_bow",
+              "local": "赚取50,000g",
+              "describe": "中间是纯金打造的"
+            },
+            {
+              "name": "波尔卡蝴蝶结",
+              "image": "polka_bow",
+              "local": "完成10个需要帮助任务",
+              "describe": "戴上她回头率一定超高"
+            },
+            {
+              "name": "雏菊发卡",
+              "image": "daisy",
+              "local": "打造15个不同的物品",
+              "describe": "新鲜的春天发卡，用来戴在头上"
+            },
+            {
+              "name": "西瓜发卡",
+              "image": "watermelon_band",
+              "local": "抓住100种不同的鱼",
+              "describe": "颜色搭配是受到夏日大家最爱的水果所启发"
+            }
+          ]
+        }
+      ]
+    },
+    "shoes": {
+      "name": "鞋子",
+      "content": [
+        {
+          "name": "鞋子1",
+          "links": [
+            {
+              "name": "运动鞋",
+              "image": "sneakers",
+              "describe": "有点单薄……但是时尚嘛",
+              "local": "完成入门任务后在探险家公会购买，矿洞第9层的史莱姆身上随机掉落，钓鱼宝箱",
+              "addition": " +1防御"
+            },
+            {
+              "name": "橡胶靴",
+              "image": "rubber_boots",
+              "describe": "提供元素保护",
+              "local": "偶尔从绿色史莱姆身上掉落,钓鱼宝箱",
+              "addition": "  +1免疫"
+            },
+            {
+              "name": "毛靴",
+              "image": "leather_boots",
+              "describe": "这种皮革非常柔软",
+              "local": "到达矿洞第10层时得到的奖励，钓鱼宝箱",
+              "addition": "+1防御,+1免疫"
+            },
+            {
+              "name": "工作靴",
+              "image": "work_boots",
+              "describe": "加固了钢铁作为额外防护",
+              "local": "钓鱼宝箱",
+              "addition": "+2防御"
+            },
+            {
+              "name": "战靴",
+              "image": "combat_boots",
+              "describe": "固了铁丝作防护",
+              "local": "在探险家公会购买，钓鱼宝箱",
+              "addition": "+3防御"
+            },
+            {
+              "name": "冻土靴",
+              "image": "tundra_boots",
+              "describe": "毛绒绒的材质保持你的脚跟温暖",
+              "local": "到达矿洞第50层时得到的奖励",
+              "addition": "+2防御，+1免疫"
+            }
+          ]
+        },
+        {
+          "name": "鞋子2",
+          "links": [
+            {
+              "name": "热能靴",
+              "image": "thermal_boots",
+              "describe": "毛绒绒的材质保持你的脚跟温暖",
+              "local": "矿洞内的怪物随机掉落,钓鱼宝箱",
+              "addition": "+1防御，+2免疫"
+            },
+            {
+              "name": "黑暗之靴",
+              "image": "dark_boots",
+              "describe": "使用黑色粗厚皮革所打造",
+              "local": "到达矿洞第80层后在探险家公会购买,钓鱼宝箱",
+              "addition": "+4防御，+2免疫"
+            },
+            {
+              "name": "蹈火者靴",
+              "image": "firewalker_boots",
+              "describe": "据说能够承受最高温的熔岩",
+              "local": "到达矿洞第80层时得到的奖励,钓鱼宝箱",
+              "addition": "+3防御，+3免疫"
+            },
+            {
+              "name": "神怪之鞋",
+              "image": "genie_shoes",
+              "describe": "奇怪的能量围绕着鞋面",
+              "local": "头骨山洞掉落,钓鱼宝箱",
+              "addition": "+1防御，+6免疫"
+            },
+            {
+              "name": "太空之靴",
+              "image": "space_boots",
+              "describe": "铱编织，所以散发着紫色亮光",
+              "local": "到达矿洞第110层时得到的奖励",
+              "addition": "+4防御，+4免疫"
+            }
+          ]
+        }
+      ]
+    },
+    "ring": {
+      "name": "戒指",
+      "content": [
+        {
+          "name": "光辉戒指",
+          "links": [
+            {
+              "name": "小型光辉戒指",
+              "image": "small_glow_ring",
+              "describe": "持续发出微弱的光",
+              "local": "在40级之前消灭矿山中的史莱姆,从钓鱼栏中找到财宝箱作为完成夜间垂钓收集包任务的回报",
+              "addition": "发出半径为5的光圈，光效果可以和其他发光戒指的光效果叠加。"
+            },
+            {
+              "name": "光辉戒指",
+              "image": "glow_ring",
+              "describe": "持续发光",
+              "local": "40级以后消灭矿山中的Slimes或者等级达到70-79级时消灭矿山中的骷髅。也可以通过摧毁矿山中的筒子和箱子来获得该战利品",
+              "addition": "发出半径为10的光圈，光效果可以和其他发光戒指的光效果叠加"
+            }
+          ]
+        },
+        {
+          "name": "光辉",
+          "links": [
+            {
+              "name": "小型磁铁戒指",
+              "image": "small_magnet_ring",
+              "describe": "稍微扩大玩家觅食物品的范围",
+              "local": "作为完成Adventurer's Bundle任务的回报,钓鱼宝箱",
+              "addition": "增加1格玩家收集物品的范围。可以和自身、普通强磁戒以及铱金环效果叠加"
+            },
+            {
+              "name": "磁铁戒指",
+              "image": "magnet_ring",
+              "describe": "扩大玩家觅食物品的范围",
+              "local": "40-80级时从矿井里的敌人身上掉落.也可以通过摧毁矿井中的筒子和箱子来获得该战利品",
+              "addition": "增加2格玩家收集物品的范围。可以和自身、小型磁铁戒指以及铱金环效果叠加"
+            }
+          ]
+        },
+        {
+          "name": "宝石戒指",
+          "links": [
+            {
+              "name": "紫水晶戒指",
+              "image": "amethyst_ring",
+              "describe": "将击退的范围扩大10%",
+              "local": "完成\"Initiation\"任务后在探险家公会购买",
+              "addition": "将击退的范围扩大10%"
+            },
+            {
+              "name": "黄水晶戒指",
+              "image": "topaz_ring",
+              "describe": "将武器的准确率提升10%",
+              "local": "完成\"Initiation\"任务后在探险家公会购买",
+              "addition": "将武器的准确率提升10%"
+            },
+            {
+              "name": "海蓝宝石戒指",
+              "image": "aquamarine_ring",
+              "describe": "将致命攻击的几率提升10%",
+              "local": "在矿井到40层后从探险家公会购买",
+              "addition": "将致命攻击的几率提升10%"
+            },
+            {
+              "name": "翡翠戒指",
+              "image": "jade_ring",
+              "describe": "将致命攻击的威力提升10%",
+              "local": "在矿井到40层后从探险家公会购买",
+              "addition": "将致命攻击的威力提升10%"
+            },
+            {
+              "name": "绿宝石戒指",
+              "image": "emerald_ring",
+              "describe": "将武器速度提升10%",
+              "local": "在矿井到40层后从探险家公会购买",
+              "addition": "将武器速度提升10%"
+            },
+            {
+              "name": "红宝石戒指",
+              "image": "ruby_ring",
+              "describe": "将攻击提升10%",
+              "local": "在矿井到80层后从探险家公会购买",
+              "addition": "将攻击提升10%"
+            },
+            {
+              "name": "铱环",
+              "image": "iridium_band",
+              "describe": "迷人的发光戒指",
+              "local": "制造，战斗 9级,钓鱼宝箱",
+              "addition": "具备光辉戒指、强磁戒和红宝石戒指的功能"
+            }
+          ]
+        },
+        {
+          "name": "其他戒指",
+          "links": [
+            {
+              "name": "史莱姆克星戒指",
+              "image": "slime_charmer_ring",
+              "describe": "防止来自史莱姆的伤害",
+              "local": "探险家公会中消灭1000只史莱姆的回报",
+              "addition": "防止来自史莱姆的伤害和减益效果。史莱姆克星戒指对大型史莱姆无效"
+            },
+            {
+              "name": "战士戒指",
+              "image": "warrior_ring",
+              "describe": "在杀死一个怪物之后，有概率给予玩家灌注“勇士能量”的效果",
+              "local": "制造，战斗4级",
+              "addition": "杀死怪物后有机会得到勇士能量的加成"
+            },
+            {
+              "name": "吸血戒指",
+              "image": "vampire_ring",
+              "describe": "每杀死一个怪物会恢复一部分生命值",
+              "local": "探险家公会消灭200只蝙蝠的回报",
+              "addition": "每杀死一个怪物会恢复两点生命值"
+            },
+            {
+              "name": "野蛮人戒指",
+              "image": "savage_ring",
+              "describe": "每杀死一个怪物都会短暂得提高速度",
+              "local": "探险家公会消除150次虚空精灵的回报",
+              "addition": "杀死一个怪物后会获得2移动速度加成，持续2秒"
+            },
+            {
+              "name": "由巴的戒指",
+              "image": "ring_of_yoba",
+              "describe": "当玩家受到伤害时，有概率生成一个护盾",
+              "local": "制造，战斗 7",
+              "addition": "在受伤后，玩家有一定几率得到由巴的祝福加成。失血越多，玩家越幸运，也就越容易被加成影响。"
+            },
+            {
+              "name": "结实戒指",
+              "image": "sturdy_ring",
+              "describe": "负面效果持续时间减半",
+              "local": "制造，战斗 1级",
+              "addition": "就像描述所说，玩家戴上这枚戒指后，被怪物击中后的负面效果"
+            },
+            {
+              "name": "窃贼戒指",
+              "image": "burglar_ring",
+              "describe": "怪物有很大几率掉落物品",
+              "local": "探险家公会消除500只灰尘精灵的回报",
+              "addition": "怪物更容易掉落物品。游戏在给怪物添加装备的时候会对怪物的下拉表扫描两次，因此同一个物品有可能掉落两次。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "cooking": {
+    "cookbook": {
+      "name": "食谱",
+      "content": [
+        {
+          "name": "耕种增益",
+          "links": [
+            {
+              "name": "完美早餐",
+              "image": "complete_breakfast",
+              "material": "煎鸡蛋 (1) 任意奶类 (1) 薯饼 (1) 薄煎饼 (1)",
+              "rely": "+200 体力值+90 生命值",
+              "addition": " 耕种 (+2),体力值 (+50),10小时",
+              "local": "电视节目偶数年，春季 21"
+            },
+            {
+              "name": "薯饼",
+              "image": "hashbrowns",
+              "material": "土豆 (1) 油 (1)",
+              "rely": "+90 体力值,+40 生命值",
+              "addition": "耕种 (+1), 8小时",
+              "local": "电视节目偶数年，春季 21"
+            },
+            {
+              "name": "爆炒青椒",
+              "image": "pepper_poppers",
+              "material": "辣椒 (1) 奶酪 (1)",
+              "rely": "+130 体力值+58 生命值",
+              "addition": "耕种 (+2),速度 (+1),10小时",
+              "local": "谢恩（3心）"
+            },
+            {
+              "name": "椰汁汤",
+              "image": "tom_kha_soup",
+              "material": "椰子 (1) 虾 (1) 普通蘑菇 (1)",
+              "rely": "+175 体力值+78 生命值",
+              "addition": "耕种 (+2),体力值 (+30),10小时",
+              "local": "桑迪（7心）"
+            },
+            {
+              "name": "农夫午餐",
+              "image": "farmer_lunch",
+              "material": "煎蛋卷 (1) 防风草 (1)",
+              "rely": "+200 体力值+90 生命值",
+              "addition": "耕种 (+3),8小时",
+              "local": "耕种 3级"
+            },
+            {
+              "name": "枫糖棒",
+              "image": "maple_bar",
+              "material": "枫糖浆 (1) 糖 (1) 大麦粉 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "耕种 (+1),钓鱼 (+1),采矿 (+1), 24小时",
+              "local": "电视节目偶数年，夏季 14"
+            }
+          ]
+        },
+        {
+          "name": "运气增益",
+          "links": [
+            {
+              "name": "幸运午餐",
+              "image": "lucky_lunch",
+              "material": "海参 (1) 墨西哥薄饼 (1) 蓝爵 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "运气 (+3),16小时",
+              "local": "电视节目偶数年，春季 28"
+            },
+            {
+              "name": "炒鳗鱼",
+              "image": "fried_eel",
+              "material": "鳗鱼 (1) 油 (1)",
+              "rely": "+75 体力值+33 生命值",
+              "addition": "运气 (+1),10小时",
+              "local": "乔治（3 心）"
+            },
+            {
+              "name": "香辣鳗鱼",
+              "image": "spicy_eel",
+              "material": "鳗鱼 (1) 辣椒 (1)",
+              "rely": "+115 体力值+51 生命值",
+              "addition": "运气 (+1),速度 (+1),10小时",
+              "local": "乔治（7心） "
+            }
+          ]
+        },
+        {
+          "name": "战斗增益",
+          "links": [
+            {
+              "name": "炒蘑菇",
+              "image": "fried_mushroom",
+              "material": "普通蘑菇 (1) 龙葵 (1) 油 (1)",
+              "rely": "+135 体力值+60 生命值",
+              "addition": "攻击 (+2),10小时",
+              "local": " 德米特里厄斯（3 心）"
+            },
+            {
+              "name": "块茎拼盘",
+              "image": "roots_platter",
+              "material": "山洞萝卜 (1) 冬根 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "攻击 (+3),8小时",
+              "local": "战斗 3级"
+            },
+            {
+              "name": "蟹黄糕",
+              "image": "crab_cakes",
+              "material": "螃蟹 (1) 大麦粉 (1) 任意蛋类 (1) 油 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "速度 (+1),防御 (+1),24小时",
+              "local": "电视节目偶数年，秋季 21"
+            }
+          ]
+        },
+        {
+          "name": "钓鱼增益",
+          "links": [
+            {
+              "name": "鱼肉卷",
+              "image": "fish_taco",
+              "material": "金枪鱼 (1) 墨西哥薄饼 (1) 红叶卷心菜 (1) 蛋黄酱 (1)",
+              "rely": "+165 体力值+74 生命值",
+              "addition": "钓鱼 (+2),10小时",
+              "local": "莱纳斯（7 心） "
+            },
+            {
+              "name": "鳟鱼汤",
+              "image": "trout_soup",
+              "material": "虹鳟鱼 (1) 绿藻 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "钓鱼 (+1),6小时40分钟",
+              "local": "电视节目奇数年，秋季 14 "
+            },
+            {
+              "name": "海之菜肴",
+              "image": "dish_the_sea",
+              "material": "沙丁鱼 (2) 薯饼 (1)",
+              "rely": "+150 体力值+67 生命值",
+              "addition": "钓鱼 (+3),8小时",
+              "local": "钓鱼 3级"
+            },
+            {
+              "name": "海鲜杂烩汤",
+              "image": "chowder",
+              "material": "蛤 (1) 牛奶 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "钓鱼 (+1), 24小时",
+              "local": " 威利（3 心）"
+            },
+            {
+              "name": "龙虾浓汤",
+              "image": "lobster_bisque",
+              "material": "龙虾 (1) 牛奶 (1))",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "钓鱼 (+3),体力值 (+50),24小时",
+              "local": "电视节目偶数年，冬季 14,威利（9 心）"
+            },
+            {
+              "name": "法式田螺",
+              "image": "escargot",
+              "material": "蜗牛 (1) 蒜 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "钓鱼 (+2),24小时",
+              "local": " 威利（5 心）"
+            },
+            {
+              "name": "烩鱼汤",
+              "image": "fish_stew",
+              "material": "小龙虾 (1) 蚌 (1) 玉黍螺 (1) 西红柿 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "钓鱼 (+3), 24小时",
+              "local": "威利（7 心）"
+            }
+          ]
+        },
+        {
+          "name": "采矿增益",
+          "links": [
+            {
+              "name": "帕尔玛奶酪茄子",
+              "image": "eggplant_parmesan",
+              "material": "茄子 (1) 西红柿 (1)",
+              "rely": "+175 体力值+78 生命值",
+              "addition": "采矿 (+1), 防御 (+3), 6小时40分钟",
+              "local": "刘易斯（7 心） "
+            },
+            {
+              "name": "红莓酱",
+              "image": "cranberry_sauce",
+              "material": "蔓越莓 (1) 糖 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "采矿 (+2) 5小时",
+              "local": " 格斯（7 心） "
+            },
+            {
+              "name": "矿工特供",
+              "image": "miners_treat",
+              "material": "山洞萝卜 (2) 糖 (1) 任意奶类 (1)",
+              "rely": "山洞萝卜 (2) 糖 (1) 任意奶类 (1)",
+              "addition": "采矿 (+3), 磁性 (+32), 8小时",
+              "local": "采矿 3级"
+            }
+          ]
+        },
+        {
+          "name": "觅食增益",
+          "links": [
+            {
+              "name": "薄煎饼",
+              "image": "pancakes",
+              "material": "大麦粉 (1) 任意蛋类 (1)",
+              "rely": "山药 (1) 南瓜 (1)",
+              "addition": "觅食 (+2),16小时",
+              "local": "电视节目奇数年，夏季 14 "
+            },
+            {
+              "name": "秋日恩赐",
+              "image": "autumns_bounty",
+              "material": "山药 (1) 南瓜 (1)",
+              "rely": "+220 体力值+99 生命值",
+              "addition": "觅食 (+2), 防御 (+2),11小时",
+              "local": "德米特里厄斯（7 心）"
+            },
+            {
+              "name": "救生汉堡",
+              "image": "survival_burger",
+              "material": "面包 (1) 山洞萝卜 (1) 茄子 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "觅食 (+3), 8小时",
+              "local": "耕种 2级"
+            },
+            {
+              "name": "救生汉堡",
+              "image": "survival_burger",
+              "material": "面包 (1) 山洞萝卜 (1) 茄子 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "觅食 (+3), 8小时",
+              "local": "耕种 2级"
+            }
+          ]
+        },
+        {
+          "name": "体力增益",
+          "links": [
+            {
+              "name": "红之盛宴",
+              "image": "red_plate",
+              "material": "红叶卷心菜 (1) 萝卜 (1)",
+              "rely": "+240 体力值+108 生命值",
+              "addition": "体力值 (+50), 5小时",
+              "local": "艾米丽（7心） "
+            },
+            {
+              "name": "巨无霸餐",
+              "image": "super_meal",
+              "material": "小白菜 (1) 蔓越莓 (1) 洋蓟 (1)",
+              "rely": "+160 体力值+72 生命值",
+              "addition": "体力值 (+40), 速度 (+1),5小时",
+              "local": "肯特（7 心） "
+            }
+          ]
+        },
+        {
+          "name": "其他",
+          "links": [
+            {
+              "name": "煎鸡蛋",
+              "image": "fried_egg",
+              "material": " 任意蛋类 (1)",
+              "rely": "+50 体力值+22 生命值",
+              "addition": "",
+              "local": "升级农舍"
+            },
+            {
+              "name": "煎蛋卷",
+              "image": "omelet",
+              "material": "任意蛋类 (1) 任意奶类 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，春季 28"
+            },
+            {
+              "name": "沙拉",
+              "image": "salad",
+              "material": "韭葱 (1) 蒲公英 (1) 醋 (1)",
+              "rely": "+113 体力值+50 生命值",
+              "addition": "",
+              "local": "艾米丽（3 心）"
+            },
+            {
+              "name": "乳酪花椰菜",
+              "image": "cheese_cauliflower",
+              "material": "花椰菜 (1) 奶酪 (1)",
+              "rely": "+138 体力值+62 生命值",
+              "addition": "",
+              "local": "潘姆（3 ）"
+            },
+            {
+              "name": "烤鱼",
+              "image": "baked_fish",
+              "material": "太阳鱼 (1) 鲷鱼 (1) 大麦粉 (1)",
+              "rely": "+75 体力值+33 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，夏季 7"
+            },
+            {
+              "name": "防风草汤",
+              "image": "parsnip_soup",
+              "material": "防风草 (1) 任意奶类 (1) 醋 (1)",
+              "rely": " +85 体力值+38 生命值",
+              "addition": "",
+              "local": "卡洛琳（3 心）"
+            },
+            {
+              "name": "混合蔬菜",
+              "image": "vegetable_medley",
+              "material": "西红柿 (1) 甜菜 (1)",
+              "rely": "+165 体力值+74 生命值",
+              "addition": "",
+              "local": "卡洛琳（7 心）"
+            },
+            {
+              "name": "炸鱿鱼",
+              "image": "fried_calamari",
+              "material": " 鱿鱼 (1) 大麦粉 (1) 油 (1)",
+              "rely": "+80 体力值+36 生命值",
+              "addition": "",
+              "local": " 乔迪（3  心）"
+            },
+            {
+              "name": "奇怪的小面包",
+              "image": "strange_bun",
+              "material": "大麦粉 (1) 玉黍螺 (1) 虚空蛋黄酱 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "",
+              "local": " 谢恩（3  心）"
+            },
+            {
+              "name": "披萨",
+              "image": "pizza",
+              "material": "大麦粉 (1) 西红柿 (1) 奶酪 (1)",
+              "rely": "+150 体力值+67 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，春季 7"
+            },
+            {
+              "name": "豆类火锅",
+              "image": "bean_hotpot",
+              "material": "绿豆 (2)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "",
+              "local": "克林特（7 心）"
+            },
+            {
+              "name": "琉璃山药",
+              "image": "glazed_yams",
+              "material": "山药 (1) 糖 (1)",
+              "rely": "+200 体力值+90 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，秋季 21"
+            },
+            {
+              "name": "惊喜鲤鱼",
+              "image": "carp_surprise",
+              "material": "鲤鱼 (4)",
+              "rely": "+90 体力值+40 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，夏季 7"
+            },
+            {
+              "name": "鲑鱼晚餐",
+              "image": "salmon_dinner",
+              "material": "鲑鱼 (1) 苋菜 (1) 甘蓝菜 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "",
+              "local": " 格斯（3 心）"
+            },
+            {
+              "name": "香酥鲈鱼",
+              "image": "crispy_bass",
+              "material": "大嘴鲈鱼 (1) 大麦粉 (1) 油 (1)",
+              "rely": "+90 体力值+40 生命值",
+              "addition": "磁性 (+64), 10小时",
+              "local": "肯特（3 心）"
+            },
+            {
+              "name": "面包",
+              "image": "bread",
+              "material": "大麦粉 (1)",
+              "rely": "+50 体力值+22 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，夏季 28"
+            },
+            {
+              "name": "巧克力蛋糕",
+              "image": "chocolate_cake",
+              "material": "大麦粉 (1) 糖 (1) 任意蛋类 (1)",
+              "rely": "+150 体力值+67 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，冬季 14"
+            },
+            {
+              "name": "粉红蛋糕",
+              "image": "pink_cake",
+              "material": "甜瓜 (1) 大麦粉 (1) 糖 (1) 任意蛋类 (1)",
+              "rely": "+250 体力值+112 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，夏季 21"
+            },
+            {
+              "name": "大黄派",
+              "image": "rhubarb_pie",
+              "material": "大黄 (1) 大麦粉 (1) 糖 (1)",
+              "rely": "+215 体力值+96 生命值",
+              "addition": "",
+              "local": "玛妮（7 心）"
+            },
+            {
+              "name": "饼干",
+              "image": "cookie",
+              "material": "大麦粉 (1) 糖 (1) 任意蛋类 (1)",
+              "rely": "+90 体力值+40 生命值",
+              "addition": "",
+              "local": "艾芙琳（4 心）"
+            },
+            {
+              "name": "意大利面",
+              "image": "spaghetti",
+              "material": "大麦粉 (1) 糖 (1) 任意蛋类 (1)",
+              "rely": "+75 体力值+33 生命值",
+              "addition": "",
+              "local": " 刘易斯（3 心）"
+            },
+            {
+              "name": "生鱼片",
+              "image": "sashimi",
+              "material": " 任意水产类 (1)",
+              "rely": "+75 体力值+33 生命值",
+              "addition": "",
+              "local": "莱纳斯（3 心）"
+            },
+            {
+              "name": "生鱼寿司",
+              "image": "maki_roll",
+              "material": "任意水产类 (1)",
+              "rely": "+75 体力值+33 生命",
+              "addition": "",
+              "local": "电视节目奇数年，夏季 21"
+            },
+            {
+              "name": "墨西哥薄饼",
+              "image": "tortilla",
+              "material": "玉米 (1)",
+              "rely": "+50 体力值+22 生命值",
+              "addition": "",
+              "local": "莱纳斯（3 心） "
+            },
+            {
+              "name": "大米布丁",
+              "image": "rice_pudding",
+              "material": " 任意奶类 (1) 糖 (1) 大米 (1)",
+              "rely": "+115 体力值+51 生命值",
+              "addition": "",
+              "local": "艾芙琳（7 心） "
+            },
+            {
+              "name": "冰淇淋",
+              "image": "rice_pudding",
+              "material": "任意奶类 (1) 糖 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "",
+              "local": "乔迪（7 心） "
+            },
+            {
+              "name": "蓝莓千层酥",
+              "image": "blueberry_tart",
+              "material": "蓝莓 (1) 大麦粉 (1) 糖 (1) 任意蛋类 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "",
+              "local": "皮埃尔（3 心）"
+            },
+            {
+              "name": "海藻汤",
+              "image": "algae_soup",
+              "material": "绿藻 (4)",
+              "rely": "+75 体力值+33 生命值",
+              "addition": "",
+              "local": " 克林特（3 心）"
+            },
+            {
+              "name": "清汤",
+              "image": "pale_broth",
+              "material": "白藻 (2)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "",
+              "local": " 玛妮（3 心）"
+            },
+            {
+              "name": "葡萄干布丁",
+              "image": "plum_pudding",
+              "material": "野梅 (2) 大麦粉 (1) 糖 (1)",
+              "rely": "+175 体力值+78 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，冬季 7"
+            },
+            {
+              "name": "水煮洋蓟",
+              "image": "atichoke_dip",
+              "material": "洋蓟 (1) 牛奶 (1)",
+              "rely": "+100 体力值+45 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，秋季 28"
+            },
+            {
+              "name": "蔬菜什锦盖饭",
+              "image": "stir_fry",
+              "material": "山洞萝卜 (1) 普通蘑菇 (1) 甘蓝菜 (1) 油 (1)",
+              "rely": "+200 体力值+90 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，春季 7"
+            },
+            {
+              "name": "烤榛子",
+              "image": "roasted_hazelnuts",
+              "material": " 榛子 (3)",
+              "rely": "+175 体力值+78 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，夏季 28"
+            },
+            {
+              "name": "南瓜派",
+              "image": "pumpkin_pie",
+              "material": "南瓜 (1) 大麦粉 (1) 牛奶 (1) 糖 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，冬季 21"
+            },
+            {
+              "name": "萝卜沙拉",
+              "image": "radish_salad",
+              "material": "油 (1) 醋 (1) 萝卜 (1)",
+              "rely": "+200 体力值+90 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，春季 21"
+            },
+            {
+              "name": "水果沙拉",
+              "image": "fruit_salad",
+              "material": "蓝莓 (1) 甜瓜 (1) 杏子 (1)",
+              "rely": "+263 体力值+118 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，秋季 7"
+            },
+            {
+              "name": "黑莓脆皮饼",
+              "image": "blackberry_cobbler",
+              "material": "黑莓 (2) 糖 (1) 大麦粉 (1)",
+              "rely": "+175 体力值+78 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，秋季 14"
+            },
+            {
+              "name": "蔓越莓糖果",
+              "image": "cranberry_candy",
+              "material": "蔓越莓 (1) 苹果 (1) 糖 (1)",
+              "rely": "+125 体力值+56 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，冬季 28"
+            },
+            {
+              "name": "意式烤面包",
+              "image": "bruschetta",
+              "material": "面包 (1) 油 (1) 西红柿 (1)",
+              "rely": "+113 体力值+50 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，冬季 21"
+            },
+            {
+              "name": "卷心菜沙拉",
+              "image": "coleslaw",
+              "material": "红叶卷心菜 (1) 醋 (1) 蛋黄酱 (1)",
+              "rely": "+213 体力值+95 生命值",
+              "addition": "",
+              "local": "电视节目奇数年，春季 14"
+            },
+            {
+              "name": "意式蕨菜炖饭",
+              "image": "fiddlehead_risotto",
+              "material": "油 (1) 蕨菜 (1) 蒜 (1)",
+              "rely": "+225 体力值+101 生命值",
+              "addition": "",
+              "local": "电视节目偶数年，秋季 28"
+            }
+          ]
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调料",
+      "content": [
+        {
+          "name": "调味品",
+          "links": [
+            {
+              "name": "糖",
+              "image": "sugars",
+              "material": "",
+              "rely": "100g/1600g",
+              "addition": "",
+              "local": "可以将甜菜放入磨坊中制造"
+            },
+            {
+              "name": "大麦粉",
+              "image": "wheat_flour",
+              "material": "",
+              "rely": "100g/2100g",
+              "addition": "",
+              "local": "可以将小麦放入磨坊中制造"
+            },
+            {
+              "name": "大米",
+              "image": "rice",
+              "material": "",
+              "rely": "200g/400g",
+              "addition": "",
+              "local": ""
+            },
+            {
+              "name": "油",
+              "image": "oil",
+              "material": "",
+              "rely": "200g/2200g",
+              "addition": "",
+              "local": "可以用产油机得到"
+            },
+            {
+              "name": "醋",
+              "image": "vinegar",
+              "material": "",
+              "rely": "200g/800g",
+              "addition": "",
+              "local": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "furniture": {
+    "furnturs": {
+      "name": "家具",
+      "content": [
+        {
+          "name": "椅子",
+          "links": [
+            {
+              "name": "橡木椅子",
+              "image": "oak_chair",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "胡桃子木椅子",
+              "image": "walnut_chair",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "桦木椅子",
+              "image": "birch_chair",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "桃子花心木椅子",
+              "image": "mahogany_chair",
+              "local": "木匠的商店",
+              "price": "1,000g"
+            },
+            {
+              "name": "红色餐厅椅",
+              "image": "red_diner_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "蓝色餐厅椅",
+              "image": "blue_diner_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "乡村椅",
+              "image": "country_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "早餐椅",
+              "image": "breakfast_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "粉色办公凳",
+              "image": "pink_office_chair",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "紫色办公椅",
+              "image": "purple_office_chair",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "绿色办公凳",
+              "image": "green_office_stool",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "橘色办公凳",
+              "image": "orange_office_stool",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "黑暗王座",
+              "image": "dark_throne",
+              "local": "木匠的商店",
+              "price": "2,000g"
+            },
+            {
+              "name": "黄色餐厅椅",
+              "image": "dining_chair_(yellow)",
+              "local": "木匠的商店",
+              "price": "1,200g"
+            },
+            {
+              "name": "红色餐厅椅r",
+              "image": "dining_chair_(red)",
+              "local": "木匠的商店",
+              "price": "1,200g"
+            },
+            {
+              "name": "绿色毛绒座位",
+              "image": "green_plush_seat",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "粉色毛绒座位",
+              "image": "pink_plush_seat",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "冬日之椅",
+              "image": "winter_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "美妙的椅子",
+              "image": "groovy_chair",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "可爱椅子",
+              "image": "cute_chair",
+              "local": "木匠的商店",
+              "price": "1,200g"
+            },
+            {
+              "name": "树桩座椅",
+              "image": "stump_seat",
+              "local": "木匠的商店",
+              "price": "2,000g"
+            },
+            {
+              "name": "金属椅子",
+              "image": "metal_chair",
+              "local": "木匠的商店",
+              "price": "800g"
+            },
+            {
+              "name": "绿色凳子",
+              "image": "green_stool",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "蓝色凳子",
+              "image": "blue_stool",
+              "local": "木匠的商店",
+              "price": "350g"
+            },
+            {
+              "name": "国王之椅",
+              "image": "king_chair",
+              "local": "木匠的商店",
+              "price": "3,000g"
+            },
+            {
+              "name": "水晶椅",
+              "image": "crystal_chair",
+              "local": "木匠的商店",
+              "price": "3,000g"
+            }
+          ]
+        },
+        {
+          "name": "餐桌",
+          "links": [
+            {
+              "name": "节日餐桌",
+              "image": "festive_dining_table",
+              "local": "木匠的商店，旅行货车",
+              "price": "3,500g，2,250g"
+            },
+            {
+              "name": "桃子花心木餐桌",
+              "image": "mahogany_dining_table",
+              "local": "木匠的商店",
+              "price": "3,000g"
+            },
+            {
+              "name": "现代餐桌",
+              "image": "modern_dining_table",
+              "local": "木匠的商店，旅行货车",
+              "price": ""
+            },
+            {
+              "name": "冬日餐桌",
+              "image": "winter_dining_table",
+              "local": "木匠的商店，旅行货车",
+              "price": "Gold"
+            }
+          ]
+        },
+        {
+          "name": "书柜",
+          "links": [
+            {
+              "name": "工匠书柜",
+              "image": "artist_bookcase",
+              "local": "木匠的商店，旅行货车",
+              "price": "1200g，250g"
+            },
+            {
+              "name": "豪华书柜",
+              "image": "luxury_bookcase",
+              "local": "木匠的商店，旅行货车",
+              "price": "2,000g，2,500g"
+            },
+            {
+              "name": "黑色书柜",
+              "image": "dark_bookcase",
+              "local": "木匠的商店，旅行货车",
+              "price": "2,000g，250g"
+            },
+            {
+              "name": "现代书柜",
+              "image": "modern_bookcase",
+              "local": "木匠的商店，旅行货车",
+              "price": "1600g，1,000g"
+            }
+          ]
+        },
+        {
+          "name": "梳妆台",
+          "links": [
+            {
+              "name": "橡木梳妆台",
+              "image": "oak_dresser",
+              "local": "木匠的商店",
+              "price": "1,000g"
+            },
+            {
+              "name": "桦木梳妆台",
+              "image": "birch_dresser",
+              "local": "木匠的商店",
+              "price": "1,000g"
+            },
+            {
+              "name": "胡桃子木梳妆台",
+              "image": "walnut_dresser",
+              "local": "木匠的商店",
+              "price": "1,000g"
+            },
+            {
+              "name": "桃子花心木梳妆台",
+              "image": "mahogany_dresser",
+              "local": "木匠的商店",
+              "price": "2,000g"
+            }
+          ]
+        },
+        {
+          "name": "地毯",
+          "links": [
+            {
+              "name": "红色别墅地毯",
+              "image": "red_cottage_rug",
+              "local": "农舍自带",
+              "price": "N/A"
+            },
+            {
+              "name": "拼布地毯",
+              "image": "patchwork_rug",
+              "local": "木匠的商店",
+              "price": "800g"
+            },
+            {
+              "name": "暗色地毯",
+              "image": "dark_rug",
+              "local": "木匠的商店",
+              "price": "2,000g"
+            },
+            {
+              "name": "红色地毯",
+              "image": "red_rug",
+              "local": "木匠的商店，旅行货车",
+              "price": "1,000g"
+            }
+          ]
+        },
+        {
+          "name": "灯具",
+          "links": [
+            {
+              "name": "乡村台灯",
+              "image": "country_lamp",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "现代台灯",
+              "image": "modern_lamp",
+              "local": "木匠的商店，旅行货车",
+              "price": "750g，750g"
+            },
+            {
+              "name": "经典台灯",
+              "image": "classic_lamp",
+              "local": "木匠的商店",
+              "price": "1,000g"
+            },
+            {
+              "name": "箱灯",
+              "image": "box_lamp",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "J可乐灯",
+              "image": "j_cola_light",
+              "local": "从Joja超市购买",
+              "price": "500g"
+            }
+          ]
+        },
+        {
+          "name": "电视",
+          "links": [
+            {
+              "name": "廉价电视",
+              "image": "budget_tv",
+              "local": "农舍自带，木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "等离子电视",
+              "image": "plasma_tv",
+              "local": "木匠的商店",
+              "price": "4,500g"
+            }
+          ]
+        },
+        {
+          "name": "盆栽",
+          "links": [
+            {
+              "name": "家居植物",
+              "image": "house_plant",
+              "local": "农舍自带，木匠的商店，旅行货车",
+              "price": "250g，500g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_2",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_3",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_4",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，2,500g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_5",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，1,250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_6",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，1,000g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_7",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，1,250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_8",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_9",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_10",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，750g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_11",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_12",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_13",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_14",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "家居植物",
+              "image": "house_plant_15",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，1,250g"
+            },
+            {
+              "name": "小植物",
+              "image": "small_plant",
+              "local": "木匠的商店，旅行货车",
+              "price": "250g，1,250g"
+            },
+            {
+              "name": "桌上植物",
+              "image": "table_plant",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "室内棕榈树",
+              "image": "indoor_palm",
+              "local": "木匠的商店，旅行货车",
+              "price": "600g，1,000g"
+            },
+            {
+              "name": "景观树",
+              "image": "topiary_tree",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "修剪的松树",
+              "image": "manicured_pine",
+              "local": "木匠的商店，旅行货车",
+              "price": "500g，1,500g"
+            },
+            {
+              "name": "冬星的树",
+              "image": "tree_of_the_winter_star",
+              "local": "木匠的商店",
+              "price": "5,000g"
+            }
+          ]
+        },
+        {
+          "name": "画像",
+          "links": [
+            {
+              "name": "“宝石海女王”",
+              "image": "sea",
+              "local": "旅行货车",
+              "price": "500g"
+            },
+            {
+              "name": "”翠山”",
+              "image": "hills",
+              "local": "给博物馆捐赠25个物品",
+              "price": "N/A"
+            },
+            {
+              "name": "“夜晚的回声山”",
+              "image": "hill",
+              "local": "给博物馆捐赠20个物品",
+              "price": "N/A"
+            },
+            {
+              "name": "“89号高速路”",
+              "image": "highway",
+              "local": "旅行货车",
+              "price": "1,250-1,750g"
+            },
+            {
+              "name": "“小路”",
+              "image": "pathways",
+              "local": "旅行货车",
+              "price": "1,750g"
+            },
+            {
+              "name": "TheMuzzamaroo",
+              "image": "muzzamaroo",
+              "local": "旅行货车",
+              "price": "2,000g"
+            },
+            {
+              "name": "“原始方向”",
+              "image": "motion",
+              "local": "旅行货车",
+              "price": "2,500g"
+            },
+            {
+              "name": "“香草谷”",
+              "image": "villa",
+              "local": "旅行货车",
+              "price": "2,000g"
+            },
+            {
+              "name": "“夜幕下的城堡”",
+              "image": "spires",
+              "local": "旅行货车",
+              "price": "750-2,000g"
+            },
+            {
+              "name": "Paradise",
+              "image": "paradise",
+              "local": "旅行货车",
+              "price": "N/A"
+            },
+            {
+              "name": "“风筝大师”",
+              "image": "kitemaster",
+              "local": "旅行货车",
+              "price": "500g"
+            },
+            {
+              "name": "\"印棉瀑布\"",
+              "image": "falls",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "Sun",
+              "image": "sun",
+              "local": "木匠的商店,旅行货车",
+              "price": "800g,1,750g"
+            },
+            {
+              "name": "“太阳45”",
+              "image": "sun_45",
+              "local": "木匠的商店,旅行货车",
+              "price": "350g,1,750g"
+            },
+            {
+              "name": "\"蓝色城市\"",
+              "image": "blue_city",
+              "local": "木匠的商店,旅行货车",
+              "price": "250g,1,250g"
+            },
+            {
+              "name": "蓝莓",
+              "image": "blueberries",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "LittleTree",
+              "image": "little_tree",
+              "local": "农舍自带,旅行货车",
+              "price": "1,500g"
+            },
+            {
+              "name": "\"针尖花\"",
+              "image": "needlepoint_flower",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "Dancing",
+              "image": "dancing_grass",
+              "local": "Grass",
+              "price": "木匠的商店,旅行货车"
+            },
+            {
+              "name": "\"小照片\"",
+              "image": "little_photos",
+              "local": "木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "\"头骨海报\"",
+              "image": "skull_poster",
+              "local": "木匠的商店",
+              "price": "500g"
+            },
+            {
+              "name": "\"壁花人\"",
+              "image": "wallflower_pal",
+              "local": "旅行货车",
+              "price": "750g"
+            }
+          ]
+        },
+        {
+          "name": "其他",
+          "links": [
+            {
+              "name": "日历",
+              "image": "calendar",
+              "local": "木匠的商店",
+              "price": "2,000g"
+            },
+            {
+              "name": "纹饰的碗",
+              "image": "decorative_bowl",
+              "local": "农舍自带,木匠的商店",
+              "price": "250g"
+            },
+            {
+              "name": "地球仪",
+              "image": "globe",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "现代帆船",
+              "image": "model_ship",
+              "local": "木匠的商店,旅行货车",
+              "price": "750g,2,500g"
+            },
+            {
+              "name": "蒲团熊",
+              "image": "futan_bear",
+              "local": "木匠的商店",
+              "price": "1,500g"
+            },
+            {
+              "name": "毛绒兔子",
+              "image": "plush_bunny",
+              "local": "复活节",
+              "price": "2,000g"
+            },
+            {
+              "name": "中式橱柜",
+              "image": "china_cabinet",
+              "local": "木匠的商店,旅行货车",
+              "price": "6000g,1,000g"
+            },
+            {
+              "name": "黄金支柱",
+              "image": "gold_pillar",
+              "local": "木匠的商店",
+              "price": "450g"
+            },
+            {
+              "name": "陶柱",
+              "image": "ceramic_pillar",
+              "local": "木匠的商店,旅行货车",
+              "price": "250g,2,500g"
+            },
+            {
+              "name": "工业管道",
+              "image": "industrial_pipe",
+              "local": "木匠的商店,旅行货车",
+              "price": "300g,1,500g"
+            },
+            {
+              "name": "图腾柱",
+              "image": "totem_pole",
+              "local": "木匠的商店",
+              "price": "750g"
+            },
+            {
+              "name": "邪恶雕塑",
+              "image": "wicked_statue",
+              "local": "科罗巴斯",
+              "price": "（配方）"
+            },
+            {
+              "name": "无尽好运雕像",
+              "image": "statue_of_endless_fortune",
+              "local": "在绿洲的赌场购买",
+              "price": "1,000,000g"
+            },
+            {
+              "name": "箱子",
+              "image": "chest",
+              "local": "制造",
+              "price": "N/A"
+            },
+            {
+              "name": "鼓声地块",
+              "image": "drum_block",
+              "local": "与罗宾的友好度到达6颗心,给博物馆捐赠一个古代鼓",
+              "price": "N/A"
+            },
+            {
+              "name": "笛声地块",
+              "image": "flute_block",
+              "local": "与罗宾的友好度到达6颗心,给博物馆捐赠一个骨笛",
+              "price": "N/A"
+            },
+            {
+              "name": "茶具",
+              "image": "tea_set",
+              "local": "冬日星盛宴（Sam或格斯的礼物）",
+              "price": "N/A"
+            },
+            {
+              "name": "Leah的雕塑",
+              "image": "leah's_sculpture",
+              "local": "莉亚（好感度到达6颗心）",
+              "price": "N/A"
+            },
+            {
+              "name": "立式晶洞",
+              "image": "standing_geode",
+              "local": "给博物馆捐赠11块矿石",
+              "price": "N/A"
+            },
+            {
+              "name": "歌咏石",
+              "image": "singing_stone",
+              "local": "给博物馆捐赠21块矿石",
+              "price": "N/A"
+            },
+            {
+              "name": "黑曜石花瓶",
+              "image": "obsidian_vase",
+              "local": "给博物馆捐赠31块矿石",
+              "price": "N/A"
+            },
+            {
+              "name": "骷髅雕像",
+              "image": "skeleton_statue",
+              "local": "给博物馆捐赠15个文物",
+              "price": "N/A"
+            },
+            {
+              "name": "大号蒲团熊",
+              "image": "futan_bear",
+              "local": "给博物馆捐赠30个物品",
+              "price": "N/A"
+            },
+            {
+              "name": "熊雕像",
+              "image": "bear_statue",
+              "local": "给博物馆捐赠50个物品",
+              "price": "N/A"
+            },
+            {
+              "name": "鸡雕像",
+              "image": "chicken_statue",
+              "local": "给博物馆捐赠",
+              "price": "N/A"
+            },
+            {
+              "name": "脊柱骨架",
+              "image": "skeleton_r_\t",
+              "local": "给博物馆捐赠",
+              "price": "N/A"
+            },
+            {
+              "name": "星露谷英雄奖杯",
+              "image": "stardew_hero_trophy",
+              "local": "重建社区中心的奖励",
+              "price": "N/A"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "manufacture": {
+    "facture": {
+      "name": "制造",
+      "content": [
+        {
+          "name": "栅栏",
+          "links": [
+            {
+              "name": "门",
+              "image": "gate",
+              "material": "木材 (10)",
+              "local": "NA",
+              "describe": "能帮你穿过栅栏。"
+            },
+            {
+              "name": "木栅栏",
+              "image": "wood_fence",
+              "material": "木材 (2)",
+              "local": "NA",
+              "describe": "能圈住杂草和动物。"
+            },
+            {
+              "name": "石栅栏",
+              "image": "stone_fence",
+              "material": "石头 (2)",
+              "local": "耕种 Level 2",
+              "describe": "比木栅栏更耐用。"
+            },
+            {
+              "name": "铁栅栏",
+              "image": "iron_fence",
+              "material": "铁锭 (1)",
+              "local": "耕种 Level 4",
+              "describe": "比石栅栏更耐用"
+            },
+            {
+              "name": "硬木栅栏",
+              "image": "hardwood_fence",
+              "material": "硬木 (1)",
+              "local": "耕种 Level 6",
+              "describe": "最耐用的一种栅栏，平均使用时间为一年"
+            }
+          ]
+        },
+        {
+          "name": "工匠物品",
+          "links": [
+            {
+              "name": "蛋黄酱机器",
+              "image": "mayonnaise_machine",
+              "material": "木材 (15)  石头 (15)   地晶 (1)   铜锭 (1)",
+              "local": "耕种2",
+              "describe": "将蛋制成蛋黄酱。"
+            },
+            {
+              "name": "蜂巢屋",
+              "image": "bee_house",
+              "material": "木材 (40)  煤炭 (8)   铁锭 (1)   枫糖浆 (1)",
+              "local": "耕种3",
+              "describe": "放置在室外，然后等着收获蜂蜜把！（冬天除外）"
+            },
+            {
+              "name": "罐头瓶",
+              "image": "preserves_jar",
+              "material": "木材 (50)  石头 (40)  煤炭 (8)",
+              "local": "耕种4",
+              "describe": "把蔬菜制成腌菜，把水果制成果酱。"
+            },
+            {
+              "name": "奶酪压制机",
+              "image": "cheese_press",
+              "material": "木材 (45)  石头 (45)  硬木 (10)   铜锭 (1)",
+              "local": "耕种6",
+              "describe": "把牛奶变成奶酪"
+            },
+            {
+              "name": "织布机",
+              "image": "loom",
+              "material": "木材 (60)  纤维 (30)   松焦油 (1)",
+              "local": "耕种7",
+              "describe": "把羊毛织成布。"
+            },
+            {
+              "name": "小桶",
+              "image": "keg",
+              "material": "木材 (30)  黏土 (1)   铜锭 (1)   铁锭 (1)   橡树树脂 (1)",
+              "local": "耕种8",
+              "describe": "把水果和蔬菜放进去，最后会变成啤酒。"
+            },
+            {
+              "name": "产油机",
+              "image": "oil_maker",
+              "material": "史莱姆泥 (50)  硬木 (20)   金锭 (1)",
+              "local": "耕种8",
+              "describe": "制作精美的松露油。"
+            },
+            {
+              "name": "树液采集器",
+              "image": "tapper",
+              "material": "木材 (40)   铜锭 (2)",
+              "local": "觅食3",
+              "describe": "放置在枫树，橡树或者松树上，然后等着蓄水池蓄满吧！"
+            },
+            {
+              "name": "酒桶",
+              "image": "cask",
+              "material": "木材 (20)  硬木 (1)",
+              "local": "NA",
+              "describe": "放在地窖中陈酿果酒和奶酪类的工匠物品。"
+            }
+          ]
+        },
+        {
+          "name": "洒水器",
+          "links": [
+            {
+              "name": "洒水器",
+              "image": "sprinkler",
+              "material": "铜锭 (1)   铁锭 (1)",
+              "local": "耕种2",
+              "describe": "每天清晨自动喷洒4块相邻的地块。"
+            },
+            {
+              "name": "优质洒水器",
+              "image": "quality_sprinkler",
+              "material": "铁锭 (1)   金锭 (1)   精炼石英 (1)",
+              "local": "耕种6",
+              "describe": "每天清晨自动喷洒8块相邻的地块。"
+            },
+            {
+              "name": "铱金洒水器",
+              "image": "iridium_sprinkler",
+              "material": "金锭 (1)   铱锭 (1)   电池组 (1)",
+              "local": "耕种9",
+              "describe": "每天清晨自动喷洒24块相邻的地块。"
+            }
+          ]
+        },
+        {
+          "name": "照明",
+          "links": [
+            {
+              "name": "火把",
+              "image": "torch",
+              "material": "木材 (1) 树液 (2)",
+              "local": "",
+              "describe": "为你提供微弱的火光。"
+            },
+            {
+              "name": "营火",
+              "image": "campfire",
+              "material": "石头 (10) 木材 (10) 纤维 (10)",
+              "local": "",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "木材火盆",
+              "image": "wooden_brazier",
+              "material": "木材 (10) 煤炭 (1) 纤维 (5)",
+              "local": "罗宾(250)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "石头火炬",
+              "image": "stone_brazier",
+              "material": "石头 (10) 煤炭 (1) 纤维 (5)",
+              "local": "罗宾(400)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "镀金火盆",
+              "image": "gold_brazier",
+              "material": "金锭 (1) 煤炭 (1) 纤维 (5)",
+              "local": "罗宾(1000)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "石刻火盆",
+              "image": "carved_brazier",
+              "material": "硬木 (10) 煤炭 (1)",
+              "local": "罗宾(2000)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "树桩火盆",
+              "image": "stump_brazier",
+              "material": "硬木 (5) 煤炭 (1)",
+              "local": "罗宾(800)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "木桶火盆",
+              "image": "barrel_brazier",
+              "material": "木材 (50)  日光精华 (1) 煤炭 (1)",
+              "local": "罗宾(800)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "头骨火盆",
+              "image": "skull_brazier",
+              "material": "硬木 (10)  日光精华 (1) 煤炭 (1)",
+              "local": "罗宾(3000)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "大理石火盆",
+              "image": "marble_brazier",
+              "material": "大理石 (1) 海蓝宝石 (1) 石头 (100)",
+              "local": "罗宾(5000)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "木质挑灯",
+              "image": "wood_lamp-post",
+              "material": "木材 (50)  电池组 (1)",
+              "local": "罗宾(500)",
+              "describe": "提供中等强度的照明。"
+            },
+            {
+              "name": "钢铁挑灯",
+              "image": "iron_lamp-post",
+              "material": "铁锭 (1)  电池组 (1)",
+              "local": "罗宾(1000)",
+              "describe": "提供中等强度的照明。"
+            }
+          ]
+        },
+        {
+          "name": "其他",
+          "links": [
+            {
+              "name": "箱子",
+              "image": "chest",
+              "material": "木材 (50)",
+              "local": "",
+              "describe": "持有30种不同的物品。"
+            },
+            {
+              "name": "熔炉",
+              "image": "furnace",
+              "material": "铜矿石 (20)  石头 (25)",
+              "local": "克林特",
+              "describe": "将矿石和煤炭变成金属锭。"
+            },
+            {
+              "name": "稻草人",
+              "image": "scarecrow",
+              "material": "木材 (50)  煤炭 (1)  纤维 (20)",
+              "local": "耕种1",
+              "describe": "防止乌鸦偷吃庄稼。"
+            },
+            {
+              "name": "种子生产器",
+              "image": "seed_maker",
+              "material": "木材 (25)  煤炭 (10)   金锭 (1)",
+              "local": "耕种9",
+              "describe": "将农作物放进去，会出来对应的种子。对果树无效。"
+            },
+            {
+              "name": "台阶",
+              "image": "staircase",
+              "material": "石头 (99)",
+              "local": "采矿2",
+              "describe": "通过台阶进入矿井下一层。"
+            },
+            {
+              "name": "炼铁",
+              "image": "iron_bar",
+              "material": "铜锭 (3)",
+              "local": "采矿4",
+              "describe": "纯铁炼制成的金属锭。"
+            },
+            {
+              "name": "炼金",
+              "image": "gold_bar",
+              "material": "铁锭 (2)",
+              "local": "采矿7",
+              "describe": "纯金炼制成的金属锭。"
+            },
+            {
+              "name": "晶体生成器",
+              "image": "crystalarium",
+              "material": "石头 (99)   金锭 (5)   铱锭 (2)   电池组 (1)",
+              "local": "采矿9",
+              "describe": "放入一块宝石，能生出更多宝石。"
+            },
+            {
+              "name": "炭窑",
+              "image": "charcoal_kiln",
+              "material": "木材 (20)   金锭 (1)",
+              "local": "觅食4",
+              "describe": "将10块木材变成一个煤炭。"
+            },
+            {
+              "name": "避雷针",
+              "image": "lightning_rod",
+              "material": "铁锭 (1)   精炼石英 (1)   蝙蝠翅膀 (5)",
+              "local": "觅食6",
+              "describe": "收集暴风雨中的能量，将其转化为电池组。"
+            },
+            {
+              "name": "回收机",
+              "image": "recycling_machine",
+              "material": "木材 (25)  石头 (25)   铁锭 (1)",
+              "local": "钓鱼4",
+              "describe": "将钓上的垃圾变成资源。"
+            },
+            {
+              "name": "虫箱",
+              "image": "worm_bin",
+              "material": "硬木 (25)   金锭 (1)   铁锭 (1)  纤维 (50)",
+              "local": "钓鱼8",
+              "describe": "定时生产鱼饵，里面的蠕虫可自给自足。"
+            },
+            {
+              "name": "史莱姆蛋压制机",
+              "image": "slime_egg-press",
+              "material": "煤炭 (25)   火水晶 (1)   电池组 (1)",
+              "local": "6",
+              "describe": "将100块史莱姆泥变为一个史莱姆蛋，科学真奇妙！"
+            },
+            {
+              "name": "史莱姆孵卵器",
+              "image": "slime_incubator",
+              "material": "铱锭 (2)  史莱姆泥 (100)",
+              "local": "8",
+              "describe": "将史莱姆蛋孵化为史莱姆，允许你在户外饲养史莱姆。"
+            },
+            {
+              "name": "传送图腾：沙滩",
+              "image": "warp_totem_beach",
+              "material": "硬木 (1)  珊瑚 (2)  纤维 (10)",
+              "local": "觅食6",
+              "describe": "能让玩家直接到达海滩，一次性物品。"
+            },
+            {
+              "name": "传送图腾：山区",
+              "image": "warp_totem_mountains",
+              "material": "硬木 (1)   铁锭 (1)  石头 (25)",
+              "local": "觅食7",
+              "describe": "能让玩家直接到达山区，一次性物品。"
+            },
+            {
+              "name": "传送图腾：农场",
+              "image": "warp_totem_farm",
+              "material": "硬木 (1)  蜂蜜 (1)  纤维 (20)",
+              "local": "觅食8",
+              "describe": "能让玩家直接到达农舍，一次性物品。"
+            },
+            {
+              "name": "求雨图腾",
+              "image": "rain_totem",
+              "material": "硬木 (1)   松露油 (1)   松焦油 (5)",
+              "local": "觅食9",
+              "describe": "增加次日下雨的几率，一次性物品。"
+            },
+            {
+              "name": "盆栽花",
+              "image": "tub_o'_flowers",
+              "material": "木材 (15)   郁金香球茎 (1)   蓝爵士种子 (1)   罂粟种子 (1)   夏季亮片种子 (1)",
+              "local": "花舞节上的展位",
+              "describe": "种在橡木桶的花，在春季 和 夏季 开放。 "
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

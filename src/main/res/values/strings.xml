@@ -55,4 +55,11 @@
     <string name="people_name">居住人员</string>
     <string name="describe">地点描述</string>
     <string name="open_time">开放时间</string>
+    <string name="image_title">建筑图片</string>
+    <string name="tools_div">可使用工具类</string>
+    <string name="mineral_div">矿石文物类</string>
+    <string name="decorate_div">装饰护甲类</string>
+    <string name="cooking_div">烹饪食品类</string>
+    <string name="furniture_div">家具类</string>
+    <string name="manufacture_div">制造类</string>
 </resources>

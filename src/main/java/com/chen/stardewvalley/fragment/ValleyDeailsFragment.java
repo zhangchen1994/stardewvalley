@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.chen.stardewvalley.DistanceOfRunListView;
@@ -31,6 +34,7 @@ public class ValleyDeailsFragment extends Fragment {
     private int listPosition;
     private LinearLayout ll;
     private ValleyBean valleyBean;
+    private ImageView ivTitle;
     private int[] titleStrings = new int[]{
             R.string.local_name,R.string.people_name,
             R.string.open_time,R.string.describe
@@ -45,6 +49,7 @@ public class ValleyDeailsFragment extends Fragment {
     private void init(){
         listPosition = getArguments().getInt("position");
         ll = view.findViewById(R.id.ll_valley);
+        ivTitle = view.findViewById(R.id.iv_valley_details);
         json();
         int viewNum = 5;
 
@@ -62,11 +67,13 @@ public class ValleyDeailsFragment extends Fragment {
         }else{
             actionList.add(valleyBean.links.get(listPosition).describe);
         }
-        for(int i=0;i<viewNum;i++){
-            TextView textView = new TextView(getActivity());
-            textView.setText(i+"");
 
-            DistanceOfRunListView listView = new DistanceOfRunListView(getActivity());
+        ivTitle.setImageResource(GetImageIdByName.getImageId(actionList.get(0),getActivity()));
+        for(int i=0;i<viewNum-1;i++){
+
+            View v2 = View.inflate(getActivity(),
+                    R.layout.frgment_valley_deatils_list_view,null);
+            DistanceOfRunListView listView = v2.findViewById(R.id.dis_of_run_valley);
             ArrayList<String> list = new ArrayList<>();
             if(viewNum == 3){
                 if(i == 0){
@@ -81,8 +88,6 @@ public class ValleyDeailsFragment extends Fragment {
                     for (String name:list){
                         int imageId = GetImageIdByName.getImageId(PeopleNameToEn.getNameEn(name)
                                 +"_icon",getActivity());
-                        System.out.println("imageis = " +imageId+" name = "
-                                +PeopleNameToEn.getNameEn(name)+"_icon");
                         if(imageId != 0){
                             imageIds.add(imageId);
                         }
@@ -91,9 +96,68 @@ public class ValleyDeailsFragment extends Fragment {
                     listView.setCount(list.size());
                     listView.setActionList(list);
                 }
+            }else if(viewNum == 4){
+                if(i == 0){
+                    listView.setMyTitle(getString(titleStrings[0]));
+                    listView.setCount(1);
+                    list.add(actionList.get(1));
+                    listView.setActionList(list);
+                }else if(i == 1){
+                    listView.setMyTitle(getString(titleStrings[1]));
+                    ArrayList<Integer> imageIds = new ArrayList<>();
+                    list = getStrings(actionList.get(2));
+                    for (String name:list){
+                        int imageId = GetImageIdByName.getImageId(PeopleNameToEn.getNameEn(name)
+                                +"_icon",getActivity());
+                        if(imageId != 0){
+                            imageIds.add(imageId);
+                        }
+                    }
+                    listView.setImageIds(imageIds);
+                    listView.setCount(list.size());
+                    listView.setActionList(list);
+                }else if(i == 2){
+                    listView.setMyTitle(getString(titleStrings[3]));
+                    list.add(actionList.get(3));
+                    listView.setCount(1);
+                    listView.setActionList(list);
+                }
+            }else if(viewNum == 5){
+                if(i == 0){
+                    listView.setMyTitle(getString(titleStrings[0]));
+                    listView.setCount(1);
+                    list.add(actionList.get(1));
+                    listView.setActionList(list);
+                }else if(i == 1){
+                    listView.setMyTitle(getString(titleStrings[1]));
+                    ArrayList<Integer> imageIds = new ArrayList<>();
+                    list = getStrings(actionList.get(2));
+                    for (String name:list){
+                        int imageId = GetImageIdByName.getImageId(PeopleNameToEn.getNameEn(name)
+                                +"_icon",getActivity());
+                        System.out.println(name);
+                        if(imageId != 0){
+                            imageIds.add(imageId);
+                        }
+                    }
+                    listView.setImageIds(imageIds);
+                    listView.setCount(list.size());
+                    listView.setActionList(list);
+                }else if(i == 2){
+                    listView.setMyTitle(getString(titleStrings[2]));
+                    list.add(actionList.get(3));
+                    listView.setCount(1);
+                    listView.setActionList(list);
+                }else if(i == 3){
+                    listView.setMyTitle(getString(titleStrings[3]));
+                    list.add(actionList.get(4));
+                    listView.setCount(1);
+                    listView.setActionList(list);
+                }
             }
             listView.setMyAdapter();
-            ll.addView(listView);
+            setListViewHeightBasedOnChildren(listView);
+            ll.addView(v2);
         }
     }
     private void json(){
@@ -130,5 +194,28 @@ public class ValleyDeailsFragment extends Fragment {
             list.add(s1);
         }
         return list;
+    }
+    public static void setListViewHeightBasedOnChildren(ListView listView){
+        ListAdapter listAdapter = listView.getAdapter();
+        //初始化高度
+        int totalHeight = 0;
+
+        for (int i = 0; i < listAdapter.getCount(); i++) {
+            View listItem = listAdapter.getView(i, null, listView);
+            //计算子项View的宽高，注意listview所在的要是linearlayout布局
+            listItem.measure(0, 0);
+            //统计所有子项的总高度
+            totalHeight += listItem.getMeasuredHeight();
+        }
+
+        ViewGroup.LayoutParams params = listView.getLayoutParams();
+
+        /*
+         * listView.getDividerHeight()获取子项间分隔符占用的高度，有多少项就乘以多少个减一
+         * params.height最后得到整个ListView完整显示需要的高度
+         * 最后将params.height设置为listview的高度
+         */
+        params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
+        listView.setLayoutParams(params);
     }
 }

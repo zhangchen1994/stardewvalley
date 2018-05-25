@@ -88,8 +88,8 @@
         },
         {
             "image": "wizzard_tower",
-            "name": "法师",
-            "people": "法师塔",
+            "name": "法师塔",
+            "people": "法师",
             "open_time": "开放时间:6:00AM-11:00PM",
             "describe": "法师的家.同法师的好感度达到四颗心后便可以进入地下室重新设定人物形象"
         },

@@ -26,6 +26,7 @@ public class DistanceOfRunListView extends ListView{
     private ArrayList<String> timeList;
     private ArrayList<String> actionList;
     private ArrayList<Integer> imageIds;
+    private boolean numberFlag = false;
 
     public DistanceOfRunListView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -103,7 +104,6 @@ public class DistanceOfRunListView extends ListView{
                 viewHolder.tv_2.setVisibility(VISIBLE);
                 viewHolder.tv_3.setVisibility(VISIBLE);
                 if(imageIds != null ){
-                    System.out.println("imageis = "+imageIds.get(i-1));
                     viewHolder.iv.setVisibility(VISIBLE);
                     viewHolder.iv.setImageResource(imageIds.get(i-1));
                 }
@@ -112,18 +112,30 @@ public class DistanceOfRunListView extends ListView{
                 }
                 if(getContext().getString(R.string.condition).equals(title)
                         ||getContext().getString(R.string.process).equals(title)
-                        ||getContext().getString(R.string.things_result).equals(title))
-                    viewHolder.tv_2.setVisibility(GONE);
+                        ||getContext().getString(R.string.things_result).equals(title)) {
+                        viewHolder.tv_2.setVisibility(GONE);
+                        numberFlag = true;
+                }
                 viewHolder.tv_3.setText(actionList.get(i-1));
-                if(actionList.get(i-1).length() > 300){
+                int num = 0;
+                if(numberFlag){
+                    num = actionList.get(i-1).length();
+                }else{
+                    if(timeList != null){
+                        num = actionList.get(i-1).length() + timeList.get(i-1).length();
+                    }else{
+                        num = actionList.get(i-1).length();
+                    }
+                }
+                if(num > 300){
                     viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),
-                            actionList.get(i-1).length()-20));
-                } else if(actionList.get(i-1).length() > 100){
+                            num-20));
+                } else if(num > 100){
                     viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),
-                            actionList.get(i-1).length()));
-                }else if(actionList.get(i-1).length() > 25){
+                            num));
+                }else if(num > 25){
                     System.out.println(actionList.get(i-1).length());
-                    viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),actionList.get(i-1).length()+20));
+                    viewHolder.tv_3.setHeight(DisplayUtils.dp2px(getContext(),num+20));
                 }
             }
             return view;

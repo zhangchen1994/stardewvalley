@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <LinearLayout
-        android:id="@+id/ll_people_title"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ffbe4e"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_people_name"
+        <LinearLayout
+            android:id="@+id/ll_people_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffbe4e"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_people_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亚力克斯"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_people_name_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alex"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_people_title_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="亚力克斯"
-            android:textColor="#000"
-            android:textSize="20sp" />
+            android:layout_below="@id/ll_people_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
 
-        <TextView
-            android:id="@+id/tv_people_name_en"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alex"
-            android:textColor="#000"
-            android:textSize="15sp" />
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_people_information"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/iv_people_title_icon"
+            android:background="#ffbe4e"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_people_title_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ll_people_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+            <TextView
+                android:id="@+id/tv_people_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/information"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_people_information"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_below="@id/iv_people_title_icon"
-        android:background="#ffbe4e"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_people_information"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/information"
-            android:textColor="#000"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ll_people_information">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_people_information">
 
             <LinearLayout
                 android:id="@+id/ll__prople_1"
@@ -89,11 +91,13 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_1"
-                android:background="#ffbe4e"/>
+                android:background="#ffbe4e" />
+
             <LinearLayout
                 android:id="@+id/ll__prople_2"
                 android:layout_width="match_parent"
@@ -121,11 +125,13 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_2"
-                android:background="#ffbe4e"/>
+                android:background="#ffbe4e" />
+
             <LinearLayout
                 android:id="@+id/ll__prople_3"
                 android:layout_width="match_parent"
@@ -153,11 +159,13 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_3"
-                android:background="#ffbe4e"/>
+                android:background="#ffbe4e" />
+
             <LinearLayout
                 android:id="@+id/ll__prople_4"
                 android:layout_width="match_parent"
@@ -185,11 +193,13 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_4"
-                android:background="#ffbe4e"/>
+                android:background="#ffbe4e" />
+
             <LinearLayout
                 android:id="@+id/ll__prople_5"
                 android:layout_width="match_parent"
@@ -218,6 +228,7 @@
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
-    </ScrollView>
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

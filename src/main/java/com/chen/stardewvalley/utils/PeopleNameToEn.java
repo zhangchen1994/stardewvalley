@@ -39,6 +39,9 @@ public class PeopleNameToEn {
             "文森特",
             "威利",
             "法师",
+            "祝尼魔",
+            "冈瑟",
+            "莫里斯"
     };
     private static String[] nameEnList = new String[]{
            "alex",
@@ -73,7 +76,10 @@ public class PeopleNameToEn {
             "sandy",
             "vincent",
             "willy",
-            "wizard"
+            "wizard",
+            "junimo",
+            "gunther",
+            "morris"
     };
 
     public static String getNameEn(String name){
