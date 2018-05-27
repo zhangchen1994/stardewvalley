@@ -175,10 +175,11 @@ public class PeopleDetailsFragment extends Fragment{
                     tvContent.setText(peopleBean.links.get(listPosition).family.get(i).name);
                     Resources res = getResources();
                     String imageNameEn = peopleBean.links.get(listPosition).family.get(i).en;
-                    if(imageNameEn != null){
-                        Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
-                                peopleBean.links.get(listPosition).family.get(i).en,getActivity()
-                        ));
+                    int imageId = GetImageIdByName.getImageId(
+                            imageNameEn,getActivity()
+                    );
+                    if(imageNameEn != null && imageId != 0){
+                        Drawable drawable = res.getDrawable(imageId);
                         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
                         tvContent.setCompoundDrawables(drawable,null,null,null);
                     }
@@ -196,11 +197,14 @@ public class PeopleDetailsFragment extends Fragment{
                     TextView tvContent = v.findViewById(R.id.tv_information_content);
                     tvContent.setText(peopleBean.links.get(listPosition).friend.get(i).name);
                     Resources res = getResources();
-                    Drawable drawable = res.getDrawable(GetImageIdByName.getImageId(
+                    int ImageId = GetImageIdByName.getImageId(
                             peopleBean.links.get(listPosition).friend.get(i).en,getActivity()
-                    ));
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tvContent.setCompoundDrawables(drawable,null,null,null);
+                    );
+                    if(ImageId != 0){
+                        Drawable drawable = res.getDrawable(ImageId);
+                        drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                        tvContent.setCompoundDrawables(drawable,null,null,null);
+                    }
 
                     ll_friend.addView(v);
 

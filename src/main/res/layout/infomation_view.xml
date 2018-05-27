@@ -9,6 +9,7 @@
         android:id="@+id/tv_information_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:text="@string/birthday"
         android:textColor="#000"
         android:textSize="15sp"/>

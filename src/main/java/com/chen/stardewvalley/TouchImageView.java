@@ -16,8 +16,7 @@ import java.util.ArrayList;
  * Created by zc on 2018/5/18.
  */
 
-@SuppressLint("AppCompatCustomView")
-public class TouchImageView extends ImageView{
+public class TouchImageView extends android.support.v7.widget.AppCompatImageView{
     private static final int REGION_NUM_H = 11;
     private static final int REGION_NUM_W = 16;
     public ArrayList<Integer> regionWList = new ArrayList<>();
@@ -55,11 +54,6 @@ public class TouchImageView extends ImageView{
 
     public TouchImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
-    }
-
-    public TouchImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
     private void init(){
@@ -114,8 +108,14 @@ public class TouchImageView extends ImageView{
                 }
             }
         }
-        System.out.println(w+" "+h);
-        return h*regionWList.size()+w;
+        System.out.println(w+" "+h+" area="+(h*regionWList.size()+w));
+        int regionNum = 0;
+        if(regionWList.size() == REGION_NUM_W){
+            regionNum = h*(regionWList.size()+1)+w;
+        }else{
+            regionNum = h*regionWList.size()+w;
+        }
+        return regionNum;
     }
     private void initRegion(){
         regionWigth = viewWidth/REGION_NUM_W;

@@ -15,6 +15,7 @@ public class PeopleBean {
         public String local;
         public List<Family> family;
         public String marriage;
+        public String sex;
         public List<Friend> friend;
         public List<Like> like;
         public List<MyCalendar> calendar;

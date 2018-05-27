@@ -28,7 +28,7 @@ public class HousePopupWindow {
     public void initPopupWindow(){
         View contentView = LayoutInflater.from(context).inflate(R.layout.house_popup_window, null);
         mPopWindow = new PopupWindow(contentView,
-                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, true);
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, false);
         mPopWindow.setWidth(getAndroiodScreenPropertyWidth());
         mPopWindow.setHeight(getAndroiodScreenPropertyeight()/2);
         mPopWindow.setContentView(contentView);

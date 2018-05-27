@@ -12,7 +12,7 @@
             android:id="@+id/ll_people_title"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#ffbe4e"
+            android:background="#c8e6c9"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_below="@id/iv_people_title_icon"
-            android:background="#ffbe4e"
+            android:background="#c8e6c9"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_1"
-                android:background="#ffbe4e" />
+                android:background="#c8e6c9" />
 
             <LinearLayout
                 android:id="@+id/ll__prople_2"
@@ -130,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_2"
-                android:background="#ffbe4e" />
+                android:background="#c8e6c9" />
 
             <LinearLayout
                 android:id="@+id/ll__prople_3"
@@ -164,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_3"
-                android:background="#ffbe4e" />
+                android:background="#c8e6c9" />
 
             <LinearLayout
                 android:id="@+id/ll__prople_4"
@@ -198,7 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/ll__prople_4"
-                android:background="#ffbe4e" />
+                android:background="#c8e6c9" />
 
             <LinearLayout
                 android:id="@+id/ll__prople_5"
