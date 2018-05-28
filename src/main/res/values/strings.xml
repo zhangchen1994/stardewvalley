@@ -20,8 +20,8 @@
     <string name="house_cancel">取消收藏</string>
     <string name="total">所有</string>
     <string name="marriage">婚姻</string>
-    <string name="marriage_ok">已婚</string>
-    <string name="marriage_no">未婚</string>
+    <string name="marriage_ok">可结婚</string>
+    <string name="marriage_no">不可结婚</string>
     <string name="sex">性别</string>
     <string name="man">男性</string>
     <string name="women">女性</string>
@@ -62,4 +62,5 @@
     <string name="cooking_div">烹饪食品类</string>
     <string name="furniture_div">家具类</string>
     <string name="manufacture_div">制造类</string>
+    <string name="home_back_toast">再按一次返回桌面</string>
 </resources>

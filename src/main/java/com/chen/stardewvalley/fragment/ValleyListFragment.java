@@ -27,6 +27,7 @@ import com.chen.stardewvalley.domain.PeopleBean;
 import com.chen.stardewvalley.domain.ValleyBean;
 import com.chen.stardewvalley.utils.GetImageIdByName;
 import com.chen.stardewvalley.utils.GetMapRegion;
+import com.chen.stardewvalley.utils.JsonParse;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -90,31 +91,7 @@ public class ValleyListFragment extends Fragment{
         });
     }
     private void json(){
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("assets/"+"valley.json");
-        String gsonStr = inToString(inputStream);
-        Gson gson = new Gson();
-        valleyBean = gson.fromJson(gsonStr,ValleyBean.class);
-    }
-    private String inToString(InputStream in){
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-
-        StringBuilder sb = new StringBuilder();
-
-        String line = null;
-        try {
-            while ((line = reader.readLine()) != null) {
-                sb.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                in.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return sb.toString().trim();
+        valleyBean = JsonParse.returnValley();
     }
    class  myAdapter extends BaseAdapter{
 

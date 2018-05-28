@@ -26,6 +26,7 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.chen.stardewvalley.HomeNewsGet;
 import com.chen.stardewvalley.R;
@@ -74,9 +75,11 @@ public class HomeActivity extends AppCompatActivity{
     private static final int VALLEY_PAGE = 4;
     private static final int NEWS_PAGE = 5;
     private static final int NEWS_NUMBER = 5;
+    private static final int HOME_BACK_TIME = 3500;
     private GvAdapter gvAdapter = new GvAdapter();
     private DrawerLayout drawerLayout;
     private boolean isHaveFocus = false;
+    private long timeFlag = 0;
     private int[] gvStringId = new int[]{
             R.string.home_people,R.string.home_tools,
             R.string.home_farm,R.string.home_offer,
@@ -398,5 +401,15 @@ public class HomeActivity extends AppCompatActivity{
                 return false;
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+       if(timeFlag == 0 || (System.currentTimeMillis() - timeFlag) > HOME_BACK_TIME){
+           timeFlag = System.currentTimeMillis();
+           Toast.makeText(this,R.string.home_back_toast,Toast.LENGTH_LONG).show();
+       }else{
+           finish();
+       }
     }
 }

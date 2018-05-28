@@ -8813,6 +8813,4045 @@
           }
         ]
       }
+    },{
+      "name": "科罗布斯",
+      "birthday": "冬季 1",
+      "local": "科罗布斯的商店",
+      "marriage": "不明",
+      "sex": "男",
+      "family": [
+        {
+          "name": "无"
+        }
+      ],
+      "friend": [
+        {
+          "name": "无"
+        }
+      ],
+      "like": [
+        {
+          "name": "钻石",
+          "name_en": "diamond"
+        },
+        {
+          "name": "野山葵",
+          "name_en": "wild_horseradish"
+        },
+        {
+          "name": "南瓜",
+          "name_en": "pumpkin"
+        },
+        {
+          "name": "铱锭",
+          "name_en": "iridium_bar"
+        },
+        {
+          "name": "虚空蛋",
+          "name_en": "void_egg"
+        },
+        {
+          "name": "虚空蛋黄酱",
+          "name_en": "void_mayonnaise"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "全天,待在下水道中，商店卖史莱姆泥",
+              "week": "周一"
+            },
+            {
+              "action": "全天,待在下水道中，商店卖万象晶石",
+              "week": "周二"
+            },
+            {
+              "action": "全天,待在下水道中，商店随机售卖一种鱼或渔具",
+              "week": "周三"
+            },
+            {
+              "action": "全天,待在下水道中，商店卖混合种子",
+              "week": "周四"
+            },
+            {
+              "action": "全天,待在下水道中，商店卖铱金洒水器",
+              "week": "周五"
+            },
+            {
+              "action": "全天,待在下水道中，商店随机售卖一种食物",
+              "week": "周六"
+            },
+            {
+              "action": "全天,待在下水道中，商店卖蝙蝠翅膀",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,与春季一样，在下水道中",
+              "week": "日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,与春季一样，在下水道中",
+              "week": "日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,与春季一样，在下水道中",
+              "week": "日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "金锭",
+            "en": "gold_bar"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          }
+        ]
+      }
+    },{
+      "name": "刘易斯",
+      "birthday": "春季 7",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "男",
+      "family": [
+        {
+          "name": "无",
+          "en": ""
+        }
+      ],
+      "friend": [
+        {
+          "name": "玛妮",
+          "en": "marnie_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "蔬菜杂烩",
+          "name_en": "vegetable_medley"
+        },
+        {
+          "name": "琉璃山药",
+          "name_en": "glazed_yams"
+        },
+        {
+          "name": "秋日恩赐",
+          "name_en": "autumn_bounty"
+        },
+        {
+          "name": "辣椒",
+          "name_en": "hot_pepper"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "10:00 AM,离开家,11:00 AM,来到渔具店、皮埃尔的杂货店或木匠的商店,4:00 PM,离开商店,5:00 PM,回家做饭,9:00 PM,在家,10:00 PM,上床睡觉,After 2:00 AM,取走你卖的物品",
+              "week": "周一"
+            },
+            {
+              "action": "10:00 AM,离开家.,10:10 AM,打理院子中的花草,11:30 AM,前往皮埃尔的杂货店,12:20 PM,来到皮埃尔的杂货店,4:00 PM,离开杂货店,4:50 PM,回家做饭,9:00 PM,在家,10:00 PM,上床睡觉,After 2:00 AM,取走你卖的物品",
+              "week": "周二"
+            },
+            {
+              "action": "4:00 PM,离开玛妮的牧场,5:00 PM,回家,周四,12:00 PM,前往社区中心,12:30 PM,站在诊所门口的树下",
+              "week": "周三"
+            },
+            {
+              "action": "10:00 AM,离开家,10:10 AM,打理院子中的花草,11:40 AM,前往皮埃尔的杂货店,12:30 PM,站在诊所门口的树下,2:00 PM,来到喷泉附近,11:10 PM,回家",
+              "week": "周五"
+            },
+            {
+              "action": "8:30 AM,在厨房,10:00 AM,离开家前往铁匠铺,11:00 AM,抵达铁匠铺,1:00 PM,离开铁匠铺前往博物馆,1:20 PM,到达博物馆,4:00 PM,离开博物馆回家,4:40 PM,回家",
+              "week": "周六"
+            },
+            {
+              "action": "11:00 AM,打理院子中的花草,12:30 PM,站在诊所门口的树下,4:30 PM,回家",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:30 PM,在家中厨房",
+              "week": "周一"
+            },
+            {
+              "action": "4:00PM,离开杂货店回家,4:40PM,在厨房,10:00 PM,上床睡觉.",
+              "week": "周二"
+            },
+            {
+              "action": "4:00 PM,离开玛妮的牧场,5:00 PM,回家",
+              "week": "周三"
+            },
+            {
+              "action": "8:30 AM,在厨房,10:00 AM,来到家门口的花园,11:40 AM,走向小镇广场,12:30 PM,站在诊所门口的树下,2:00 PM,站在杂货店门口的布告栏前,4:00 PM,回家",
+              "week": "周四"
+            },
+            {
+              "action": "4:00PM,站在喷泉旁,5:00PM,到达星落酒吧",
+              "week": "周五"
+            },
+            {
+              "action": "10:00AM,离开镇长的庄园,10:50AM,去铁匠铺收税,1:20PM,到达图书馆,4:50PM,回家,10:00PM,上床睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "10:00 AM,离开镇长的庄园,10:10 AM,打理院子中的花草,2:50 PM,站在海滩的码头上。,4:50 PM,进入家中,8:00 PM,离开星落酒吧,8:10 PM,回家",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "11:50 AM,在木匠的商店,4:00 PM,站在杂货店门口的布告栏前",
+              "week": "周一"
+            },
+            {
+              "action": "3:40pm,在玛妮的牧场",
+              "week": "周三"
+            },
+            {
+              "action": "3:00 PM,在皮埃尔的杂货店门前,4:00 PM,往家走,4:40 PM,到家",
+              "week": "周四"
+            },
+            {
+              "action": "1:30 PM,站在诊所门口的树下,2:30 PM,站在喷泉旁,6:00 PM,在星落酒吧里,11:00 PM,回家,11:30 PM,到家",
+              "week": "周五"
+            },
+            {
+              "action": "3:30 PM,考古社团",
+              "week": "周六"
+            },
+            {
+              "action": "9:30 AM,打理院子中的花草,11:00 AM,来到Leah的小屋的河边,1:30 PM,站在河边,4:00 PM,往家走,5:30 PM,到家,10:00 PM,上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "4:30 PM,从沙滩回家",
+              "week": "周一"
+            },
+            {
+              "action": "8:30 AM,起床,10:00 AM,在家门口,10:40 AM,来到家门口的花园,11:40 AM,前往皮埃尔的杂货店,12:20 PM,进入皮埃尔的杂货店,4:00 PM,前往镇长的庄园,4:40 PM,到家",
+              "week": "周二"
+            },
+            {
+              "action": "4:30 PM,到家",
+              "week": "周三"
+            },
+            {
+              "action": "2:20PM,在皮埃尔的杂货店门前,4:00 PM,往家走,4:30 PM,到家",
+              "week": "周四"
+            },
+            {
+              "action": "12:30 PM,站在诊所门口的树下,2:00 PM,来到喷泉附近,5:50 PM,到达酒吧",
+              "week": "周五"
+            },
+            {
+              "action": "2:30 PM,在皮埃尔的杂货店门口,5:00 PM,回家",
+              "week": "周六"
+            },
+            {
+              "action": "9:00 AM,在厨房,6:00 PM,回家",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "在晴天的晚7时至晚11时之间进入鹈鹕镇。时间发生时必须与玛妮和刘易斯的好感度同时到达6心",
+          "things": "在晚7时后进入鹈鹕镇，你会出现在刘易斯的屋子后面。刘易斯与玛尼正在河边讨论将他们二人的关系公之于众的事。刘易斯说这会降低他的公信力，而玛尼则坚持他不能总是以工作为优先。最后，玛尼说她会将二人的秘密关系维持好。此后，你会突然出现吓到二人。刘易斯问你是否听到了什么，而你需要做出选择。如果你选择保守秘密，刘易斯会对你保持感谢。如果你说你会告诉镇上的所有人，刘易斯会哭泣。之后，玛尼会问你为何躲在屋子后面，而玩家会转身逃走，留下两个莫名其妙的人。不论你是对谁交谈，关系都不会发生任何变动。",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "椰子",
+            "en": "coconut"
+          },
+          {
+            "name": "仙人掌果子",
+            "en": "cactus_fruit"
+          },
+          {
+            "name": "蓝莓",
+            "en": "blueberry"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "野山葵",
+            "en": "wild_horseradish"
+          },
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "石英",
+            "en": "quartz"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "莱纳斯",
+      "birthday": "冬季 3",
+      "local": "鹈鹕镇",
+      "marriage": "不明",
+      "sex": "男",
+      "family": [
+        {
+          "name": "无"
+        }
+      ],
+      "friend": [
+        {
+          "name": "无"
+        }
+      ],
+      "like": [
+        {
+          "name": "椰子",
+          "name_en": "coconut"
+        },
+        {
+          "name": "仙人掌果子",
+          "name_en": "cactus_fruit"
+        },
+        {
+          "name": "蓝莓千层酥",
+          "name_en": "blueberry_tart"
+        },
+        {
+          "name": "海之菜肴",
+          "name_en": "dish_the_sea"
+        },
+        {
+          "name": "山药",
+          "name_en": "yam"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "6:30 AM,在帐篷旁边的木丛中,7:00 AM,在帐篷前的火堆前,9:30 AM,前往营地旁的湖边,10:00 AM,在营地旁的湖边,2:00 PM,回到营地,2:30 PM,在帐篷前的火堆前,7:00 PM,在帐篷里",
+              "week": "周一 - 周日"
+            },
+            {
+              "action": "6:40 AM,在帐篷里,9:40 AM,在帐篷旁边的木丛中,10:20 AM,在帐篷里,3:10 PM,在帐篷旁边的紫叶树下,7:10 PM,在帐篷里",
+              "week": "雨天"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:40 AM,在营地望着湖水,9:40 AM,前往营地旁的湖边,10:20 AM,在营地旁的湖边,1:10 PM,站在湖边的栅栏旁,4:00 PM,回到营地,4:40 PM,在帐篷前的火堆前,8:00 PM,在帐篷旁边的木丛中,8:20 PM,在帐篷里",
+              "week": "周一 - 周日"
+            },
+            {
+              "action": "6:40 AM,在帐篷里,9:40 AM,在帐篷旁边的木丛中,10:20 AM,在帐篷里,3:10 PM,在帐篷旁边的紫叶树下,7:10 PM,在帐篷里",
+              "week": "雨天"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:40 AM,在帐篷里,7:10 AM,在帐篷旁边的木丛中,7:40 AM,在帐篷前的火堆前,9:30 AM,在温泉边,2:50 PM,在营地旁的湖边,6:30 PM,在帐篷里",
+              "week": "周一 - 周日"
+            },
+            {
+              "action": "6:40 AM,在帐篷里,9:40 AM,在帐篷旁边的木丛中,10:20 AM,在帐篷里,3:10 PM,在帐篷旁边的紫叶树下,7:10 PM,在帐篷里",
+              "week": "雨天"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "4:20 pm,温泉进门处",
+              "week": "周一 - 周日"
+            },
+            {
+              "action": "11:30 AM – 12:00 PM,在帐篷前的火堆前,12:00 PM – 4:00 PM,温泉进门处",
+              "week": "周二"
+            },
+            {
+              "action": "2:00 PM – 2:40 PM,从帐篷前往温泉,2:40 PM – 6:00 PM,温泉进门处,6:00 PM – 6:40 PM,从温泉返回帐篷",
+              "week": "周三"
+            },
+            {
+              "action": "5:00 PM,在温泉内取暖",
+              "week": "周四-周六"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "在晴天或雪天的晚8时至0时去小帐篷附近",
+          "things": "莱纳斯会邀请玩家前往他的帐篷处。他为首次见面时不信任你而道歉，并感谢你做他的好朋友。他请玩家进入帐篷，并展示了如何制作钓鱼用的万能鱼饵。",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "钻石",
+            "en": "diamond"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "玛妮",
+      "birthday": "秋季 18",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "女",
+      "family": [
+        {
+          "name": "谢恩（外甥）",
+          "en": "shane_icon"
+        },
+        {
+          "name": "贾斯（侄女）",
+          "en": "jas_icon"
+        }
+      ],
+      "friend": [
+        {
+          "name": "乔迪",
+          "en": "lewis_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "钻石",
+          "name_en": "diamond"
+        },
+        {
+          "name": "粉红蛋糕",
+          "name_en": "pink_cake"
+        },
+        {
+          "name": "农夫午餐",
+          "name_en": "farmer_lunch"
+        },
+        {
+          "name": "南瓜派",
+          "name_en": "pumpkin_pie"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "6:00 AM,在她的房间,8:00 AM,前往皮埃尔的杂货店,10:00 AM,抵达皮埃尔的杂货店,12:00 PM,离开皮埃尔的杂货店返回牧场,1:30 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "6:00 AM,在她的房间,10:00 AM,前往皮埃尔的杂货店,12:00 PM,到达皮埃尔的杂货店与卡洛琳、乔迪、艾米丽和罗宾跳操,6:10 PM,离开皮埃尔的杂货店返回牧场,8:00 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后来到厨房,6:00 PM,返回卧室,9:00 PM,上床睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后来到厨房,6:00 PM,返回卧室,9:00 PM,上床睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后来到厨房,6:00 PM,返回卧室,9:00 PM,上床睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后来到厨房,6:00 PM,返回卧室,9:00 PM,上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:00 AM,在她的房间,8:00 AM,前往皮埃尔的杂货店,10:00 AM,抵达皮埃尔的杂货店,12:00 PM,离开皮埃尔的杂货店返回牧场,1:30 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "6:00 AM,在她的房间,10:00 AM,前往皮埃尔的杂货店,12:00 PM,到达皮埃尔的杂货店与卡洛琳、乔迪、艾米丽和罗宾跳操,6:10 PM,离开皮埃尔的杂货店返回牧场,8:00 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里",
+              "week": "周三"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里",
+              "week": "周四"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:00 AM,在她的房间,7:00 PM,在星落酒吧",
+              "week": "周六"
+            },
+            {
+              "action": "6:00 AM,在她的房间",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:00 AM,在她的房间,8:00 AM,前往皮埃尔的杂货店,10:00 AM,抵达皮埃尔的杂货店,12:00 PM,离开皮埃尔的杂货店返回牧场,1:30 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "6:00 AM,在她的房间,10:00 AM,前往皮埃尔的杂货店,12:00 PM,到达皮埃尔的杂货店与卡洛琳、乔迪、艾米丽和罗宾跳操,6:10 PM,离开皮埃尔的杂货店返回牧场,8:00 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:00 AM,在她的房间,8:00 AM,前往皮埃尔的杂货店,10:00 AM,抵达皮埃尔的杂货店,12:00 PM,离开皮埃尔的杂货店返回牧场,1:30 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "6:00 AM,在她的房间,10:00 AM,前往皮埃尔的杂货店,12:00 PM,到达皮埃尔的杂货店与卡洛琳、乔迪、艾米丽和罗宾跳操,6:10 PM,离开皮埃尔的杂货店返回牧场,8:00 PM,到家站在厨房,9:00 PM,上床睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "6:00 AM,在她的房间,11:00 AM,来到诊所,12:00 AM,在候诊室,1:40 PM,在检查室",
+              "week": "周四 (第18天18)"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:00 AM,在她的房间,9:00 AM,在柜台,4:00 PM,关店后回到卧室里,5:00 PM,前往星落酒吧,6:20 PM,抵达星落酒吧,11:00 PM,离开星落酒吧返回家中,12:30 PM,到家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "野山葵",
+            "en": "wild_horseradish"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "粘土",
+            "en": "clay"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "潘姆",
+      "birthday": "春季 18",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "女",
+      "family": [
+        {
+          "name": "潘妮（女儿）",
+          "en": "penny_icon"
+        }
+      ],
+      "friend": [
+        {
+          "name": "格斯",
+          "en": "gus_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "防风草",
+          "name_en": "parsnip"
+        },
+        {
+          "name": "仙人掌果子",
+          "name_en": "cactus_fruit"
+        },
+        {
+          "name": "防风草汤",
+          "name_en": "parsnip_soup"
+        },
+        {
+          "name": "琉璃山药",
+          "name_en": "glazed_yams"
+        },
+        {
+          "name": "淡啤酒",
+          "name_en": "pale_ale"
+        },
+        {
+          "name": "啤酒",
+          "name_en": "beer"
+        },
+        {
+          "name": "蜜蜂酒",
+          "name_en": "mead"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（不通公交时）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,8:30 AM,L前往农场东边的车站,10:00 AM,到达车站,5:00 PM,离开车站前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（公交修复后）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（雨天）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（不通公交时）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,8:30 AM,L前往农场东边的车站,10:00 AM,到达车站,5:00 PM,离开车站前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（公交修复后）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（雨天）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（不通公交时）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,8:30 AM,L前往农场东边的车站,10:00 AM,到达车站,5:00 PM,离开车站前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（公交修复后）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（雨天）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,坐在家里沙发上,12:00 PM,前往Joja超市,4:00 PM,前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（不通公交时）"
+            },
+            {
+              "action": "8:00 AM,坐在家里沙发上,8:30 AM,L前往农场东边的车站,10:00 AM,到达车站,5:00 PM,离开车站前往星之果实餐吧,12:00 AM,离开酒吧回家睡觉",
+              "week": "周一 - 周日（公交修复后）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "黄水仙",
+            "en": "daffodil"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "野山葵",
+            "en": "wild_horseradish"
+          },
+          {
+            "name": "石英",
+            "en": "quartz"
+          },
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "章鱼",
+            "en": "octopus"
+          },
+          {
+            "name": "鱿鱼",
+            "en": "squid"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "皮埃尔",
+      "birthday": "春季 26",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "男",
+      "family": [
+        {
+          "name": "卡洛琳（妻子）",
+          "en": "caroline_icon"
+        },
+        {
+          "name": "阿比盖尔（女儿）",
+          "en": "abigail_icon"
+        }
+      ],
+      "friend": [
+        {
+          "name": "无"
+        }
+      ],
+      "like": [
+        {
+          "name": "炸鱿鱼",
+          "name_en": "fried_calamari"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM-5:00 PM,皮埃尔的杂货店柜台前",
+              "week": "周一 - 周日（除周三）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM-5:00 PM,皮埃尔的杂货店柜台前",
+              "week": "周一 - 周日（除周三）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM-5:00 PM,皮埃尔的杂货店柜台前",
+              "week": "周一 - 周日（除周三）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM-5:00 PM,皮埃尔的杂货店柜台前",
+              "week": "周一 - 周日（除周三）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "进入皮埃尔的杂货店后会触发一段剧情。",
+          "things": "玩家来到Pierre的卧室，环视一周后，你发现书架后面是Pierre的“私密储藏地”。此时Pierre把你抓了个现行，让你保守秘密。你同意不会告诉别人，他也保证不会透露你偷窥他卧室的事情。如果你拒绝的话，你的好感度会减少2心。",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "黄水仙",
+            "en": "daffodil"
+          },
+          {
+            "name": "蒲公英",
+            "en": "dandelion"
+          },
+          {
+            "name": "钻石",
+            "en": "diamond"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "防风草汤",
+            "en": "parsnip_soup"
+          },
+          {
+            "name": "玉米",
+            "en": "corn"
+          },
+          {
+            "name": "墨西哥薄饼",
+            "en": "tortilla"
+          },
+          {
+            "name": "蒜",
+            "en": "garlic"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "罗宾",
+      "birthday": "秋季 21",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "女",
+      "family": [
+        {
+          "name": "德米特里厄斯（丈夫）",
+          "en": "demetrius_icon"
+        },
+        {
+          "name": "玛鲁（女儿）",
+          "en": "maru_icon"
+        },
+        {
+          "name": "塞巴斯蒂安（儿子）",
+          "en": "sebastian_icon"
+        }
+      ],
+      "friend": [
+        {
+          "name": "不明"
+        }
+      ],
+      "like": [
+        {
+          "name": "意大利面",
+          "name_en": "spaghetti"
+        },
+        {
+          "name": "山羊奶酪",
+          "name_en": "goat_cheese"
+        },
+        {
+          "name": "桃子",
+          "name_en": "peach"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,12:00 PM,社区中心恢复后：离开木匠的商店前往社区中心,4:00 PM,社区中心恢复后：回家,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "8:00 AM,在家,9:30 AM,来到皮埃尔的杂货店与乔迪、卡洛琳、艾米丽和玛妮跳操,1:00 PM,在皮埃尔的杂货店,6:00 PM,离开皮埃尔的杂货店回家,9:00 PM,回家睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,4:00 PM,离开家前往星落酒吧,7:30 PM,在星落酒吧,9:00 PM,离开星落酒吧回家",
+              "week": "周五"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,12:00 PM,社区中心恢复后：离开木匠的商店前往社区中心,4:00 PM,社区中心恢复后：回家,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "8:00 AM,在家,9:30 AM,来到皮埃尔的杂货店与乔迪、卡洛琳、艾米丽和玛妮跳操,1:00 PM,在皮埃尔的杂货店,6:00 PM,离开皮埃尔的杂货店回家,9:00 PM,回家睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,4:00 PM,离开家前往星落酒吧,7:30 PM,在星落酒吧,9:00 PM,离开星落酒吧回家",
+              "week": "周五"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,12:00 PM,社区中心恢复后：离开木匠的商店前往社区中心,4:00 PM,社区中心恢复后：回家,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "8:00 AM,在家,9:30 AM,来到皮埃尔的杂货店与乔迪、卡洛琳、艾米丽和玛妮跳操,1:00 PM,在皮埃尔的杂货店,6:00 PM,离开皮埃尔的杂货店回家,9:00 PM,回家睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,4:00 PM,离开家前往星落酒吧,7:30 PM,在星落酒吧,9:00 PM,离开星落酒吧回家",
+              "week": "周五"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,12:00 PM,社区中心恢复后：离开木匠的商店前往社区中心,4:00 PM,社区中心恢复后：回家,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周一"
+            },
+            {
+              "action": "8:00 AM,在家,9:30 AM,来到皮埃尔的杂货店与乔迪、卡洛琳、艾米丽和玛妮跳操,1:00 PM,在皮埃尔的杂货店,6:00 PM,离开皮埃尔的杂货店回家,9:00 PM,回家睡觉",
+              "week": "周二"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周三"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周四"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,4:00 PM,离开家前往星落酒吧,7:30 PM,在星落酒吧,9:00 PM,离开星落酒吧回家",
+              "week": "周五"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "8:00 AM,在家,9:00 AM,在木匠的商店,5:00 PM,离开木匠的商店来到 山区,7:30 PM,往家走,9:00 PM,回家睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "罗宾在家时来到她家中",
+          "things": "玩家会看到罗宾在清理她的锯子，问玩家是否用木头做过东西，玩家此时可以选择“是”或“否”，然后罗宾说，“我觉得凭咱俩的关系，已经可以把我木匠的诀窍告诉你啦！” 然后给玩家两个配方——鼓块和长笛块。并认为“用自己制作的东西装饰农场感觉很棒！”",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "硬木",
+            "en": "hardwood"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "野山葵",
+            "en": "wild_horseradish"
+          },
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "桑迪",
+      "birthday": "秋季 15",
+      "local": "鹈鹕镇",
+      "marriage": "不明",
+      "sex": "女",
+      "family": [
+        {
+          "name": "无"
+        }
+      ],
+      "friend": [
+        {
+          "name": "艾米丽",
+          "en": "emily_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "黄水仙",
+          "name_en": "daffodil"
+        },
+        {
+          "name": "甜豌豆",
+          "name_en": "sweet_pea"
+        },
+        {
+          "name": "番红花",
+          "name_en": "crocus"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "全天,沙漠商店",
+              "week": "常规日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,沙漠商店",
+              "week": "常规日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,沙漠商店",
+              "week": "常规日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,沙漠商店",
+              "week": "常规日程"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "羊奶",
+            "en": "goat_milk"
+          },
+          {
+            "name": "大瓶羊奶",
+            "en": "large_goat_milk"
+          },
+          {
+            "name": "动物毛",
+            "en": "wool"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "山洞萝卜",
+            "en": "cave_carrot"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "文森特",
+      "birthday": "春季 10",
+      "local": "鹈鹕镇",
+      "marriage": "单身不可攻略",
+      "sex": "男",
+      "family": [
+        {
+          "name": "山姆（哥哥）",
+          "en": "sam_icon"
+        },
+        {
+          "name": "乔迪（妈妈）",
+          "en": "jodi_icon"
+        },
+        {
+          "name": "肯特（爸爸）",
+          "en": "kent_icon"
+        }
+      ],
+      "friend": [
+        {
+          "name": "贾斯",
+          "en": "jas_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "粉红蛋糕",
+          "name_en": "pink_cake"
+        },
+        {
+          "name": "葡萄",
+          "name_en": "grape"
+        },
+        {
+          "name": "蔓越莓糖果",
+          "name_en": "cranberry_candy"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM,柳巷1号，起床，对前往哈维的诊所感到忧虑,11:30 AM,离开家，前往哈维的诊所体检,1:30 PM,在诊所就诊,4:00 PM,离开诊所回家,10:00 PM,上床睡觉",
+              "week": "第11天"
+            },
+            {
+              "action": "上午9:00,柳巷1号，起床。,上午11:00,柳巷1号，在家玩。,下午2:00,鹈鹕镇，在家到处晃悠。,下午5:00,鹈鹕镇，在家到处晃悠。,下午7:00,柳巷1号，在家自娱自乐。,晚上10:00,柳巷1号，上床睡觉。",
+              "week": "雨天"
+            },
+            {
+              "action": "9:00 AM,博物馆，离开家前往博物馆，潘妮会给他上课,2:00 PM,鹈鹕镇，离开博物馆回到鹈鹕镇.,4:20 PM,鹈鹕镇，在鹈鹕镇晃悠。,5:40 PM,柳巷1号，回家,10:00 PM,柳巷1号，上床睡觉",
+              "week": "周二、周三、周五"
+            },
+            {
+              "action": "10:10 AM,鹈鹕镇，离开家前往鹈鹕镇.,12:00 PM,鹈鹕镇，前往镇上的广场,5:00 PM,鹈鹕镇，离开广场回到鹈鹕镇.,10:00 PM,柳巷1号，回家上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM,柳巷1号，起床，对前往哈维的诊所感到忧虑,11:30 AM,离开家，前往哈维的诊所体检,1:30 PM,在诊所就诊,4:00 PM,离开诊所回家,10:00 PM,上床睡觉",
+              "week": "春季第11天"
+            },
+            {
+              "action": "上午9:00,柳巷1号，起床。,上午11:00,柳巷1号，在家玩。,下午2:00,鹈鹕镇，在家到处晃悠。,下午5:00,鹈鹕镇，在家到处晃悠。,下午7:00,柳巷1号，在家自娱自乐。,晚上10:00,柳巷1号，上床睡觉。",
+              "week": "雨天"
+            },
+            {
+              "action": "9:00 AM,柳巷1号，起床,11:00 AM,柳巷1号，在家玩。,1:40 PM,沙滩，离开家前往沙滩,7:00 PM,柳巷1号，离开沙滩回家,11:00 PM,柳巷1号，上床睡觉",
+              "week": "日常"
+            },
+            {
+              "action": "9:00 AM,博物馆，离开家前往博物馆，潘妮会给他上课,2:00 PM,鹈鹕镇，离开博物馆回到鹈鹕镇.,4:20 PM,鹈鹕镇，在鹈鹕镇晃悠。,5:40 PM,柳巷1号，回家,10:00 PM,柳巷1号，上床睡觉",
+              "week": "周二、周三、周五"
+            },
+            {
+              "action": "10:10 AM,鹈鹕镇，离开家前往鹈鹕镇.,12:00 PM,鹈鹕镇，前往镇上的广场,5:00 PM,鹈鹕镇，离开广场回到鹈鹕镇.,10:00 PM,柳巷1号，回家上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM,柳巷1号，起床，对前往哈维的诊所感到忧虑,11:30 AM,离开家，前往哈维的诊所体检,1:30 PM,在诊所就诊,4:00 PM,离开诊所回家,10:00 PM,上床睡觉",
+              "week": "第11天"
+            },
+            {
+              "action": "上午9:00,柳巷1号，起床。,上午11:00,柳巷1号，在家玩。,下午2:00,鹈鹕镇，在家到处晃悠。,下午5:00,鹈鹕镇，在家到处晃悠。,下午7:00,柳巷1号，在家自娱自乐。,晚上10:00,柳巷1号，上床睡觉。",
+              "week": "雨天"
+            },
+            {
+              "action": "9:00 AM,博物馆，离开家前往博物馆，潘妮会给他上课,2:00 PM,鹈鹕镇，离开博物馆回到鹈鹕镇.,4:20 PM,鹈鹕镇，在鹈鹕镇晃悠。,5:40 PM,柳巷1号，回家,10:00 PM,柳巷1号，上床睡觉",
+              "week": "周二、周三、周五"
+            },
+            {
+              "action": "10:10 AM,鹈鹕镇，离开家前往鹈鹕镇.,12:00 PM,鹈鹕镇，前往镇上的广场,5:00 PM,鹈鹕镇，离开广场回到鹈鹕镇.,10:00 PM,柳巷1号，回家上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "9:00 AM,柳巷1号，起床，对前往哈维的诊所感到忧虑,11:30 AM,离开家，前往哈维的诊所体检,1:30 PM,在诊所就诊,4:00 PM,离开诊所回家,10:00 PM,上床睡觉",
+              "week": "第11天"
+            },
+            {
+              "action": "上午9:00,柳巷1号，起床。,上午11:00,柳巷1号，在家玩。,下午2:00,鹈鹕镇，在家到处晃悠。,下午5:00,鹈鹕镇，在家到处晃悠。,下午7:00,柳巷1号，在家自娱自乐。,晚上10:00,柳巷1号，上床睡觉。",
+              "week": "雨天"
+            },
+            {
+              "action": "9:00 AM,博物馆，离开家前往博物馆，潘妮会给他上课,2:00 PM,鹈鹕镇，离开博物馆回到鹈鹕镇.,4:20 PM,鹈鹕镇，在鹈鹕镇晃悠。,5:40 PM,柳巷1号，回家,10:00 PM,柳巷1号，上床睡觉",
+              "week": "周二、周三、周五"
+            },
+            {
+              "action": "10:10 AM,鹈鹕镇，离开家前往鹈鹕镇.,12:00 PM,鹈鹕镇，前往镇上的广场,5:00 PM,鹈鹕镇，离开广场回到鹈鹕镇.,10:00 PM,柳巷1号，回家上床睡觉",
+              "week": "周日"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "和文森特的好感到达8心",
+          "things": "他就会来问你是否能守得住秘密。你不用告诉他你是否能守得住秘密，因为他会接着说：“不要告诉潘妮，等我长大了，我想娶她。”无论你有没有娶潘妮他都会说。",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "黄水仙",
+            "en": "daffodil"
+          },
+          {
+            "name": "椰子",
+            "en": "coconut"
+          },
+          {
+            "name": "蜂蜜",
+            "en": "honey"
+          },
+          {
+            "name": "果酱",
+            "en": "jelly"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "石英",
+            "en": "quartz"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "野山葵",
+            "en": "wild_horseradish"
+          },
+          {
+            "name": "粘土",
+            "en": "clay"
+          },
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          }
+        ]
+      }
+    },{
+      "name": "威利",
+      "birthday": "夏季 24",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "男",
+      "family": [
+        {
+          "name": "无"
+        }
+      ],
+      "friend": [
+        {
+          "name": "艾利欧特",
+          "en": "elliott_icon"
+        }
+      ],
+      "like": [
+        {
+          "name": "钻石",
+          "name_en": "diamond"
+        },
+        {
+          "name": "鲶鱼",
+          "name_en": "catfish"
+        },
+        {
+          "name": "章鱼",
+          "name_en": "octopus"
+        },
+        {
+          "name": "海参",
+          "name_en": "sea_cucumber"
+        },
+        {
+          "name": "南瓜",
+          "name_en": "pumpkin"
+        },
+        {
+          "name": "铱锭",
+          "name_en": "iridium_bar"
+        },
+        {
+          "name": "鲟鱼",
+          "name_en": "sturgeon"
+        },
+        {
+          "name": "蜜蜂酒",
+          "name_en": "mead"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "6:10 AM,醒来后来到渔具店外钓鱼,8:50 AM,回到渔具店,8:50 AM,在渔具店柜台工作,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "雨天"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,10:10 AM,诊所，离开渔具店来到哈维的诊所,1:30 PM,诊所，在诊所,5:00 PM,酒吧，离开诊所前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "第9天"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到Leah的小屋门口的小河边钓鱼,2:00 PM,鹈鹕镇，回到鹈鹕镇继续钓鱼,5:00 PM,渔具店，前往星落酒吧,11:00 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，离开渔具店前往星落酒吧,11:20 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,沙滩，离开渔具店在沙滩钓鱼,10:00 PM,渔具店，离开沙滩回家",
+              "week": "日常安排"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:10 AM,醒来后来到渔具店外钓鱼,8:50 AM,回到渔具店,8:50 AM,在渔具店柜台工作,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "雨天"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到Leah的小屋门口的小河边钓鱼,2:00 PM,鹈鹕镇，回到鹈鹕镇继续钓鱼,5:00 PM,渔具店，前往星落酒吧,11:00 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，离开渔具店前往星落酒吧,11:20 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,沙滩，离开渔具店在沙滩钓鱼,10:00 PM,渔具店，离开沙滩回家",
+              "week": "日常安排"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:10 AM,醒来后来到渔具店外钓鱼,8:50 AM,回到渔具店,8:50 AM,在渔具店柜台工作,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "雨天"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到Leah的小屋门口的小河边钓鱼,2:00 PM,鹈鹕镇，回到鹈鹕镇继续钓鱼,5:00 PM,渔具店，前往星落酒吧,11:00 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，离开渔具店前往星落酒吧,11:20 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,沙滩，离开渔具店在沙滩钓鱼,10:00 PM,渔具店，离开沙滩回家",
+              "week": "日常安排"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "6:10 AM,醒来后来到渔具店外钓鱼,8:50 AM,回到渔具店,8:50 AM,在渔具店柜台工作,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "雨天"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到Leah的小屋门口的小河边钓鱼,2:00 PM,鹈鹕镇，回到鹈鹕镇继续钓鱼,5:00 PM,渔具店，前往星落酒吧,11:00 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周六"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，离开渔具店前往星落酒吧,11:20 PM,渔具店，离开星落酒吧回家睡觉",
+              "week": "周五"
+            },
+            {
+              "action": "6:10 AM,沙滩，醒来后来到渔具店外钓鱼,8:50 AM,渔具店，回到渔具店,9:00 AM,渔具店，在渔具店柜台工作,5:00 PM,酒吧，前往星落酒吧,11:20 PM,渔具店，回家睡觉",
+              "week": "日常"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "金锭",
+            "en": "gold_bar"
+          },
+          {
+            "name": "虎纹鳟鱼",
+            "en": "tiger_trout"
+          },
+          {
+            "name": "蛇齿单线鱼",
+            "en": "lingcod"
+          },
+          {
+            "name": "烤鱼",
+            "en": "baked_fish"
+          },
+          {
+            "name": "炸鱿鱼",
+            "en": "fried_calamari"
+          },
+          {
+            "name": "惊喜鲤鱼",
+            "en": "carp_surprise"
+          },
+          {
+            "name": "鲑鱼晚餐",
+            "en": "salmon_dinner"
+          },
+          {
+            "name": "鱼肉卷",
+            "en": "fish_taco"
+          },
+          {
+            "name": "香酥鲈鱼",
+            "en": "crispy_bass"
+          },
+          {
+            "name": "鳟鱼汤",
+            "en": "trout_soup"
+          },
+          {
+            "name": "炒鳗鱼",
+            "en": "fried_eel"
+          },
+          {
+            "name": "海鲜杂烩汤",
+            "en": "chowder"
+          },
+          {
+            "name": "龙虾浓汤",
+            "en": "lobster_bisque"
+          },
+          {
+            "name": "烩鱼汤",
+            "en": "fish_stew"
+          },
+          {
+            "name": "蟹黄糕",
+            "en": "crab_cakes"
+          },
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "生鱼片",
+            "en": "sashimi"
+          },
+          {
+            "name": "生鱼寿司",
+            "en": "maki_roll"
+          },
+          {
+            "name": "海之菜肴",
+            "en": "dish_the_sea"
+          },
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "虚空蛋",
+            "en": "void_egg"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "史莱姆",
+            "en": "slime"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
+    },{
+      "name": "法师",
+      "birthday": "冬季 17",
+      "local": "鹈鹕镇",
+      "marriage": "非单身",
+      "sex": "男",
+      "family": [
+        {
+          "name": "无"
+        }
+      ],
+      "friend": [
+        {
+          "name": "无"
+        }
+      ],
+      "like": [
+        {
+          "name": "大海参",
+          "name_en": "super_cucumber"
+        },
+        {
+          "name": "紫蘑菇",
+          "name_en": "purple_mushroom"
+        },
+        {
+          "name": "虚空精华",
+          "name_en": "void_essence"
+        },
+        {
+          "name": "太阳精华",
+          "name_en": "solar_essence"
+        },
+        {
+          "name": "五彩碎片",
+          "name_en": "prismatic_shard"
+        },
+        {
+          "name": "兔子的脚",
+          "name_en": "rabbit_foot"
+        }
+      ],
+      "calendar": [
+        {
+          "weeks": [
+            {
+              "action": "全天,待在法师塔",
+              "week": "日程行程（除了节日）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,待在法师塔",
+              "week": "日程行程（除了节日）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,待在法师塔",
+              "week": "日程行程（除了节日）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "全天,待在法师塔",
+              "week": "日程行程（除了节日）"
+            }
+          ]
+        },
+        {
+          "weeks": [
+            {
+              "action": "无",
+              "week": "不符合条件（不可攻略）"
+            }
+          ]
+        }
+      ],
+      "love_thing": [
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        },
+        {
+          "condition": "无",
+          "things": "无",
+          "result": "无"
+        }
+      ],
+      "likes": {
+        "likes_1": [
+          {
+            "name": "咖啡",
+            "en": "coffee"
+          },
+          {
+            "name": "苹果",
+            "en": "apple"
+          },
+          {
+            "name": "杏子",
+            "en": "apricot"
+          },
+          {
+            "name": "橙子",
+            "en": "orange"
+          },
+          {
+            "name": "桃子",
+            "en": "peach"
+          },
+          {
+            "name": "石榴",
+            "en": "pomegranate"
+          },
+          {
+            "name": "樱桃",
+            "en": "cherry"
+          },
+          {
+            "name": "枫糖浆",
+            "en": "maple_syrup"
+          }
+        ],
+        "likes_2": [
+          {
+            "name": "荷包蛋",
+            "en": "fried_egg"
+          },
+          {
+            "name": "面包",
+            "en": "bread"
+          },
+          {
+            "name": "小麦",
+            "en": "wheat"
+          },
+          {
+            "name": "啤酒花",
+            "en": "hops"
+          }
+        ],
+        "likes_3": [
+          {
+            "name": "石头",
+            "en": "stone"
+          },
+          {
+            "name": "浮木",
+            "en": "driftwood"
+          },
+          {
+            "name": "大麦粉",
+            "en": "wheat_flour"
+          },
+          {
+            "name": "油",
+            "en": "oil"
+          },
+          {
+            "name": "工作小食",
+            "en": "field_snack"
+          },
+          {
+            "name": "醋",
+            "en": "vinegar"
+          },
+          {
+            "name": "大米",
+            "en": "rice"
+          },
+          {
+            "name": "晶球",
+            "en": "geode"
+          },
+          {
+            "name": "冰封晶球",
+            "en": "frozen_geode"
+          },
+          {
+            "name": "岩浆晶球",
+            "en": "magma_geode"
+          },
+          {
+            "name": "橡树树脂",
+            "en": "oak_resin"
+          },
+          {
+            "name": "松焦油",
+            "en": "pine_tar"
+          },
+          {
+            "name": "万象晶球",
+            "en": "omni_geode"
+          }
+        ],
+        "likes_4": [
+          {
+            "name": "树液",
+            "en": "sap"
+          },
+          {
+            "name": "生锈的汤匙",
+            "en": "rusty_spoon"
+          },
+          {
+            "name": "生锈的靴刺",
+            "en": "rusty_spur"
+          },
+          {
+            "name": "生锈的齿轮",
+            "en": "rusty_cog"
+          },
+          {
+            "name": "鲤鱼",
+            "en": "carp"
+          },
+          {
+            "name": "海草",
+            "en": "seaweed"
+          },
+          {
+            "name": "绿藻",
+            "en": "green_algae"
+          },
+          {
+            "name": "白藻",
+            "en": "white_algae"
+          },
+          {
+            "name": "干草",
+            "en": "hay"
+          },
+          {
+            "name": "咀嚼洁齿棒",
+            "en": "chewing_stick"
+          },
+          {
+            "name": "虞美人",
+            "en": "poppy"
+          },
+          {
+            "name": "铜矿石",
+            "en": "copper_ore"
+          },
+          {
+            "name": "铁矿石",
+            "en": "iron_ore"
+          },
+          {
+            "name": "海胆",
+            "en": "sea_urchin"
+          },
+          {
+            "name": "红蘑菇",
+            "en": "red_mushroom"
+          },
+          {
+            "name": "虫肉",
+            "en": "bug_meat"
+          },
+          {
+            "name": "蜗牛",
+            "en": "snail"
+          },
+          {
+            "name": "蝙蝠翅膀",
+            "en": "bat_wing"
+          },
+          {
+            "name": "蒜油",
+            "en": "oil_of_garlic"
+          },
+          {
+            "name": "奇怪的小面包",
+            "en": "strange_bun"
+          },
+          {
+            "name": "虚空蛋黄酱",
+            "en": "void_mayonnaise"
+          }
+        ]
+      }
     }
   ]
 }

@@ -33,6 +33,14 @@ import java.util.Arrays;
  */
 
 public class PeopleActivity extends AppCompatActivity{
+    public static final int DROP_STATUS_TOTAL = 0;
+    public static final int DROP_STATUS_MARRIAGE_OK = 1;
+    public static final int DROP_STATUS_MARRIAGE_NO = 2;
+    public static final int DROP_STATUS_SEX_M = 3;
+    public static final int DROP_STATUS_SEX_W = 4;
+    public static int dropStatus = DROP_STATUS_TOTAL;
+    public static int dropMarrStatus = DROP_STATUS_TOTAL;
+    public static int dropSexStatus = DROP_STATUS_TOTAL;
     private PeopleListFragment peopleListFragment;
     private PeopleDetailsFragment peopleDetailsFragment;
     private boolean isShowDetails = false;
@@ -52,10 +60,11 @@ public class PeopleActivity extends AppCompatActivity{
 
         peopleListFragment.setOnListClickListener(new PeopleListFragment.ListClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l,String name) {
                 isShowDetails = true;
                 Bundle bundle = new Bundle();
                 bundle.putInt("position",i);
+                bundle.putString("name",name);
                 peopleDetailsFragment.setArguments(bundle);
                 fragmentManager.beginTransaction().setCustomAnimations(R.anim.animator_enter,
                         R.anim.animator_back_2)

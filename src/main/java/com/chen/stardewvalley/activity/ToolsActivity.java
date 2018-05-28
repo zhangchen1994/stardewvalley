@@ -31,7 +31,6 @@ public class ToolsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_tools);
 
-        JsonParse.jsonTools(this);
         initFragment();
     }
     private void initFragment(){

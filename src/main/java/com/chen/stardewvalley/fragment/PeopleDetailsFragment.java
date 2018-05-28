@@ -27,6 +27,7 @@ import com.chen.stardewvalley.DistanceOfRunListView;
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.domain.PeopleBean;
 import com.chen.stardewvalley.utils.GetImageIdByName;
+import com.chen.stardewvalley.utils.JsonParse;
 import com.chen.stardewvalley.utils.PeopleNameToEn;
 import com.google.gson.Gson;
 
@@ -89,7 +90,9 @@ public class PeopleDetailsFragment extends Fragment{
     private void init(){
         vpDetails = view.findViewById(R.id.vp_people_details);
         json();
+        String name = getArguments().getString("name");
         listPosition = getArguments().getInt("position");
+        listPosition = getListPosition(name);
         calendar = peopleBean.links.get(listPosition).calendar;
         love_thing = peopleBean.links.get(listPosition).love_thing;
         likes = peopleBean.links.get(listPosition).likes;
@@ -98,33 +101,19 @@ public class PeopleDetailsFragment extends Fragment{
         setIndicator();
         ViewPagerHelper.bind(magicIndicator,vpDetails);
     }
-    private void json(){
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("assets/"+"people.json");
-        String gsonStr = inToString(inputStream);
-        Gson gson = new Gson();
-        peopleBean = gson.fromJson(gsonStr,PeopleBean.class);
-
-    }
-    private String inToString(InputStream in){
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-
-        StringBuilder sb = new StringBuilder();
-
-        String line = null;
-        try {
-            while ((line = reader.readLine()) != null) {
-                sb.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                in.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+    private int getListPosition(String name){
+        int position = 0;
+        for(int i=0;i<peopleBean.links.size();i++){
+            if(name.equals(peopleBean.links.get(i).name)){
+                position = i;
+                break;
             }
         }
-        return sb.toString().trim();
+        return position;
+    }
+    private void json(){
+        peopleBean = JsonParse.returnPeople();
+
     }
     class DetailsAdapter extends PagerAdapter{
 
