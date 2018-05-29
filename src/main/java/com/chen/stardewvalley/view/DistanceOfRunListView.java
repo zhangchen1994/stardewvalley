@@ -1,4 +1,4 @@
-package com.chen.stardewvalley;
+package com.chen.stardewvalley.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.utils.DisplayUtils;
 
 import java.util.ArrayList;
@@ -82,7 +83,7 @@ public class DistanceOfRunListView extends ListView{
         public View getView(final int i, View view, ViewGroup viewGroup) {
             final ViewHolder viewHolder;
             if(view == null){
-                view = View.inflate(getContext(),R.layout.view_list_ditance_of_run,null);
+                view = View.inflate(getContext(), R.layout.view_list_ditance_of_run,null);
                 viewHolder = new ViewHolder();
                 viewHolder.tv_1 = view.findViewById(R.id.tv_v_l_dor);
                 viewHolder.tv_2 = view.findViewById(R.id.tv_v_time);

@@ -2456,13 +2456,13 @@
               "name": "现代餐桌",
               "image": "modern_dining_table",
               "local": "木匠的商店，旅行货车",
-              "price": ""
+              "price": "2700g,250-1000g"
             },
             {
               "name": "冬日餐桌",
               "image": "winter_dining_table",
               "local": "木匠的商店，旅行货车",
-              "price": "Gold"
+              "price": "3500g，1500g"
             }
           ]
         },
@@ -2850,8 +2850,8 @@
             {
               "name": "Dancing",
               "image": "dancing_grass",
-              "local": "Grass",
-              "price": "木匠的商店,旅行货车"
+              "local": "木匠的商店,旅行货车",
+              "price": "NA"
             },
             {
               "name": "\"小照片\"",

@@ -63,4 +63,18 @@
     <string name="furniture_div">家具类</string>
     <string name="manufacture_div">制造类</string>
     <string name="home_back_toast">再按一次返回桌面</string>
+    <string name="tools_name">名称</string>
+    <string name="image">图片</string>
+    <string name="spend">花费</string>
+    <string name="raw_material">原料</string>
+    <string name="promote">提升</string>
+    <string name="lenvel">等级</string>
+    <string name="tools_local">来源</string>
+    <string name="damage">伤害</string>
+    <string name="addition">增益</string>
+    <string name="use">用途</string>
+    <string name="tools_describe">描述</string>
+    <string name="cultural_relic_use">送礼，博物馆捐献</string>
+    <string name="rely">回复</string>price
+    <string name="price">价格</string>
 </resources>

@@ -28,7 +28,7 @@
             android:textSize="20sp"
             android:text="@string/home_valley"/>
     </android.support.v7.widget.Toolbar>
-    <com.chen.stardewvalley.TouchImageView
+    <com.chen.stardewvalley.view.TouchImageView
         android:id="@+id/my_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"

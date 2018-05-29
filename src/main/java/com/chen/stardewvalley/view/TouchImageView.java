@@ -1,4 +1,4 @@
-package com.chen.stardewvalley;
+package com.chen.stardewvalley.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

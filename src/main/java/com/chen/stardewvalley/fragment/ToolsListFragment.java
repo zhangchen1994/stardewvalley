@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -58,6 +59,7 @@ public class ToolsListFragment extends Fragment{
     private MagicIndicator magicIndicator;
     private ViewPager vpMain;
     private ToolsBean toolsBean;
+    private gridViewClickListener listener;
     private int[] titlesStrings = new int[]{
             R.string.tools_div,
             R.string.mineral_div,
@@ -66,6 +68,12 @@ public class ToolsListFragment extends Fragment{
             R.string.furniture_div,
             R.string.manufacture_div
     };
+    public static interface gridViewClickListener{
+        public void onItemClick(int pager,int div,String name);
+    }
+    public void setGridViewClickListener(gridViewClickListener listener){
+        this.listener = listener;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -284,7 +292,8 @@ public class ToolsListFragment extends Fragment{
         }
 
         @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public View getView(final int i, View view, ViewGroup viewGroup) {
+            int clickNum = 0;
             ViewHolder viewHolder;
             if(view == null){
                 viewHolder = new ViewHolder();
@@ -306,18 +315,21 @@ public class ToolsListFragment extends Fragment{
                                        toolsBean.tools.tool.content.get(i).links.size()-1
                                ).image,getActivity());
                        textString = toolsBean.tools.tool.content.get(i).name;
+                        clickNum = 0;
                     }else if(div ==1){
                         ImageId = GetImageIdByName.getImageId(
                                 toolsBean.tools.weapon.conten.get(i).links.get(
                                         toolsBean.tools.weapon.conten.get(i).links.size()-1
                                 ).image,getActivity());
                         textString = toolsBean.tools.weapon.conten.get(i).name;
+                        clickNum = 1;
                     }else{
                         ImageId = GetImageIdByName.getImageId(
                                 toolsBean.tools.fishing_gear.content.get(i).links.get(
                                         toolsBean.tools.fishing_gear.content.get(i).links.size()-1
                                 ).image,getActivity());
                         textString = toolsBean.tools.fishing_gear.content.get(i).name;
+                        clickNum = 2;
                     }
                     break;
                 case 1:
@@ -325,10 +337,12 @@ public class ToolsListFragment extends Fragment{
                         ImageId = GetImageIdByName.getImageId(toolsBean.mineral.ore.content.get(i).
                                 links.get(0).image,getActivity());
                         textString = toolsBean.mineral.ore.content.get(i).name;
+                        clickNum = 0;
                     }else{
                         ImageId = GetImageIdByName.getImageId(toolsBean.mineral.cultural_relic.content.get(i).
                                 links.get(0).image,getActivity());
                         textString = toolsBean.mineral.cultural_relic.content.get(i).name;
+                        clickNum = 1;
                     }
                     break;
                 case 2:
@@ -338,18 +352,21 @@ public class ToolsListFragment extends Fragment{
                                         toolsBean.decorate.head.content.get(i).links.size()-1
                                 ).image,getActivity());
                         textString = toolsBean.decorate.head.content.get(i).name;
+                        clickNum = 0;
                     }else if(div ==1){
                         ImageId = GetImageIdByName.getImageId(
                                 toolsBean.decorate.shoes.content.get(i).links.get(
                                         toolsBean.decorate.shoes.content.get(i).links.size()-1
                                 ).image,getActivity());
                         textString = toolsBean.decorate.shoes.content.get(i).name;
+                        clickNum = 1;
                     }else{
                         ImageId = GetImageIdByName.getImageId(
                                 toolsBean.decorate.ring.content.get(i).links.get(
                                         toolsBean.decorate.ring.content.get(i).links.size()-1
                                 ).image,getActivity());
                         textString = toolsBean.decorate.ring.content.get(i).name;
+                        clickNum = 2;
                     }
                     break;
                 case 3:
@@ -357,10 +374,12 @@ public class ToolsListFragment extends Fragment{
                         ImageId = GetImageIdByName.getImageId(toolsBean.cooking.cookbook.content.get(i).
                                 links.get(0).image,getActivity());
                         textString = toolsBean.cooking.cookbook.content.get(i).name;
+                        clickNum = 0;
                     }else{
                         ImageId = GetImageIdByName.getImageId(toolsBean.cooking.seasoning.content.get(i).
                                 links.get(0).image,getActivity());
                         textString = toolsBean.cooking.seasoning.content.get(i).name;
+                        clickNum = 1;
                     }
                     break;
                 case 4:
@@ -376,6 +395,17 @@ public class ToolsListFragment extends Fragment{
             }
             viewHolder.imageView.setImageResource(ImageId);
             viewHolder.textView.setText(textString);
+
+            final String finalTextString = textString;
+            final int finalClickNum = clickNum;
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(listener != null){
+                        listener.onItemClick(pages, finalClickNum,finalTextString);
+                    }
+                }
+            });
             return view;
         }
     }

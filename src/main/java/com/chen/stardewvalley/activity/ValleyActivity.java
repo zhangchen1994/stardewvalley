@@ -9,10 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.chen.stardewvalley.R;
-import com.chen.stardewvalley.TouchImageView;
+import com.chen.stardewvalley.view.TouchImageView;
 import com.chen.stardewvalley.ValleyRegionPopupWindow;
-import com.chen.stardewvalley.fragment.PeopleDetailsFragment;
-import com.chen.stardewvalley.fragment.PeopleListFragment;
 import com.chen.stardewvalley.fragment.ValleyDeailsFragment;
 import com.chen.stardewvalley.fragment.ValleyListFragment;
 import com.chen.stardewvalley.utils.GetMapRegion;
