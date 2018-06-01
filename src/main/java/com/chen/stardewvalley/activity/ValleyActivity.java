@@ -82,7 +82,7 @@ public class ValleyActivity extends AppCompatActivity{
         });
     }
     private void initPopup() {
-        popupWindow = new ValleyRegionPopupWindow(ValleyActivity.this);
+        popupWindow = ValleyRegionPopupWindow.getInstance(this);
         touchImageView.setOnRegionTouchListener(new TouchImageView.onRegionTouchListener() {
             @Override
             public void onRegionTouch(int region,int x,int y) {

@@ -77,4 +77,8 @@
     <string name="cultural_relic_use">送礼，博物馆捐献</string>
     <string name="rely">回复</string>price
     <string name="price">价格</string>
+    <string name="calendar">日历</string>
+    <string name="calendar_day">日期</string>
+    <string name="day">日</string>
+    <string name="festival">节日</string>
 </resources>

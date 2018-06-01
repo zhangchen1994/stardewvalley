@@ -25,10 +25,16 @@ public class ValleyRegionPopupWindow {
     private Context context;
     public PopupWindow mPopWindow;
     private int windtLimit;
+    private static ValleyRegionPopupWindow valleyRegionPopupWindow = null;
 
-
-    public ValleyRegionPopupWindow(Context context){
+    private ValleyRegionPopupWindow(Context context){
         this.context = context;
+    }
+    public static ValleyRegionPopupWindow getInstance(Context context){
+        if(valleyRegionPopupWindow == null){
+            valleyRegionPopupWindow = new ValleyRegionPopupWindow(context);
+        }
+        return valleyRegionPopupWindow;
     }
     android.os.Handler handler = new android.os.Handler(){
         @Override

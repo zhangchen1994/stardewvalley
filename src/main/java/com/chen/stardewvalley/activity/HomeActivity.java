@@ -288,9 +288,17 @@ public class HomeActivity extends AppCompatActivity{
         }
 
         @Override
-        public Object instantiateItem(ViewGroup container, int position) {
+        public Object instantiateItem(ViewGroup container, final int position) {
             ImageView view = imageViews.get(position);
             container.addView(view);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(HomeActivity.this,SeasonActivity.class);
+                    intent.putExtra("position",position);
+                    HomeActivity.this.startActivity(intent);
+                }
+            });
             return view;
         }
 

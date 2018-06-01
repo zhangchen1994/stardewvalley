@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/season_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/action_bar_bacground"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp">
+
+        <ImageButton
+            android:id="@+id/im_but_menu"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/action_menu" />
+
+        <TextView
+            android:id="@+id/tv_season_toobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/home_people"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/season_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.chen.stardewvalley.view.CalendarView
+                android:id="@+id/season_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/ll_season_festival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#c8e6c9">
+
+                <ImageView
+                    android:id="@+id/ex_arrow_up"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/up_arrow"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/ex_arrow_down"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/down_arrow"
+                     />
+
+                <TextView
+                    android:id="@+id/ex_tv_titles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/festival"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <com.chen.stardewvalley.view.ExcelView
+                android:id="@+id/season_excel_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            </com.chen.stardewvalley.view.ExcelView>
+            <RelativeLayout
+                android:id="@+id/ll_season_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#c8e6c9">
+
+                <ImageView
+                    android:id="@+id/ex_arrow_up_birthday"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/up_arrow"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/ex_arrow_down_birthday"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/down_arrow"
+                    />
+
+                <TextView
+                    android:id="@+id/ex_tv_titles_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/birthday"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <com.chen.stardewvalley.view.ExcelView
+                android:id="@+id/season_excel_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            </com.chen.stardewvalley.view.ExcelView>
+            <RelativeLayout
+                android:id="@+id/ll_season_fram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#c8e6c9">
+
+                <ImageView
+                    android:id="@+id/ex_arrow_up_fram"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/up_arrow"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/ex_arrow_down_fram"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/down_arrow"
+                    />
+
+                <TextView
+                    android:id="@+id/ex_tv_titles_fram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/birthday"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

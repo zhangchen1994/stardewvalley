@@ -66,7 +66,7 @@ public class ValleyListFragment extends Fragment{
     private void init(){
         json();
         if(popupWindow == null){
-            popupWindow = new ValleyRegionPopupWindow(getActivity());
+            popupWindow = ValleyRegionPopupWindow.getInstance(getActivity());
         }
 
         rvList = view.findViewById(R.id.gv_valley_list);

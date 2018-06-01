@@ -3256,14 +3256,14 @@
             },
             {
               "name": "木质挑灯",
-              "image": "wood_lamp-post",
+              "image": "wood_lamp_post",
               "material": "木材 (50)  电池组 (1)",
               "local": "罗宾(500)",
               "describe": "提供中等强度的照明。"
             },
             {
               "name": "钢铁挑灯",
-              "image": "iron_lamp-post",
+              "image": "iron_lamp_post",
               "material": "铁锭 (1)  电池组 (1)",
               "local": "罗宾(1000)",
               "describe": "提供中等强度的照明。"
@@ -3359,7 +3359,7 @@
             },
             {
               "name": "史莱姆蛋压制机",
-              "image": "slime_egg-press",
+              "image": "slime_egg_press",
               "material": "煤炭 (25)   火水晶 (1)   电池组 (1)",
               "local": "6",
               "describe": "将100块史莱姆泥变为一个史莱姆蛋，科学真奇妙！"
@@ -3401,7 +3401,7 @@
             },
             {
               "name": "盆栽花",
-              "image": "tub_o'_flowers",
+              "image": "tub_o_flowers",
               "material": "木材 (15)   郁金香球茎 (1)   蓝爵士种子 (1)   罂粟种子 (1)   夏季亮片种子 (1)",
               "local": "花舞节上的展位",
               "describe": "种在橡木桶的花，在春季 和 夏季 开放。 "
