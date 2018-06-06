@@ -156,38 +156,244 @@
                     "data": "春季24天"
                 }
             ],
-            "birthday": [
+            "fram_1": [
                 {
-                    "name": "肯特",
-                    "data": "春季4天"
+                    "name": "蓝调爵士",
+                    "images": "blue_jazz",
+                    "seed_price": "30g",
+                    "grow_up_day": "7天",
+                    "times": "3",
+                    "price": "50g"
                 },
                 {
-                    "name": "刘易斯",
-                    "data": "春季7天"
+                    "name": "花椰菜",
+                    "images": "cauliflower",
+                    "seed_price": "80g",
+                    "grow_up_day": "12天",
+                    "times": "2",
+                    "price": "175g"
                 },
                 {
-                    "name": "文森特",
-                    "data": "春季10天"
+                    "name": "大蒜",
+                    "images": "garlic",
+                    "seed_price": "40g",
+                    "grow_up_day": "4天",
+                    "times": "6",
+                    "price": "60g"
                 },
                 {
-                    "name": "海莉",
-                    "data": "春季14天"
+                    "name": "甘蓝菜",
+                    "images": "kale",
+                    "seed_price": "70g",
+                    "grow_up_day": "6天",
+                    "times": "4",
+                    "price": "110g"
                 },
                 {
-                    "name": "潘姆",
-                    "data": "春季18天"
+                    "name": "防风草",
+                    "images": "parsnip",
+                    "seed_price": "20g",
+                    "grow_up_day": "4天",
+                    "times": "6",
+                    "price": "35g"
                 },
                 {
-                    "name": "谢恩",
-                    "data": "春季20天"
+                    "name": "土豆",
+                    "images": "potato",
+                    "seed_price": "50g",
+                    "grow_up_day": "6天",
+                    "times": "4",
+                    "price": "80g"
                 },
                 {
-                    "name": "皮埃尔",
-                    "data": "春季26天"
+                    "name": "大黄",
+                    "images": "rhubarb",
+                    "seed_price": "绿洲:100g",
+                    "grow_up_day": "13天",
+                    "times": "2",
+                    "price": "220g"
                 },
                 {
-                    "name": "艾米丽",
-                    "data": "春季27天"
+                    "name": "郁金香",
+                    "images": "tulip",
+                    "seed_price": "20g",
+                    "grow_up_day": "6天",
+                    "times": "4",
+                    "price": "30g"
+                }
+            ],
+            "fram_2": [
+                {
+                    "name": "咖啡豆",
+                    "images": "coffee_bean",
+                    "seed_price": "旅行货车:2,500g",
+                    "grow_up_day": "10天",
+                    "grow_up_days": "2天"
+                },
+                {
+                    "name": "绿豆",
+                    "images": "green_bean",
+                    "seed_price": "60g",
+                    "grow_up_day": "10天",
+                    "grow_up_days": "3天"
+                },
+                {
+                    "name": "草莓",
+                    "images": "strawberry",
+                    "seed_price": "复活节:100g",
+                    "grow_up_day": "8天",
+                    "grow_up_days": "4天"
+                }
+            ],
+            "pick": [
+                {
+                    "name": "野山葵",
+                    "images": "wild_horseradish",
+                    "describe": "味道辛辣的根。可以在春天找到。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "黄水仙",
+                    "images": "daffodil",
+                    "describe": "传统的春季花朵，适合做礼物。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "韭葱",
+                    "images": "leek",
+                    "describe": "美味。跟洋大葱相似。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "蒲公英",
+                    "images": "dandelion",
+                    "describe": "花不算最好看，但叶子能做好吃的沙拉。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "大葱",
+                    "images": "spring_onion",
+                    "describe": "这些大葱在春天生长很旺盛。",
+                    "local": "鹈鹕镇，煤矿森林"
+                },
+                {
+                    "name": "龙葵",
+                    "images": "morel",
+                    "describe": "美味的蘑菇。有水果香气和一点点胡椒气味。",
+                    "local": "秘密森林"
+                },
+                {
+                    "name": "普通蘑菇",
+                    "images": "common_mushroom",
+                    "describe": "有点坚果味，口感不错。",
+                    "local": "秘密森林，鹈鹕镇"
+                },
+                {
+                    "name": "美洲大树莓",
+                    "images": "salmonberry",
+                    "describe": "生长在春天的浆果。带有森林的气味。",
+                    "local": "鹈鹕镇"
+                }
+            ],
+            "fish": [
+                {
+                    "name": "鳀鱼",
+                    "images": "anchovy",
+                    "describe": "一种海里的小银鱼。",
+                    "local": "海洋",
+                    "time": "任何时间",
+                    "season": "春季, 秋季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "小嘴鲈鱼",
+                    "images": "smallmouth_bass",
+                    "describe": "一种对污染很敏感的淡水鱼。",
+                    "local": "河流（小镇）, 森林池塘",
+                    "time": "任何时间",
+                    "season": "春季, 秋季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鲶鱼",
+                    "images": "catfish",
+                    "describe": "一种能在小溪里找到的罕见鱼类。",
+                    "local": "河流（小镇+森林）, 秘密森林, 魔法师的沼泽",
+                    "time": "任何时间",
+                    "season": "春季, 秋季, (春季和夏季的秘密森林)",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "太阳鱼",
+                    "images": "sunfish",
+                    "describe": "一种常见的河鱼。",
+                    "local": "河流（小镇+森林）",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "春季, 夏季",
+                    "weather": "晴天"
+                },
+                {
+                    "name": "鲱鱼",
+                    "images": "herring",
+                    "describe": "一种常见的海鱼。",
+                    "local": "海洋",
+                    "time": "任何时间",
+                    "season": "春季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鳗鱼",
+                    "images": "eel",
+                    "describe": "一种长而滑溜的小鱼。",
+                    "local": "海洋",
+                    "time": "4:00 PM – 2:00 AM",
+                    "season": "春季, 秋季",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "沙丁鱼",
+                    "images": "sardine",
+                    "describe": "一种常见的海鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "春季, 秋季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "西鲱",
+                    "images": "shad",
+                    "describe": "结群生活在海里，但会回到河里产卵。",
+                    "local": "河流（小镇+森林）",
+                    "time": "9:00 AM – 2:00 AM",
+                    "season": "春季, 夏季, 秋季",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "大比目鱼",
+                    "images": "halibut",
+                    "describe": "形状扁平、居住在大洋底的鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 11:00 AM，7:00 PM – 2:00 AM",
+                    "season": "春季, 夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鲤鱼",
+                    "images": "carp",
+                    "describe": "一种常见的池鱼。",
+                    "local": "山间湖泊, 下水道, 秘密森林",
+                    "time": "任何时间",
+                    "season": "春季, 夏季, 秋季 (冬季仅在秘密森林)",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "传说之鱼",
+                    "images": "legend",
+                    "describe": "万鱼之王！他们说它永远不会被抓到。",
+                    "local": "山间湖泊. 深水区. 在圆木旁出现的几率稍高. 需要玩家钓鱼等级到10级，自行升级或烹饪食物的buff升级皆可。",
+                    "time": "任何时间",
+                    "season": "春季",
+                    "weather": "雨天"
                 }
             ]
         },
@@ -334,6 +540,306 @@
                     "birthday": "",
                     "festival": "月光水母起舞"
                 }
+            ],
+            "festival": [
+                {
+                    "name": "夏威夷宴会",
+                    "images": "luau",
+                    "data": "夏季11天"
+                },
+                {
+                    "name": "月光水母起舞",
+                    "images": "dance_moonlight_jellies",
+                    "data": "夏季28日"
+                }
+            ],
+            "fram_1": [
+                {
+                    "name": "甜瓜",
+                    "images": "melon",
+                    "seed_price": "80g",
+                    "grow_up_day": "12天",
+                    "times": "2",
+                    "price": "250g"
+                },
+                {
+                    "name": "罂粟",
+                    "images": "poppy",
+                    "seed_price": "100g",
+                    "grow_up_day": "7天",
+                    "times": "3",
+                    "price": "140g"
+                },
+                {
+                    "name": "萝卜",
+                    "images": "radish",
+                    "seed_price": "40g",
+                    "grow_up_day": "6天",
+                    "times": "4",
+                    "price": "90g"
+                },
+                {
+                    "name": "红叶卷心菜",
+                    "images": "red_cabbage",
+                    "seed_price": "100g",
+                    "grow_up_day": "9天",
+                    "times": "3",
+                    "price": "260g"
+                },
+                {
+                    "name": "杨桃",
+                    "images": "starfruit",
+                    "seed_price": "绿洲:",
+                    "grow_up_day": "400g",
+                    "times": "13天",
+                    "price": "2"
+                },
+                {
+                    "name": "夏季亮片",
+                    "images": "summer_spangle",
+                    "seed_price": "50g",
+                    "grow_up_day": "8天",
+                    "times": "3",
+                    "price": "90g"
+                },
+                {
+                    "name": "向日葵",
+                    "images": "sunflower",
+                    "seed_price": "200g",
+                    "grow_up_day": "8天",
+                    "times": "3",
+                    "price": "80g"
+                },
+                {
+                    "name": "小麦",
+                    "images": "wheat",
+                    "seed_price": "10g",
+                    "grow_up_day": "4天",
+                    "times": "6",
+                    "price": "25g"
+                }
+            ],
+            "fram_2": [
+                {
+                    "name": "蓝莓",
+                    "images": "blueberry",
+                    "seed_price": "80g",
+                    "grow_up_day": "13天",
+                    "grow_up_days": "4天"
+                },
+                {
+                    "name": "咖啡豆",
+                    "images": "coffee_bean",
+                    "seed_price": "旅行货车:",
+                    "grow_up_day": "2,500g",
+                    "grow_up_days": "10天"
+                },
+                {
+                    "name": "玉米",
+                    "images": "corn",
+                    "seed_price": "150g",
+                    "grow_up_day": "14天",
+                    "grow_up_days": "4天"
+                },
+                {
+                    "name": "啤酒花",
+                    "images": "hops",
+                    "seed_price": "60g",
+                    "grow_up_day": "11天",
+                    "grow_up_days": "1天"
+                },
+                {
+                    "name": "辣椒",
+                    "images": "hot_pepper",
+                    "seed_price": "40g",
+                    "grow_up_day": "5天",
+                    "grow_up_days": "3天"
+                },
+                {
+                    "name": "西红柿",
+                    "images": "tomato",
+                    "seed_price": "50g",
+                    "grow_up_day": "11天",
+                    "grow_up_days": "4天"
+                }
+            ],
+            "pick": [
+                {
+                    "name": "香味浆果",
+                    "images": "spice_berry",
+                    "describe": "空气里全是它浓郁的香气。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "葡萄",
+                    "images": "grape",
+                    "describe": "一串香甜的水果。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "甜豌豆",
+                    "images": "sweet_pea",
+                    "describe": "盛开在夏季的芳香花朵。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "红蘑菇",
+                    "images": "red_mushroom",
+                    "describe": "有斑点的蘑菇，有时可以在洞穴中找到。",
+                    "local": "秘密森林，山洞"
+                },
+                {
+                    "name": "蕨菜",
+                    "images": "fiddlehead_fern",
+                    "describe": "幼苗可以食用。",
+                    "local": "秘密森林"
+                }
+            ],
+            "fish": [
+                {
+                    "name": "河豚",
+                    "images": "pufferfish",
+                    "describe": "受到威胁时身体会膨胀。",
+                    "local": "海洋",
+                    "time": "12:00 PM – 4:00 PM",
+                    "season": "夏",
+                    "weather": ""
+                },
+                {
+                    "name": "金枪鱼",
+                    "images": "tuna",
+                    "describe": "生活在海洋中的大型鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/冬",
+                    "weather": ""
+                },
+                {
+                    "name": "虹鳟鱼",
+                    "images": "rainbow_trout",
+                    "describe": "带有彩色条纹的淡水鳟鱼。",
+                    "local": "河流（镇上+森林），矿井外的池塘",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏",
+                    "weather": ""
+                },
+                {
+                    "name": "鲶鱼",
+                    "images": "catfish",
+                    "describe": "稀有的鱼。可以在溪流中找到。",
+                    "local": "河流（镇上+森林），秘密森林池塘",
+                    "time": "全天",
+                    "season": "春/秋/夏季秘密森林池塘",
+                    "weather": ""
+                },
+                {
+                    "name": "狗鱼",
+                    "images": "pike",
+                    "describe": "很难捉到的淡水鱼。",
+                    "local": "河流（镇上+森林），森林池塘",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/冬",
+                    "weather": ""
+                },
+                {
+                    "name": "翻车鱼",
+                    "images": "sunfish",
+                    "describe": "很普通的鱼，生长在河流中。",
+                    "local": "河流（镇上+森林）",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "春/夏",
+                    "weather": ""
+                },
+                {
+                    "name": "红鲻鱼",
+                    "images": "red_mullet",
+                    "describe": "很久以前人们养它们来当宠物。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/冬",
+                    "weather": ""
+                },
+                {
+                    "name": "章鱼",
+                    "images": "octopus",
+                    "describe": "神秘而聪明的生物。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 1:00 PM",
+                    "season": "夏",
+                    "weather": ""
+                },
+                {
+                    "name": "红鲷鱼",
+                    "images": "red_snapper",
+                    "describe": "这种鱼很受欢迎。身上的红颜色很好看。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/秋",
+                    "weather": ""
+                },
+                {
+                    "name": "大海参",
+                    "images": "super_cucumber",
+                    "describe": "海参的一种稀有紫色变种。",
+                    "local": "海洋",
+                    "time": "6:00 PM – 2:00 AM",
+                    "season": "夏/秋",
+                    "weather": ""
+                },
+                {
+                    "name": "鲟鱼",
+                    "images": "sturgeon",
+                    "describe": "数量在逐渐减少的一种古老的食底泥鱼。雌性寿命可达150年。",
+                    "local": "矿山外的湖泊",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/冬",
+                    "weather": ""
+                },
+                {
+                    "name": "罗非鱼",
+                    "images": "tilapia",
+                    "describe": "以草食为主的鱼，喜欢温水。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 2:00 PM",
+                    "season": "夏/秋",
+                    "weather": ""
+                },
+                {
+                    "name": "剑鱼",
+                    "images": "dorado",
+                    "describe": "凶猛的肉食鱼类，身上有好看的橙色鳞片。",
+                    "local": "森林河流",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏",
+                    "weather": ""
+                },
+                {
+                    "name": "西鲱",
+                    "images": "shad",
+                    "describe": "群居于海中，但会洄游到河里产卵。",
+                    "local": "河流（镇上+森林）",
+                    "time": "9:00 AM – 2:00 AM",
+                    "season": "春/夏/秋",
+                    "weather": ""
+                },
+                {
+                    "name": "大比目鱼",
+                    "images": "halibut",
+                    "describe": "外形扁平，生活在海底。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 11:00 AM, 7:00 PM – 2:00 AM",
+                    "season": "春/夏/冬",
+                    "weather": ""
+                },
+                {
+                    "name": "赤红之鳞",
+                    "images": "crimsonfish",
+                    "describe": "生活在海洋深处，但是喜欢在夏季的温水中产卵。",
+                    "local": "海洋（东部码头）",
+                    "time": "全天",
+                    "season": "夏",
+                    "weather": ""
+                }
             ]
         },
         {
@@ -479,6 +985,299 @@
                     "birthday": "",
                     "festival": ""
                 }
+            ],
+            "festival": [
+                {
+                    "name": "星露谷展览会",
+                    "images": "stardew_valley_fair",
+                    "data": "秋季16天"
+                },
+                {
+                    "name": "万灵节",
+                    "images": "spirits_eve",
+                    "data": "秋季27天"
+                }
+            ],
+            "fram_1": [
+                {
+                    "name": "苋菜",
+                    "images": "amaranth",
+                    "seed_price": "70g",
+                    "grow_up_day": "7天",
+                    "times": "3",
+                    "price": "150g"
+                },
+                {
+                    "name": "洋蓟",
+                    "images": "artichoke",
+                    "seed_price": "30g",
+                    "grow_up_day": "8天",
+                    "times": "3",
+                    "price": "160g"
+                },
+                {
+                    "name": "甜菜",
+                    "images": "beet",
+                    "seed_price": "绿洲:20g",
+                    "grow_up_day": "6天",
+                    "times": "4",
+                    "price": "100g"
+                },
+                {
+                    "name": "小白菜",
+                    "images": "bok_choy",
+                    "seed_price": "50g",
+                    "grow_up_day": "4天",
+                    "times": "6",
+                    "price": "80g"
+                },
+                {
+                    "name": "玫瑰仙子",
+                    "images": "fairy_rose",
+                    "seed_price": "200g",
+                    "grow_up_day": "12天",
+                    "times": "2",
+                    "price": "290g"
+                },
+                {
+                    "name": "南瓜",
+                    "images": "pumpkin",
+                    "seed_price": "100g",
+                    "grow_up_day": "13天",
+                    "times": "2",
+                    "price": "320g"
+                },
+                {
+                    "name": "向日葵",
+                    "images": "sunflower",
+                    "seed_price": "200g",
+                    "grow_up_day": "8天",
+                    "times": "3",
+                    "price": "80g"
+                },
+                {
+                    "name": "宝石甜莓",
+                    "images": "sweet_gem_berry",
+                    "seed_price": "旅行货车:1,000g",
+                    "grow_up_day": "24天",
+                    "times": "1",
+                    "price": "3,000g"
+                },
+                {
+                    "name": "小麦",
+                    "images": "wheat",
+                    "seed_price": "10g",
+                    "grow_up_day": "4天",
+                    "times": "夏季：6",
+                    "price": "25g"
+                },
+                {
+                    "name": "山药",
+                    "images": "yam",
+                    "seed_price": "60g",
+                    "grow_up_day": "10天",
+                    "times": "2",
+                    "price": "160g"
+                }
+            ],
+            "fram_2": [
+                {
+                    "name": "玉米",
+                    "images": "corn",
+                    "seed_price": "150g",
+                    "grow_up_day": "14天",
+                    "grow_up_days": "4天"
+                },
+                {
+                    "name": "蔓越莓",
+                    "images": "cranberries",
+                    "seed_price": "240g",
+                    "grow_up_day": "7天",
+                    "grow_up_days": "5天"
+                },
+                {
+                    "name": "茄子",
+                    "images": "eggplant",
+                    "seed_price": "20g",
+                    "grow_up_day": "5天",
+                    "grow_up_days": "5天"
+                },
+                {
+                    "name": "葡萄",
+                    "images": "grape",
+                    "seed_price": "60g",
+                    "grow_up_day": "10天",
+                    "grow_up_days": "3天"
+                }
+            ],
+            "pick": [
+                {
+                    "name": "野梅",
+                    "images": "wild_plum",
+                    "describe": "酸甜多汁，香味浓烈。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "榛子",
+                    "images": "hazelnut",
+                    "describe": "真是巨大的一颗榛子！",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "黑莓",
+                    "images": "blackberry",
+                    "describe": "早秋的食物。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "鸡油菌",
+                    "images": "chanterelle",
+                    "describe": "一种美味的蘑菇，味道像水果，稍辣。",
+                    "local": "秘密森林,山洞"
+                },
+                {
+                    "name": "普通蘑菇",
+                    "images": "common_mushroom",
+                    "describe": "稍微坚硬，肉质滑。",
+                    "local": "鹈鹕镇,秘密森林.山洞"
+                }
+            ],
+            "fish": [
+                {
+                    "name": "鳀鱼",
+                    "images": "anchovy",
+                    "describe": "银色小鱼，出现在海里。",
+                    "local": "海洋",
+                    "time": "全天",
+                    "season": "春/秋",
+                    "weather": "任意"
+                },
+                {
+                    "name": "沙丁鱼",
+                    "images": "sardine",
+                    "describe": "很普通的鱼，生长在海洋中。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "春/秋/冬",
+                    "weather": "任意"
+                },
+                {
+                    "name": "小嘴河鲈",
+                    "images": "smallmouth_bass",
+                    "describe": "淡水鱼，对污染很敏感。",
+                    "local": "河流（镇上），森林池塘",
+                    "time": "全天",
+                    "season": "春/秋",
+                    "weather": "任意"
+                },
+                {
+                    "name": "鲑鱼",
+                    "images": "salmon",
+                    "describe": "逆流而上产卵。",
+                    "local": "河流（镇上+森林）",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "秋",
+                    "weather": "任意"
+                },
+                {
+                    "name": "大眼鱼",
+                    "images": "walleye",
+                    "describe": "淡水鱼，可以在夜晚被捉到。",
+                    "local": "河流（镇上+森林），森林池塘，矿井外的池塘",
+                    "time": "12:00 PM – 2:00 AM",
+                    "season": "秋",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "鲶鱼",
+                    "images": "catfish",
+                    "describe": "不常见的鱼。可以在溪流中找到。",
+                    "local": "河流（镇上+森林），秘密森林池塘",
+                    "time": "全天",
+                    "season": "春/秋/夏季秘密森林池塘",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "鳗鱼",
+                    "images": "eel",
+                    "describe": "又长又滑的小鱼。",
+                    "local": "海洋",
+                    "time": "4:00 PM – 2:00 AM",
+                    "season": "春/秋",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "红鲷鱼",
+                    "images": "red_snapper",
+                    "describe": "这种鱼很受欢迎。身上的红颜色很好看。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "夏/秋",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "海参",
+                    "images": "sea_cucumber",
+                    "describe": "滑腻的生物，出现在海底。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "秋/冬",
+                    "weather": "任意"
+                },
+                {
+                    "name": "大海参",
+                    "images": "super_cucumber",
+                    "describe": "海参的一种稀有紫色变种。",
+                    "local": "海洋",
+                    "time": "6:00 PM – 2:00 AM",
+                    "season": "夏/秋",
+                    "weather": "任意"
+                },
+                {
+                    "name": "虎纹鳟鱼",
+                    "images": "tiger_trout",
+                    "describe": "稀有的杂交鳟鱼，不能生育后代。",
+                    "local": "河流（镇上+森林）",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "秋/冬",
+                    "weather": "任意"
+                },
+                {
+                    "name": "罗非鱼",
+                    "images": "tilapia",
+                    "describe": "以草食为主的鱼，喜欢温水。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 2:00 PM",
+                    "season": "夏/秋",
+                    "weather": "任意"
+                },
+                {
+                    "name": "青花鱼",
+                    "images": "albacore",
+                    "describe": "喜欢冷水和温水“交汇处”的温度。",
+                    "local": "海洋",
+                    "time": "6:00 AM – 11:00 AM, 6:00 PM – 2:00 AM",
+                    "season": "秋/冬",
+                    "weather": "晴天/雨天"
+                },
+                {
+                    "name": "西鲱",
+                    "images": "shad",
+                    "describe": "群居于海中，但会洄游到河里产卵。",
+                    "local": "河流（镇上+森林）",
+                    "time": "9:00 AM – 2:00 AM",
+                    "season": "春/夏/秋",
+                    "weather": "雨天"
+                },
+                {
+                    "name": "鮟鱇",
+                    "images": "angler",
+                    "describe": "用一支发光钓竿吸引猎物。",
+                    "local": "站在Joja Mart北边的木板桥中央向北甩钓竿",
+                    "time": "全天",
+                    "season": "秋",
+                    "weather": "任意"
+                }
             ]
         },
         {
@@ -623,6 +1422,197 @@
                     "day": "28",
                     "birthday": "",
                     "festival": ""
+                }
+            ],
+            "festival": [
+                {
+                    "name": "冰雪节",
+                    "images": "festival_of_ice_1",
+                    "data": "冬季第8天"
+                },
+                {
+                    "name": "冬日星盛宴",
+                    "images": "feast_of_the_winterstar",
+                    "data": "冬季第25天"
+                }
+            ],
+            "fram_2": [],
+            "pick": [
+                {
+                    "name": "冬根",
+                    "images": "winter_root",
+                    "describe": "一种淀粉块茎植物。",
+                    "local": "鹈鹕镇；用锄头锄地（见表下注释）；矿井内（40-80层）也可能掉落"
+                },
+                {
+                    "name": "水晶果",
+                    "images": "crystal_fruit",
+                    "describe": "一种在冬天出现的美味水果。",
+                    "local": "鹈鹕镇；矿井内（40-80层）也可能掉落"
+                },
+                {
+                    "name": "雪山药",
+                    "images": "snow_yam",
+                    "describe": "这种小山药隐藏在雪地下。",
+                    "local": "鹈鹕镇；用锄头锄地"
+                },
+                {
+                    "name": "番红花",
+                    "images": "crocus",
+                    "describe": "冬天开花的一种花朵。",
+                    "local": "鹈鹕镇"
+                },
+                {
+                    "name": "冬青树",
+                    "images": "holly",
+                    "describe": "它的叶子和鲜红的浆果让它成为了极受欢迎的冬天饰品。",
+                    "local": "鹈鹕镇"
+                }
+            ],
+            "fish": [
+                {
+                    "name": "大嘴鲈鱼",
+                    "images": "largemouth_bass",
+                    "describe": "一种住在湖里的受欢迎鱼类。",
+                    "local": "山区湖泊",
+                    "time": "6:00 AM – 7:00 PM",
+                    "season": "所有季节",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "大头鱼",
+                    "images": "bullhead",
+                    "describe": "鲶鱼的近亲，以湖底的多种食物为食。",
+                    "local": "山区湖泊",
+                    "time": "任何时间",
+                    "season": "所有季节",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "金枪鱼",
+                    "images": "tuna",
+                    "describe": "一种住在海里的大型鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "沙丁鱼",
+                    "images": "sardine",
+                    "describe": "一种常见的海鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "春季, 秋季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "河鲈",
+                    "images": "perch",
+                    "describe": "一种冬季淡水鱼。",
+                    "local": "河流小镇/森林/森林池塘/山区湖泊",
+                    "time": "任何时间",
+                    "season": "冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "狗鱼",
+                    "images": "pike",
+                    "describe": "一种冬季淡水鱼。",
+                    "local": "河流（小镇+森林/森林池塘",
+                    "time": "任何时间",
+                    "season": "夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "红鲻鱼",
+                    "images": "red_mullet",
+                    "describe": "从前它们被当做宠物饲养。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鲱鱼",
+                    "images": "herring",
+                    "describe": "一种常见的海鱼。",
+                    "local": "海洋",
+                    "time": "任何时间",
+                    "season": "春季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鱿鱼",
+                    "images": "squid",
+                    "describe": "一种可以长得很大的深海生物。",
+                    "local": "海洋",
+                    "time": "6:00 PM - 2:00 AM",
+                    "season": "冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "海参",
+                    "images": "sea_cucumber",
+                    "describe": "一种在海底能找到的黏滑生物。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "秋季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "鲟鱼",
+                    "images": "sturgeon",
+                    "describe": "古老的生物链底层生物，数量一直在减少。雌性的寿命长达150年。",
+                    "local": "山区湖泊",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "虎纹鳟鱼",
+                    "images": "tiger_trout",
+                    "describe": "一种不能繁殖后代的稀有杂交鳟鱼。",
+                    "local": "河流（小镇+森林）",
+                    "time": "6:00 AM - 7:00 PM",
+                    "season": "秋季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "青花鱼",
+                    "images": "albacore",
+                    "describe": "喜欢温度的\"交界处\"，即指冷水与温水交界的地方。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 11:00 AM/6:00 PM - 2:00 AM",
+                    "season": "秋季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "蛇齿单线鱼",
+                    "images": "lingcod",
+                    "describe": "可怕的捕食者，会吞下一切可以吃下的东西。",
+                    "local": "河流（小镇+森林/山区湖泊",
+                    "time": "任何时间",
+                    "season": "冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "大比目鱼",
+                    "images": "halibut",
+                    "describe": "形状扁平、居住在大洋底的鱼。",
+                    "local": "海洋",
+                    "time": "6:00 AM - 11:00 AM/7:00 PM - 2:00 AM",
+                    "season": "春季, 夏季, 冬季",
+                    "weather": "任何天气"
+                },
+                {
+                    "name": "冰川鱼",
+                    "images": "glacierfish",
+                    "describe": "会在冰川的底部搭巢。",
+                    "local": "煤矿森林内箭头岛的南段。",
+                    "time": "任何时间",
+                    "season": "冬季",
+                    "weather": "任何天气"
                 }
             ]
         }

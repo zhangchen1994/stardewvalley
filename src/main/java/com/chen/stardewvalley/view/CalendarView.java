@@ -3,6 +3,8 @@ package com.chen.stardewvalley.view;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Display;
@@ -18,6 +20,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.chen.stardewvalley.R;
+import com.chen.stardewvalley.db.SeasonDb;
 import com.chen.stardewvalley.domain.CalendarBean;
 import com.chen.stardewvalley.utils.DisplayUtils;
 import com.chen.stardewvalley.utils.GetImageIdByName;
@@ -42,6 +45,7 @@ public class CalendarView extends LinearLayout{
     private OnCalendarViewClickListener listener;
     private int clickPosition = 0;
     private View clickView;
+    private ArrayList<Integer> thingsList = new ArrayList<>();
     public static interface OnCalendarViewClickListener{
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l);
     }
@@ -85,10 +89,11 @@ public class CalendarView extends LinearLayout{
                 gridView.post(new Runnable() {
                     @Override
                     public void run() {
-                        gridView.setAdapter(new GvAdapter(
+                        GvAdapter adapter = new GvAdapter(
                                 gridView.getWidth(),
                                 gridView.getHeight()
-                        ));
+                        );
+                        gridView.setAdapter(adapter);
                     }
                 });
             }
@@ -112,6 +117,9 @@ public class CalendarView extends LinearLayout{
 
             }
         });
+    }
+    public void setThingsList(ArrayList<Integer> list){
+        thingsList = list;
     }
     public void setDayList(ArrayList<CalendarBean.DayList> list){
         dayList = list;
@@ -166,6 +174,11 @@ public class CalendarView extends LinearLayout{
                 view.setLayoutParams(param);
             }
             viewHolder.tvCalendar.setText(dayList.get(i).day);
+            for(int k : thingsList){
+                if(i == k){
+                    viewHolder.ivCalendar.setBackgroundResource(R.drawable.season_things_icon);
+                }
+            }
             if(dayList.get(i).birthday != ""){
                 String images = PeopleNameToEn.getNameEn(dayList.get(i).birthday)+"_icon";
                 int imageId = GetImageIdByName.getImageId(images,getContext());

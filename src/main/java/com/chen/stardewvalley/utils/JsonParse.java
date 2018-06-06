@@ -3,6 +3,7 @@ package com.chen.stardewvalley.utils;
 import android.content.Context;
 
 import com.chen.stardewvalley.domain.CalendarBean;
+import com.chen.stardewvalley.domain.OfferBean;
 import com.chen.stardewvalley.domain.PeopleBean;
 import com.chen.stardewvalley.domain.ToolsBean;
 import com.chen.stardewvalley.domain.ValleyBean;
@@ -22,6 +23,7 @@ public class JsonParse {
     public static PeopleBean peopleBean;
     public static ValleyBean valleyBean;
     public static CalendarBean calendarBean;
+    public static OfferBean offerBean;
 
     public static void jsonTools(Context context){
         InputStream inputStream = context.getClass().getClassLoader().getResourceAsStream("assets/"+"tools.json");
@@ -47,11 +49,20 @@ public class JsonParse {
         Gson gson = new Gson();
         calendarBean = gson.fromJson(gsonStr,CalendarBean.class);
     }
+    public static void jsonOffer(Context context){
+        InputStream inputStream = context.getClass().getClassLoader().getResourceAsStream("assets/"+"offer.json");
+        String gsonStr = inToString(inputStream);
+        Gson gson = new Gson();
+        offerBean = gson.fromJson(gsonStr,OfferBean.class);
+    }
     public static ToolsBean returnTools(){
         return toolsBean;
     }
     public static ValleyBean returnValley(){
         return valleyBean;
+    }
+    public static OfferBean returnOffer(){
+        return offerBean;
     }
     public static PeopleBean returnPeople(){
         return peopleBean;

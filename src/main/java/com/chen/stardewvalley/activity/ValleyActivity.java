@@ -112,4 +112,10 @@ public class ValleyActivity extends AppCompatActivity{
             finish();
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        ValleyRegionPopupWindow.removeValleyRegionPopupWindow();
+    }
 }

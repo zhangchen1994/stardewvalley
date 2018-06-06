@@ -1,0 +1,925 @@
+﻿{
+    "links": [
+        {
+            "name": "工艺室",
+            "reward": "桥梁维修",
+            "content": [
+                {
+                    "name": "春季觅食收集包",
+                    "image": "crafts_spring",
+                    "reward": "春季种子(30)",
+                    "reward_images": "spring_seeds",
+                    "offer_con": [
+                        {
+                            "name": "野山葵",
+                            "images": "wild_horseradish",
+                            "describe": "春季 觅食"
+                        },
+                        {
+                            "name": "水仙花",
+                            "images": "daffodil",
+                            "describe": "春季 觅食, 花舞节上在皮埃尔处购买"
+                        },
+                        {
+                            "name": "韭葱",
+                            "images": "leek",
+                            "describe": "春季 觅食"
+                        },
+                        {
+                            "name": "蒲公英",
+                            "images": "dandelion",
+                            "describe": "春季 觅食, 花舞节上在皮埃尔处购买"
+                        }
+                    ]
+                },
+                {
+                    "name": "夏季觅食收集包",
+                    "image": "cafts_summer",
+                    "reward": "夏季种子(30)",
+                    "reward_images": "summer_seeds",
+                    "offer_con": [
+                        {
+                            "name": "葡萄",
+                            "images": "grape",
+                            "describe": "夏季 觅食, 秋季 耕种"
+                        },
+                        {
+                            "name": "香料果",
+                            "images": "spice_berry",
+                            "describe": "夏季 觅食, 农场的山洞（选择果蝠）"
+                        },
+                        {
+                            "name": "甜豌豆",
+                            "images": "sweet_pea",
+                            "describe": "夏季 觅食"
+                        }
+                    ]
+                },
+                {
+                    "name": "秋季觅食收集包",
+                    "image": "cafts_autumn",
+                    "reward": "秋季种子 (30)",
+                    "reward_images": "fall_seeds",
+                    "offer_con": [
+                        {
+                            "name": "普通蘑菇",
+                            "images": "common_mushroom",
+                            "describe": "秋季 觅食, 春季 & 秋季在秘密森林里觅食, 农场的山洞（选择蘑菇洞）, 将树液采集器放在大蘑菇上"
+                        },
+                        {
+                            "name": "野梅",
+                            "images": "wild_plum",
+                            "describe": "秋季 觅食"
+                        },
+                        {
+                            "name": "榛子",
+                            "images": "hazelnut",
+                            "describe": "秋季 觅食"
+                        },
+                        {
+                            "name": "黑莓",
+                            "images": "blackberry",
+                            "describe": "秋季 觅食, 农场的山洞 （选择果蝠）"
+                        }
+                    ]
+                },
+                {
+                    "name": "冬季觅食收集包",
+                    "image": "crafts_winter",
+                    "reward": "冬季种子 (30)",
+                    "reward_images": "winter_seeds",
+                    "offer_con": [
+                        {
+                            "name": "冬根",
+                            "images": "winter_root",
+                            "describe": "冬季锄古物地格, 矿洞41至79层打败蓝色史莱姆"
+                        },
+                        {
+                            "name": "水晶野果",
+                            "images": "crystal_fruit",
+                            "describe": "冬季 觅食, 矿洞41至79层打败沙尘恶灵"
+                        },
+                        {
+                            "name": "雪山药",
+                            "images": "snow_yam",
+                            "describe": "冬季锄古物地格"
+                        },
+                        {
+                            "name": "番红花",
+                            "images": "crocus",
+                            "describe": "冬季 觅食"
+                        }
+                    ]
+                },
+                {
+                    "name": "建筑收集包",
+                    "image": "crafts_build",
+                    "reward": "煤炭窑 (1)",
+                    "reward_images": "charcoal_kiln",
+                    "offer_con": [
+                        {
+                            "name": "木材 (99)",
+                            "images": "wood",
+                            "describe": "用斧头砍树"
+                        },
+                        {
+                            "name": "木材 (99)",
+                            "images": "wood",
+                            "describe": "用斧头砍树"
+                        },
+                        {
+                            "name": "石头 (99)",
+                            "images": "stone",
+                            "describe": "用十字镐敲碎石头"
+                        },
+                        {
+                            "name": "硬木 (10)",
+                            "images": "hardwood",
+                            "describe": "使用升级的斧头砍大树桩或圆木,在矿井里砍木箱获得"
+                        }
+                    ]
+                },
+                {
+                    "name": "异域情调觅食收集包(9选5)",
+                    "image": "crafts_build",
+                    "reward": "秋日恩赐 (5)",
+                    "reward_images": "autumn_bounty",
+                    "offer_con": [
+                        {
+                            "name": "椰子",
+                            "images": "coconut",
+                            "describe": "沙漠 觅食"
+                        },
+                        {
+                            "name": "仙人掌果子",
+                            "images": "cactus_fruit",
+                            "describe": "沙漠 觅食"
+                        },
+                        {
+                            "name": "山洞萝卜",
+                            "images": "cave_carrot",
+                            "describe": "矿洞, 砍木箱或锄地"
+                        },
+                        {
+                            "name": "红蘑菇",
+                            "images": "red_mushroom",
+                            "describe": "在矿洞 觅食, 夏季 & 秋季在秘密森林里觅食, 农场的山洞（选择蘑菇洞）, 将树液采集器放在大蘑菇上"
+                        },
+                        {
+                            "name": "紫蘑菇",
+                            "images": "purple_mushroom",
+                            "describe": "矿洞, 农场的山洞（选择蘑菇洞）, 选择森林农场的话秋季觅食即可"
+                        },
+                        {
+                            "name": "枫糖浆",
+                            "images": "maple_syrup",
+                            "describe": "将树液采集器放在枫树上"
+                        },
+                        {
+                            "name": "橡树树脂",
+                            "images": "oak_resin",
+                            "describe": "将树液采集器放在橡树上"
+                        },
+                        {
+                            "name": "松焦油",
+                            "images": "pine_tar",
+                            "describe": "将树液采集器放在松树上"
+                        },
+                        {
+                            "name": "龙葵",
+                            "images": "morel",
+                            "describe": "春季在秘密森林觅食, 农场的山洞（选择蘑菇洞）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "茶水间",
+            "reward": "温室",
+            "content": [
+                {
+                    "name": "春季作物收集包",
+                    "image": "pantry_spring",
+                    "reward": "生长激素 (20)",
+                    "reward_images": "speed_gro",
+                    "offer_con": [
+                        {
+                            "name": "防风草",
+                            "images": "parsnip",
+                            "describe": "春季农作物"
+                        },
+                        {
+                            "name": "绿豆",
+                            "images": "green_bean",
+                            "describe": "春季农作物"
+                        },
+                        {
+                            "name": "花椰菜",
+                            "images": "cauliflower",
+                            "describe": "春季农作物"
+                        },
+                        {
+                            "name": "土豆",
+                            "images": "potato",
+                            "describe": "春季农作物"
+                        }
+                    ]
+                },
+                {
+                    "name": "夏季作物收集包",
+                    "image": "pantry_summer",
+                    "reward": "优质洒水器 (1)",
+                    "reward_images": "quality_sprinkler",
+                    "offer_con": [
+                        {
+                            "name": "西红柿",
+                            "images": "tomato",
+                            "describe": "夏季农作物"
+                        },
+                        {
+                            "name": "辣椒",
+                            "images": "hot_pepper",
+                            "describe": "夏季农作物"
+                        },
+                        {
+                            "name": "蓝莓",
+                            "images": "blueberry",
+                            "describe": "夏季农作物"
+                        },
+                        {
+                            "name": "甜瓜",
+                            "images": "melon",
+                            "describe": "夏季农作物"
+                        }
+                    ]
+                },
+                {
+                    "name": "秋季作物收集包",
+                    "image": "pantry_autumn",
+                    "reward": "蜂房 (1)",
+                    "reward_images": "bee_house",
+                    "offer_con": [
+                        {
+                            "name": "玉米",
+                            "images": "corn",
+                            "describe": "夏季 / 秋季农作物"
+                        },
+                        {
+                            "name": "茄子",
+                            "images": "eggplant",
+                            "describe": "秋季农作物"
+                        },
+                        {
+                            "name": "南瓜",
+                            "images": "pumpkin",
+                            "describe": "秋季农作物"
+                        },
+                        {
+                            "name": "山药",
+                            "images": "yam",
+                            "describe": "秋季农作物"
+                        }
+                    ]
+                },
+                {
+                    "name": "品质作物收集包",
+                    "image": "pantry_lvbest",
+                    "reward": "罐头瓶 (1)",
+                    "reward_images": "preserves_jar",
+                    "offer_con": [
+                        {
+                            "name": "防风草(5)",
+                            "images": "parsnip",
+                            "describe": "春季的金星品质作物"
+                        },
+                        {
+                            "name": "甜瓜(5)",
+                            "images": "melongold",
+                            "describe": "夏季的金星品质作物"
+                        },
+                        {
+                            "name": "南瓜(5)",
+                            "images": "pumpkingold",
+                            "describe": "秋季的金星品质作物"
+                        },
+                        {
+                            "name": "玉米(5)",
+                            "images": "corngold",
+                            "describe": "夏季 / 秋季的金星品质作物"
+                        }
+                    ]
+                },
+                {
+                    "name": "动物制品收集包(6选5)",
+                    "image": "pantry_animal",
+                    "reward": "压酪机 (1)",
+                    "reward_images": "cheese_press",
+                    "offer_con": [
+                        {
+                            "name": "大壶牛奶",
+                            "images": "large_milk",
+                            "describe": "奶牛"
+                        },
+                        {
+                            "name": "棕色大鸡蛋 (Brown)",
+                            "images": "large_brown_egg",
+                            "describe": "鸡"
+                        },
+                        {
+                            "name": "大鸡蛋",
+                            "images": "large_egg",
+                            "describe": "鸡"
+                        },
+                        {
+                            "name": "",
+                            "images": "large_goat_milk",
+                            "describe": "大瓶羊奶 \t山羊"
+                        },
+                        {
+                            "name": "动物毛",
+                            "images": "wool",
+                            "describe": "绵羊, 兔子"
+                        },
+                        {
+                            "name": "鸭蛋",
+                            "images": "duck_egg",
+                            "describe": "鸭"
+                        }
+                    ]
+                },
+                {
+                    "name": "工匠物品收集包(12选6)",
+                    "image": "pantry_artizan",
+                    "reward": "小桶 (1)",
+                    "reward_images": "keg",
+                    "offer_con": [
+                        {
+                            "name": "松露油 (1)",
+                            "images": "truffle_oil",
+                            "describe": "使用产油机制作松露"
+                        },
+                        {
+                            "name": "布料",
+                            "images": "cloth",
+                            "describe": "织布机, 用回收机回收湿报纸"
+                        },
+                        {
+                            "name": "山羊乳酪",
+                            "images": "goat_cheese",
+                            "describe": "压酪机"
+                        },
+                        {
+                            "name": "乳酪",
+                            "images": "cheese",
+                            "describe": "压酪机"
+                        },
+                        {
+                            "name": "蜂蜜",
+                            "images": "honey",
+                            "describe": "蜂房"
+                        },
+                        {
+                            "name": "果冻",
+                            "images": "jelly",
+                            "describe": "罐头瓶"
+                        },
+                        {
+                            "name": "苹果",
+                            "images": "apple",
+                            "describe": "秋季的苹果树, 农场的山洞 （选择果蝠）"
+                        },
+                        {
+                            "name": "杏子",
+                            "images": "apricot",
+                            "describe": "春季的杏树, 农场的山洞 （选择果蝠）"
+                        },
+                        {
+                            "name": "橙子",
+                            "images": "orange",
+                            "describe": "夏季的橘树, 农场的山洞 （选择果蝠）"
+                        },
+                        {
+                            "name": "桃子",
+                            "images": "peach",
+                            "describe": "夏季的桃树, 农场的山洞 （选择果蝠）"
+                        },
+                        {
+                            "name": "石榴",
+                            "images": "pomegranate",
+                            "describe": "秋季的石榴树, 农场的山洞 （选择果蝠）"
+                        },
+                        {
+                            "name": "樱桃",
+                            "images": "cherry",
+                            "describe": "春季的樱桃树, 农场的山洞 （选择果蝠）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "鱼缸",
+            "reward": "移除卵石",
+            "content": [
+                {
+                    "name": "河鱼收集包",
+                    "image": "fish_river",
+                    "reward": "鱼饵 (30)",
+                    "reward_images": "bait",
+                    "offer_con": [
+                        {
+                            "name": "太阳鱼",
+                            "images": "sunfish",
+                            "describe": "河流, 6:00 AM – 7:00 PM, 春季和夏季."
+                        },
+                        {
+                            "name": "鲶鱼",
+                            "images": "catfish",
+                            "describe": "河流, 任意时间, 春季和秋季, 夏季的秘密森林池塘。仅在雨天出现。"
+                        },
+                        {
+                            "name": "西鲱",
+                            "images": "shad",
+                            "describe": "河流, 任意时间, 春季、夏季和秋季。仅在雨天出现。"
+                        },
+                        {
+                            "name": "虎纹鳟鱼",
+                            "images": "tiger_trout",
+                            "describe": "河流, 6:00 AM – 7:00 PM, 秋季和冬季."
+                        }
+                    ]
+                },
+                {
+                    "name": "湖鱼收集包",
+                    "image": "fish_lake",
+                    "reward": "精装旋式鱼饵 (1)",
+                    "reward_images": "dressed_spinner",
+                    "offer_con": [
+                        {
+                            "name": "大嘴鲈鱼",
+                            "images": "largemouth_bass",
+                            "describe": "湖泊, 6:00 AM – 7:00 PM, 所有季节"
+                        },
+                        {
+                            "name": "鲤鱼",
+                            "images": "carp",
+                            "describe": "湖泊, 任意时间, 春季、夏季和秋季."
+                        },
+                        {
+                            "name": "大头鱼",
+                            "images": "bullhead",
+                            "describe": "湖泊, 任意时间, 所有季节"
+                        },
+                        {
+                            "name": "鲟鱼",
+                            "images": "sturgeon",
+                            "describe": "湖泊, 6:00 AM – 7:00 PM , 夏季和冬季."
+                        }
+                    ]
+                },
+                {
+                    "name": "海鱼收集包",
+                    "image": "fish_sea",
+                    "reward": "传送图腾：海滩 (5)",
+                    "reward_images": "warp_totem_beach",
+                    "offer_con": [
+                        {
+                            "name": "沙丁鱼",
+                            "images": "sardine",
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 春季、秋季和冬季."
+                        },
+                        {
+                            "name": "金枪鱼",
+                            "images": "tuna",
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和冬季."
+                        },
+                        {
+                            "name": "红鲷鱼",
+                            "images": "red_snapper",
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和秋季。仅在雨天出现。"
+                        },
+                        {
+                            "name": "罗非鱼",
+                            "images": "tilapia",
+                            "describe": "海洋, 6:00 AM – 2:00 PM, 夏季和秋季."
+                        }
+                    ]
+                },
+                {
+                    "name": "夜间垂钓收集包",
+                    "image": "fish_night",
+                    "reward": "小型光辉戒指 (1)",
+                    "reward_images": "small_glow_ring",
+                    "offer_con": [
+                        {
+                            "name": "大眼鱼",
+                            "images": "walleye",
+                            "describe": "河流, 12:00 PM – 2:00 AM, 秋季。仅在雨天出现。"
+                        },
+                        {
+                            "name": "鲷鱼",
+                            "images": "bream",
+                            "describe": "河流, 6:00 PM – 2:00 AM, 所有季节"
+                        },
+                        {
+                            "name": "鳗鱼",
+                            "images": "eel",
+                            "describe": "海洋, 4:00 PM – 2:00 AM, 春季和秋季。仅在雨天出现。"
+                        }
+                    ]
+                },
+                {
+                    "name": "蟹笼收集包(10选5)",
+                    "image": "fish_crab",
+                    "reward": "蟹笼 (3)",
+                    "reward_images": "crab_pot",
+                    "offer_con": [
+                        {
+                            "name": "龙虾",
+                            "images": "lobster",
+                            "describe": "用蟹笼捕获"
+                        },
+                        {
+                            "name": "小龙虾",
+                            "images": "crayfish",
+                            "describe": "用蟹笼捕获"
+                        },
+                        {
+                            "name": "螃蟹",
+                            "images": "crab",
+                            "describe": "用蟹笼捕获, 杀死矿洞的岩石蟹"
+                        },
+                        {
+                            "name": "鸟蛤",
+                            "images": "cockle",
+                            "describe": "用蟹笼捕获, 海滩 觅食"
+                        },
+                        {
+                            "name": "蚌",
+                            "images": "mussel",
+                            "describe": "用蟹笼捕获, 海滩 觅食"
+                        },
+                        {
+                            "name": "虾",
+                            "images": "shrimp",
+                            "describe": "用蟹笼捕获"
+                        },
+                        {
+                            "name": "蜗牛",
+                            "images": "snail",
+                            "describe": "用蟹笼捕获"
+                        },
+                        {
+                            "name": "",
+                            "images": "periwinkle",
+                            "describe": "玉黍螺 \t用蟹笼捕获"
+                        },
+                        {
+                            "name": "牡蛎",
+                            "images": "oyster",
+                            "describe": "用蟹笼捕获, 海滩 觅食"
+                        },
+                        {
+                            "name": "蛤",
+                            "images": "clam",
+                            "describe": "用蟹笼捕获, 海滩 觅食"
+                        }
+                    ]
+                },
+                {
+                    "name": "特色鱼类收集包",
+                    "image": "fish_feature",
+                    "reward": "小桶 (1)",
+                    "reward_images": "dish_o_the_sea",
+                    "offer_con": [
+                        {
+                            "name": "河豚",
+                            "images": "pufferfish",
+                            "describe": "海洋, 12:00 PM – 4:00 PM, 夏季."
+                        },
+                        {
+                            "name": "鬼鱼",
+                            "images": "ghostfish",
+                            "describe": "矿洞, 任意时间,所有季节, 也可能从幽灵身上掉落"
+                        },
+                        {
+                            "name": "沙鱼",
+                            "images": "sandfish",
+                            "describe": "沙漠的池塘, 6:00 AM – 8:00 PM, 所有季节"
+                        },
+                        {
+                            "name": "木跃鱼",
+                            "images": "woodskip",
+                            "describe": "秘密森林, 任意时间,所有季节"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "锅炉房",
+            "reward": "维修矿车",
+            "content": [
+                {
+                    "name": "铁匠收集包",
+                    "image": "boiler_iron",
+                    "reward": "熔炉 (1)",
+                    "reward_images": "furnace",
+                    "offer_con": [
+                        {
+                            "name": "铜锭",
+                            "images": "copper_bar",
+                            "describe": "将铜矿石放入熔炉"
+                        },
+                        {
+                            "name": "铁锭",
+                            "images": "iron_bar",
+                            "describe": "将铁矿石放入熔炉, 获得炼铁配方后打造"
+                        },
+                        {
+                            "name": "金锭",
+                            "images": "gold_bar",
+                            "describe": "将黄金矿石放入熔炉, 获得炼金配方后打造"
+                        }
+                    ]
+                },
+                {
+                    "name": "地质学家收集包",
+                    "image": "boiler_rocksy",
+                    "reward": "万象晶石 (5)",
+                    "reward_images": "omni_geode",
+                    "offer_con": [
+                        {
+                            "name": "石英",
+                            "images": "quartz",
+                            "describe": "在矿洞觅食（所有层）"
+                        },
+                        {
+                            "name": "地晶",
+                            "images": "earth_crystal",
+                            "describe": "在矿洞1-39层觅食, 晶洞, 在矿洞杀死道基（1-29层）"
+                        },
+                        {
+                            "name": "泪晶",
+                            "images": "frozen_tear",
+                            "describe": "在矿洞40-79层觅食, 冰封晶洞, 在矿洞杀死沙尘恶灵（40-80层）"
+                        },
+                        {
+                            "name": "火水晶",
+                            "images": "fire_quartz",
+                            "describe": "在矿洞80-120层觅食 , 巨大晶洞, 万象晶石"
+                        }
+                    ]
+                },
+                {
+                    "name": "冒险者收集包(4选2)",
+                    "image": "boiler_adventurer",
+                    "reward": "小型磁铁戒指 (1)",
+                    "reward_images": "small_magnet_ring",
+                    "offer_con": [
+                        {
+                            "name": "史莱姆泥 (99)",
+                            "images": "slime",
+                            "describe": "杀死史莱姆"
+                        },
+                        {
+                            "name": "蝙蝠翅膀 (10)",
+                            "images": "bat_wing",
+                            "describe": "在矿洞杀死蝙蝠"
+                        },
+                        {
+                            "name": "日光精华",
+                            "images": "solar_essence",
+                            "describe": "在矿洞杀死幽灵、乌贼娃或金属大头, 在头骨山洞杀死木乃伊"
+                        },
+                        {
+                            "name": "虚空精华",
+                            "images": "void_essence",
+                            "describe": "在矿洞杀死影子狂徒, 在头骨山洞巨蛇座"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "布告栏",
+            "reward": "友谊",
+            "content": [
+                {
+                    "name": "大厨收集包",
+                    "image": "bulletin_cook",
+                    "reward": "粉红蛋糕 (3)",
+                    "reward_images": "pink_cake",
+                    "offer_con": [
+                        {
+                            "name": "枫糖浆",
+                            "images": "maple_syrup",
+                            "describe": "将树液采集器放在枫树上"
+                        },
+                        {
+                            "name": "蕨菜",
+                            "images": "fiddlehead_fern",
+                            "describe": "夏季在秘密森林觅食"
+                        },
+                        {
+                            "name": "松露",
+                            "images": "truffle",
+                            "describe": "猪"
+                        },
+                        {
+                            "name": "罂粟",
+                            "images": "poppy",
+                            "describe": "夏季 农作物"
+                        },
+                        {
+                            "name": "生鱼寿司",
+                            "images": "maki_roll",
+                            "describe": "烹饪（食谱来源：酱料女皇, 星之果实餐吧)"
+                        },
+                        {
+                            "name": "煎鸡蛋",
+                            "images": "fried_egg",
+                            "describe": "烹饪"
+                        }
+                    ]
+                },
+                {
+                    "name": "染料收集包",
+                    "image": "bulletin_dye",
+                    "reward": "种子生产器 (1)",
+                    "reward_images": "seed_maker",
+                    "offer_con": [
+                        {
+                            "name": "红蘑菇",
+                            "images": "red_mushroom",
+                            "describe": "在矿洞觅食, 夏季或秋季在秘密森林觅食 , 农场的山洞（选择蘑菇洞）, 将树液采集器放在大蘑菇上"
+                        },
+                        {
+                            "name": "海胆",
+                            "images": "sea_urchin",
+                            "describe": "在海滩觅食（用300块木头修复海滩东边的断桥后）"
+                        },
+                        {
+                            "name": "向日葵",
+                            "images": "sunflower",
+                            "describe": "夏季 / 秋季 农作物"
+                        },
+                        {
+                            "name": "鸭毛",
+                            "images": "duck_feather",
+                            "describe": "鸭"
+                        },
+                        {
+                            "name": "海蓝宝石",
+                            "images": "aquamarine",
+                            "describe": "冰封晶洞, 矿洞中的箱子"
+                        },
+                        {
+                            "name": "红叶卷心菜",
+                            "images": "red_cabbage",
+                            "describe": "夏季 农作物（游戏从第二年开始才在皮埃尔的杂货店售卖红叶卷心菜种子）"
+                        }
+                    ]
+                },
+                {
+                    "name": "地质收集包",
+                    "image": "bulletin_study",
+                    "reward": "回收机 (1)",
+                    "reward_images": "recycling_machine",
+                    "offer_con": [
+                        {
+                            "name": "紫蘑菇",
+                            "images": "purple_mushroom",
+                            "describe": "矿洞, 农场的山洞（选择蘑菇洞）, 选择森林农场的玩家秋季在农场觅食"
+                        },
+                        {
+                            "name": "鹦鹉螺",
+                            "images": "nautilus_shell",
+                            "describe": "冬季在沙滩觅食（注意：这并非鹦鹉螺化石古物）"
+                        },
+                        {
+                            "name": "鲢鱼",
+                            "images": "chub",
+                            "describe": "山湖和河流, 所有季节"
+                        },
+                        {
+                            "name": "冰封晶洞",
+                            "images": "frozen_geode",
+                            "describe": "矿洞 Levels 40-79"
+                        }
+                    ]
+                },
+                {
+                    "name": "饲料收集包",
+                    "image": "bulletin_fodder",
+                    "reward": "取暖器 (1)",
+                    "reward_images": "heater",
+                    "offer_con": [
+                        {
+                            "name": "小麦 (10)",
+                            "images": "wheat",
+                            "describe": "夏季 / 秋季 农作物"
+                        },
+                        {
+                            "name": "干草 (10)",
+                            "images": "hay",
+                            "describe": "在玛妮的牧场购买, 建造筒仓后用镰刀割草收集"
+                        },
+                        {
+                            "name": "苹果 (3)",
+                            "images": "apple",
+                            "describe": "秋季的苹果树"
+                        }
+                    ]
+                },
+                {
+                    "name": "魔法师收集包",
+                    "image": "bulletin_wizard",
+                    "reward": "金锭 (5)",
+                    "reward_images": "gold_bar",
+                    "offer_con": [
+                        {
+                            "name": "橡树树脂",
+                            "images": "oak_resin",
+                            "describe": "将树液采集器放在橡树"
+                        },
+                        {
+                            "name": "果酒",
+                            "images": "wine",
+                            "describe": "小桶"
+                        },
+                        {
+                            "name": "兔子的脚",
+                            "images": "rabbit's_foot",
+                            "describe": "兔子, 在头骨山洞杀死巨蛇座(几率0.8%)"
+                        },
+                        {
+                            "name": "石榴",
+                            "images": "pomegranate",
+                            "describe": "秋季的石榴树, 农场的山洞（选择果蝠）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "地下室",
+            "reward": "修理汽车",
+            "content": [
+                {
+                    "name": "2500收集包",
+                    "image": "vault_2500",
+                    "reward": "巧克力蛋糕 (3)",
+                    "reward_images": "chocolate_cake",
+                    "offer_con": [
+                        {
+                            "name": "2,500g",
+                            "images": "gold",
+                            "describe": "交2500g"
+                        }
+                    ]
+                },
+                {
+                    "name": "5000收集包",
+                    "image": "vault_5000",
+                    "reward": "高级肥料 (30)",
+                    "reward_images": "quality_fertilizer",
+                    "offer_con": [
+                        {
+                            "name": "5,000g",
+                            "images": "gold",
+                            "describe": "交5000g"
+                        }
+                    ]
+                },
+                {
+                    "name": "10000收集包",
+                    "image": "vault_1000",
+                    "reward": "避雷针 (1)",
+                    "reward_images": "lightning_rod",
+                    "offer_con": [
+                        {
+                            "name": "10,000g",
+                            "images": "gold",
+                            "describe": "交10000g"
+                        }
+                    ]
+                },
+                {
+                    "name": "25000收集包",
+                    "image": "vault_25000",
+                    "reward": "宝石复制机 (1)",
+                    "reward_images": "crystalarium",
+                    "offer_con": [
+                        {
+                            "name": "2,5000g",
+                            "images": "gold",
+                            "describe": "交25000g"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

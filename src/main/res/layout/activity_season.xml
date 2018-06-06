@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_season"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -29,155 +30,141 @@
             android:textColor="#fff"
             android:textSize="20sp" />
     </android.support.v7.widget.Toolbar>
-
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/season_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_alignBottom="@id/view_zhanwei"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:outlineProvider="background"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/iv_season_menu_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/season_menu_add"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="@string/add"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/iv_season_menu_farm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_season_menu_farm_but"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/season_menu_farm"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="@string/crops"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/iv_season_menu_pick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_season_menu_pick_but"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/season_menu_pick"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="@string/season_pick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/iv_season_menu_fish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_season_menu_fish_but"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/season_menu_fish"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="@string/fish"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/iv_season_menu_remove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/season_menu_remove"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="@string/gone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ll_season_min_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/oval_shap"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/season_menu"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:outlineProvider="background"
+        android:src="@drawable/season_menu_add"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:orientation="vertical"/>
+    <View
+        android:id="@+id/view_zhanwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:id="@+id/sf_season"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/season_toolbar">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:orientation="vertical">
-
-            <com.chen.stardewvalley.view.CalendarView
-                android:id="@+id/season_calendar"
-                android:layout_width="match_parent"
-                android:layout_height="270dp"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp" />
-
-            <RelativeLayout
-                android:id="@+id/ll_season_festival"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="#c8e6c9">
-
-                <ImageView
-                    android:id="@+id/ex_arrow_up"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/up_arrow"
-                    android:visibility="gone"/>
-
-                <ImageView
-                    android:id="@+id/ex_arrow_down"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/down_arrow"
-                     />
-
-                <TextView
-                    android:id="@+id/ex_tv_titles"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="50dp"
-                    android:gravity="center_vertical"
-                    android:text="@string/festival"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-            <com.chen.stardewvalley.view.ExcelView
-                android:id="@+id/season_excel_view_1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp">
-
-            </com.chen.stardewvalley.view.ExcelView>
-            <RelativeLayout
-                android:id="@+id/ll_season_birthday"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="#c8e6c9">
-
-                <ImageView
-                    android:id="@+id/ex_arrow_up_birthday"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/up_arrow"
-                    android:visibility="gone"/>
-
-                <ImageView
-                    android:id="@+id/ex_arrow_down_birthday"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/down_arrow"
-                    />
-
-                <TextView
-                    android:id="@+id/ex_tv_titles_birthday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="50dp"
-                    android:gravity="center_vertical"
-                    android:text="@string/birthday"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-            <com.chen.stardewvalley.view.ExcelView
-                android:id="@+id/season_excel_view_2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp">
-
-            </com.chen.stardewvalley.view.ExcelView>
-            <RelativeLayout
-                android:id="@+id/ll_season_fram"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="#c8e6c9">
-
-                <ImageView
-                    android:id="@+id/ex_arrow_up_fram"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/up_arrow"
-                    android:visibility="gone"/>
-
-                <ImageView
-                    android:id="@+id/ex_arrow_down_fram"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/down_arrow"
-                    />
-
-                <TextView
-                    android:id="@+id/ex_tv_titles_fram"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="50dp"
-                    android:gravity="center_vertical"
-                    android:text="@string/birthday"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_below="@id/season_toolbar"
+        />
 </RelativeLayout>

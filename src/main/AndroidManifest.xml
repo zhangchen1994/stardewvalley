@@ -24,6 +24,7 @@
         <activity android:name=".activity.FarmActivity"/>
         <activity android:name=".activity.ToolsActivity"/>
         <activity android:name=".activity.SeasonActivity"/>
+        <activity android:name=".activity.OfferActivity"/>
     </application>
     <uses-permission  android:name="android.permission.INTERNET"/>
 </manifest>

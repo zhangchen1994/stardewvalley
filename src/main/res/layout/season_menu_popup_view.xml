@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@drawable/oval_shap"
+    android:elevation="5dp"
+    android:translationZ="5dp"
+    android:outlineProvider="background">
+    <ImageView
+        android:id="@+id/iv_season_menu_min"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/season_menu_add"/>
+</RelativeLayout>

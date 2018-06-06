@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+    <com.chen.stardewvalley.view.ExcelView
+        android:id="@+id/ex_dial_season"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.chen.stardewvalley.view.ExcelView>
+    <EditText
+        android:id="@+id/ed_dial_season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/intput"/>
+</LinearLayout>

@@ -3,12 +3,17 @@ package com.chen.stardewvalley.activity;
 import android.content.res.Resources;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.session.PlaybackState;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.BaseExpandableListAdapter;
@@ -20,10 +25,16 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.chen.stardewvalley.R;
+import com.chen.stardewvalley.SeasonMenuPopupWindow;
 import com.chen.stardewvalley.domain.CalendarBean;
 import com.chen.stardewvalley.domain.PeopleBean;
+import com.chen.stardewvalley.fragment.SeasonFishFragment;
+import com.chen.stardewvalley.fragment.SeasonFramFragment;
+import com.chen.stardewvalley.fragment.SeasonMainFragment;
+import com.chen.stardewvalley.fragment.SeasonPickFragment;
 import com.chen.stardewvalley.utils.DisplayUtils;
 import com.chen.stardewvalley.utils.GetImageIdByName;
 import com.chen.stardewvalley.utils.JsonParse;
@@ -38,34 +49,38 @@ import java.util.ArrayList;
  */
 
 public class SeasonActivity extends AppCompatActivity{
+    public final static int SEASON_MAIN = 0;
+    public final static int SEASON_FRAM = 1;
+    public final static int SEASON_PICK = 2;
+    public final static int SEASON_FISH = 3;
     private Toolbar toolbar;
     private TextView toobarTv;
+    private SeasonMainFragment mainFragment;
+    private SeasonFramFragment framFragment;
+    private SeasonPickFragment pickFragment;
+    private SeasonFishFragment fishFragment;
+    private FragmentManager fragmentManager;
     private int position;
-    private PeopleBean peopleBean;
-    private boolean isFestival = true;
-    private RelativeLayout rlFestivalTitle;
-    private ExcelView season_excel_view_1;
-    private RelativeLayout rlBirthdayTitle;
-    private ExcelView season_excel_view_2;
-    private int[] festivalTitle = new int[]{
-            R.string.image,
-            R.string.tools_name,
-            R.string.calendar_day
-    };
-    private int[] birthdayTitle = new int[]{
-            R.string.image,
-            R.string.tools_name,
-            R.string.like,
-            R.string.calendar_day
-    };
+    private LinearLayout llSeasonMenu;
+    private LinearLayout menuAdd;
+    private LinearLayout menuFram;
+    private LinearLayout menuPick;
+    private LinearLayout menuFish;
+    private LinearLayout menuRemove;
+    private ImageView ivFram;
+    private ImageView ivPick;
+    private ImageView ivFish;
+    private ImageView llSeasonMinMenu;
+    private boolean isAnimation = false;
+    private int fragmentStatus = 0;
+    private SeasonMenuPopupWindow mPopupWindow;
+    private CalendarBean calendarBean;
     private int[] toolBarTitle = new int[]{
             R.string.spring,
             R.string.summer,
             R.string.autumn,
             R.string.winter
     };
-    private CalendarBean calendarBean;
-    private CalendarView calendarView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,138 +88,148 @@ public class SeasonActivity extends AppCompatActivity{
         position = getIntent().getIntExtra("position",0);
         setToolBar();
 
-        calendarView = findViewById(R.id.season_calendar);
-        rlFestivalTitle = findViewById(R.id.ll_season_festival);
-        season_excel_view_1 = findViewById(R.id.season_excel_view_1);
-        rlBirthdayTitle = findViewById(R.id.ll_season_birthday);
-        season_excel_view_2 = findViewById(R.id.season_excel_view_2);
-
+        llSeasonMenu = findViewById(R.id.season_menu);
+        menuAdd = findViewById(R.id.iv_season_menu_add);
+        menuFram = findViewById(R.id.iv_season_menu_farm);
+        menuPick = findViewById(R.id.iv_season_menu_pick);
+        menuFish = findViewById(R.id.iv_season_menu_fish);
+        menuRemove = findViewById(R.id.iv_season_menu_remove);
+        ivFram = findViewById(R.id.iv_season_menu_farm_but);
+        ivPick = findViewById(R.id.iv_season_menu_pick_but);
+        ivFish = findViewById(R.id.iv_season_menu_fish_but);
+        llSeasonMinMenu = findViewById(R.id.ll_season_min_menu);
+        mPopupWindow = SeasonMenuPopupWindow.getInstance(this);
         calendarBean = JsonParse.returnCalendar();
-        peopleBean = JsonParse.returnPeople();
-        calendarView.setCalendarTitle(calendarBean.links.get(position).name);
-        calendarView.setDayList(calendarBean.links.get(position).month);
 
-        setCalendarViewListener();
-        setExcelView(season_excel_view_1);
-        setExcelView(season_excel_view_2);
-        setRlClickListener();
-    }
+        initFragment();
 
-    private void setRlClickListener() {
-        rlFestivalTitle.setOnClickListener(new View.OnClickListener() {
+        menuRemove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ImageView imageViewUp = rlFestivalTitle.findViewById(R.id.ex_arrow_up);
-                ImageView imageViewDown = rlFestivalTitle.findViewById(R.id.ex_arrow_down);
-                if(season_excel_view_1.getVisibility() == View.VISIBLE){
-                    season_excel_view_1.setVisibility(View.GONE);
-                    imageViewUp.setVisibility(View.VISIBLE);
-                    imageViewDown.setVisibility(View.GONE);
-                }else{
-                    season_excel_view_1.setVisibility(View.VISIBLE);
-                    imageViewUp.setVisibility(View.GONE);
-                    imageViewDown.setVisibility(View.VISIBLE);
-                }
+                llSeasonMenu.setVisibility(View.INVISIBLE);
+                setMenuGoneAnimation();
             }
         });
-        rlBirthdayTitle.setOnClickListener(new View.OnClickListener() {
+        menuAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ImageView imageViewUp = rlBirthdayTitle.findViewById(R.id.ex_arrow_up_birthday);
-                ImageView imageViewDown = rlBirthdayTitle.findViewById(R.id.ex_arrow_down_birthday);
-                if(season_excel_view_2.getVisibility() == View.VISIBLE){
-                    season_excel_view_2.setVisibility(View.GONE);
-                    imageViewUp.setVisibility(View.VISIBLE);
-                    imageViewDown.setVisibility(View.GONE);
-                }else{
-                    season_excel_view_2.setVisibility(View.VISIBLE);
-                    imageViewUp.setVisibility(View.GONE);
-                    imageViewDown.setVisibility(View.VISIBLE);
-                }
+                mainFragment.setAddDialog();
             }
         });
-    }
-
-    private void setCalendarViewListener() {
-        calendarView.setOnCalendarViewClickListener(new CalendarView.OnCalendarViewClickListener() {
+        menuFram.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(calendarBean.links.get(position).month.get(i).festival == ""){
+            public void onClick(View view) {
 
-                }else{
-
+                if(calendarBean.links.get(position).fram_2.size() == 0){
+                    Toast.makeText(SeasonActivity.this,R.string.winter_fram,Toast.LENGTH_SHORT)
+                            .show();
+                    return;
                 }
-
-                if(calendarBean.links.get(position).month.get(i).birthday == ""){
-
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",position);
+                framFragment.setArguments(bundle);
+                if(fragmentStatus != SEASON_MAIN){
+                    fragmentStatus = SEASON_FRAM;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,R.anim.animator_up2
+                    ).replace(R.id.sf_season, framFragment).commit();
                 }else{
-
+                    fragmentStatus = SEASON_FRAM;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,0
+                    ).add(R.id.sf_season, framFragment).commit();
                 }
+                setMenuStatus();
+            }
+        });
+        menuPick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",position);
+                pickFragment.setArguments(bundle);
+                if(fragmentStatus != SEASON_MAIN){
+                    fragmentStatus = SEASON_PICK;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,R.anim.animator_up2
+                    ).replace(R.id.sf_season, pickFragment).commit();
+                }else{
+                    fragmentStatus = SEASON_PICK;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,0
+                    ).add(R.id.sf_season, pickFragment).commit();
+                }
+                setMenuStatus();
+            }
+        });
+        menuFish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",position);
+                fishFragment.setArguments(bundle);
+                if(fragmentStatus != SEASON_MAIN){
+                    fragmentStatus = SEASON_FISH;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,R.anim.animator_up2
+                    ).replace(R.id.sf_season, fishFragment).commit();
+                }else{
+                    fragmentStatus = SEASON_FISH;
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.animator_up,0
+                    ).add(R.id.sf_season, fishFragment).commit();
+                }
+                setMenuStatus();
             }
         });
     }
-
-    private void setExcelView(ExcelView excelView){
-        int id = excelView.getId();
-        switch (id){
-            case R.id.season_excel_view_1:
-                excelView.setTitleList(festivalTitle);
-                excelView.setWeigthList(new int[]{1,2,2});
-                excelView.setLayouttTitle();
-                ArrayList<String> list1 = new ArrayList<>();
-                ArrayList<String> list2 = new ArrayList<>();
-                ArrayList<String> list3 = new ArrayList<>();
-                for(int i2=0;i2<calendarBean.links.get(position).festival.size();i2++){
-                    list1.add(calendarBean.links.get(position).festival.get(i2).images);
-                    list2.add(calendarBean.links.get(position).festival.get(i2).name);
-                    list3.add(calendarBean.links.get(position).festival.get(i2).data);
-                }
-                ArrayList<ArrayList<String>> lists = new ArrayList<>();
-                lists.add(list1);
-                lists.add(list2);
-                lists.add(list3);
-
-                excelView.setDataList(lists);
-                excelView.setAdapter();
-                excelView.setListHeigh();
-                break;
-            case R.id.season_excel_view_2:
-                excelView.setTitleList(birthdayTitle);
-                excelView.setWeigthList(new int[]{1,1,2,1});
-                excelView.setLayouttTitle();
-                ArrayList<String> list2_1 = new ArrayList<>();
-                ArrayList<String> list2_2 = new ArrayList<>();
-                ArrayList<String> list2_3 = new ArrayList<>();
-                ArrayList<String> list2_4 = new ArrayList<>();
-                for(int i3=0;i3<calendarBean.links.get(position).birthday.size();i3++){
-                    int num = getListPosition(calendarBean.links.get(position).birthday.get(i3).name);
-
-                    list2_1.add(PeopleNameToEn.getNameEn(peopleBean.links.get(num).name)
-                    +"_icon");
-                    list2_2.add(peopleBean.links.get(num).name);
-                    StringBuffer stringBuffer = new StringBuffer();
-                    for(int k=0;k<peopleBean.links.get(num).like.size();k++){
-                        if(k != peopleBean.links.get(num).like.size()-1){
-                            stringBuffer.append(peopleBean.links.get(num).like.get(k).name+";");
-                        }else{
-                            stringBuffer.append(peopleBean.links.get(num).like.get(k).name);
-                        }
-                    }
-                    list2_3.add(stringBuffer.toString());
-                    list2_4.add(calendarBean.links.get(position).birthday.get(i3).data);
-                }
-                ArrayList<ArrayList<String>> lists2 = new ArrayList<>();
-                lists2.add(list2_1);
-                lists2.add(list2_2);
-                lists2.add(list2_3);
-                lists2.add(list2_4);
-
-                excelView.setDataList(lists2);
-                excelView.setAdapter();
-                excelView.setListHeigh();
-                break;
+    private void setMenuStatus(){
+        if(fragmentStatus == SEASON_MAIN){
+            menuAdd.setClickable(true);
+            menuFram.setClickable(true);
+            menuPick.setClickable(true);
+            menuFish.setClickable(true);
+            ivFram.setBackgroundResource(R.drawable.season_menu_farm);
+            ivFish.setBackgroundResource(R.drawable.season_menu_fish);
+            ivPick.setBackgroundResource(R.drawable.season_menu_pick);
+        }else if(fragmentStatus == SEASON_FRAM){
+            menuAdd.setClickable(false);
+            menuFram.setClickable(false);
+            menuPick.setClickable(true);
+            menuFish.setClickable(true);
+            ivFram.setBackgroundResource(R.drawable.season_menu_farm_click);
+            ivFish.setBackgroundResource(R.drawable.season_menu_fish);
+            ivPick.setBackgroundResource(R.drawable.season_menu_pick);
+        }else if(fragmentStatus == SEASON_PICK){
+            menuAdd.setClickable(false);
+            menuFram.setClickable(true);
+            menuPick.setClickable(false);
+            menuFish.setClickable(true);
+            ivFram.setBackgroundResource(R.drawable.season_menu_farm);
+            ivFish.setBackgroundResource(R.drawable.season_menu_fish);
+            ivPick.setBackgroundResource(R.drawable.season_menu_pick_click);
+        }else if(fragmentStatus == SEASON_FISH){
+            menuAdd.setClickable(false);
+            menuFram.setClickable(true);
+            menuPick.setClickable(true);
+            menuFish.setClickable(false);
+            ivFram.setBackgroundResource(R.drawable.season_menu_farm);
+            ivFish.setBackgroundResource(R.drawable.season_menu_fish_click);
+            ivPick.setBackgroundResource(R.drawable.season_menu_pick);
         }
-
+    }
+    private void initFragment(){
+        fragmentStatus = SEASON_MAIN;
+        mainFragment = new SeasonMainFragment();
+        framFragment = new SeasonFramFragment();
+        pickFragment = new SeasonPickFragment();
+        fishFragment = new SeasonFishFragment();
+        fragmentManager = getSupportFragmentManager();
+        Bundle bundle = new Bundle();
+        bundle.putInt("position",position);
+        mainFragment.setArguments(bundle);
+        fragmentManager.beginTransaction().replace(R.id.sf_season, mainFragment).commit();
+        setMenuStatus();
     }
     private void setToolBar(){
         toolbar = findViewById(R.id.season_toolbar);
@@ -213,14 +238,69 @@ public class SeasonActivity extends AppCompatActivity{
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toobarTv.setText(toolBarTitle[position]);
     }
-   private int getListPosition(String name){
-       int num = 0;
-       for(PeopleBean.PeoPle peoPle : peopleBean.links){
-           if(peoPle.name.equals(name)){
-               break;
-           }
-           num++;
-       }
-       return num;
-   }
+    private void setMenuGoneAnimation() {
+        TranslateAnimation translateAnimation = new TranslateAnimation(1,0,1,1,
+                Animation.RELATIVE_TO_SELF, 0f,
+                Animation.RELATIVE_TO_SELF, 0f);
+        translateAnimation.setDuration(500);
+        llSeasonMenu.setAnimation(translateAnimation);
+        translateAnimation.start();
+        translateAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                menuRemove.setClickable(false);
+                isAnimation = false;
+                mPopupWindow.initPopupWindow();
+                mPopupWindow.showPopupWindow(llSeasonMinMenu);
+
+                mPopupWindow.setOnMenuClickListener(new SeasonMenuPopupWindow.OnMenuClickListener() {
+                    @Override
+                    public void onClick() {
+                        if(isAnimation){
+                            menuRemove.setClickable(true);
+                            mPopupWindow.popupWindow.dismiss();
+                            llSeasonMenu.setVisibility(View.VISIBLE);
+                            llSeasonMenu.setElevation(5);
+                            llSeasonMenu.setTranslationZ(5);
+                        }
+                    }
+                });
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                isAnimation = true;
+                llSeasonMenu.setVisibility(View.INVISIBLE);
+                llSeasonMenu.setElevation(0);
+                llSeasonMenu.setTranslationZ(0);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SeasonMenuPopupWindow.removeSeasonMenuPopupWindow();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(fragmentStatus != SEASON_MAIN){
+            fragmentStatus = SEASON_MAIN;
+            Bundle bundle = new Bundle();
+            bundle.putInt("position",position);
+            mainFragment.setArguments(bundle);
+            fragmentManager.beginTransaction().setCustomAnimations(
+                    0,R.anim.animator_down
+            ).replace(R.id.sf_season, mainFragment).commit();
+            setMenuStatus();
+        }else{
+            finish();
+        }
+    }
 }

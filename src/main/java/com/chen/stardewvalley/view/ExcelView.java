@@ -168,6 +168,7 @@ public class ExcelView extends LinearLayout{
             View listItem = listAdapter.getView(i, null, listView);
             //计算子项View的宽高，注意listview所在的要是linearlayout布局
             listItem.measure(widthSpec, 0);
+
             //统计所有子项的总高度
             totalHeight += listItem.getMeasuredHeight();
         }

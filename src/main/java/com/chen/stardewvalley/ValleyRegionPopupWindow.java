@@ -36,6 +36,9 @@ public class ValleyRegionPopupWindow {
         }
         return valleyRegionPopupWindow;
     }
+    public static void removeValleyRegionPopupWindow(){
+        valleyRegionPopupWindow = null;
+    }
     android.os.Handler handler = new android.os.Handler(){
         @Override
         public void handleMessage(Message msg) {

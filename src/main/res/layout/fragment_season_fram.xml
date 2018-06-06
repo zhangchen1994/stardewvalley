@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+    <include layout="@layout/season_progressbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/season_fram_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#c8e6c9"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/harvest"
+                android:textColor="#000"
+                />
+
+            <com.chen.stardewvalley.view.ExcelView
+                android:id="@+id/ex_season_fram_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+            </com.chen.stardewvalley.view.ExcelView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#c8e6c9"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/harvests"
+                android:textColor="#000" />
+
+            <com.chen.stardewvalley.view.ExcelView
+                android:id="@+id/ex_season_fram_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+            </com.chen.stardewvalley.view.ExcelView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

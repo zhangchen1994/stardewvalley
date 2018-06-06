@@ -81,4 +81,27 @@
     <string name="calendar_day">日期</string>
     <string name="day">日</string>
     <string name="festival">节日</string>
+    <string name="add">添加</string>
+    <string name="gone">隐藏</string>
+    <string name="crops">作物</string>
+    <string name="fish">鱼类</string>
+    <string name="things">事件</string>
+    <string name="things_details">事件详情</string>
+    <string name="ok">确认</string>
+    <string name="delete">删除</string>
+    <string name="intput">请输入</string>
+    <string name="season_tishi">未选定日期</string>
+    <string name="season_pick">采摘</string>
+    <string name="harvest">一次收获作物</string>
+    <string name="harvests">多次收获作物</string>
+    <string name="seed_price">种子价格</string>
+    <string name="grow_up_day">成长天数</string>
+    <string name="fram_times">单季最多收获次数</string>
+    <string name="fram_price">售价</string>
+    <string name="grow_up_days">再次收获天数</string>
+    <string name="loading">加载中...</string>
+    <string name="fish_time">钓鱼时间</string>
+    <string name="weather">天气</string>
+    <string name="season">季节</string>
+    <string name="winter_fram">无冬季作物</string>
 </resources>

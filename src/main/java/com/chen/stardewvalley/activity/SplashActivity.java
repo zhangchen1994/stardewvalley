@@ -59,6 +59,7 @@ public class SplashActivity extends AppCompatActivity {
                 JsonParse.jsonValley(SplashActivity.this);
                 JsonParse.jsonPeople(SplashActivity.this);
                 JsonParse.jsonCalendar(SplashActivity.this);
+                JsonParse.jsonOffer(SplashActivity.this);
                 loadFinish = true;
             }
         }.start();
