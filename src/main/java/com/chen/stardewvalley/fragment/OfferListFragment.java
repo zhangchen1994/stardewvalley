@@ -7,11 +7,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.domain.OfferBean;
@@ -43,6 +45,13 @@ public class OfferListFragment extends Fragment{
     private ImageButton ivRight;
 
     private OfferBean offerBean;
+    private OfferClickListenter listenter;
+    public interface OfferClickListenter{
+        public void viewClick(int position,int i);
+    }
+    public void setOfferClickListenter(OfferClickListenter listenter){
+        this.listenter = listenter;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -91,6 +100,7 @@ public class OfferListFragment extends Fragment{
             tvTile.setText(offerBean.links.get(position).name);
             tvReward.setText(offerBean.links.get(position).reward);
             ArrayList<TextView> tvList = new ArrayList<>();
+            ArrayList<ImageView> ivList = new ArrayList<>();
             tvList.add(tvOffer_1);
             tvList.add(tvOffer_2);
             tvList.add(tvOffer_3);
@@ -103,18 +113,24 @@ public class OfferListFragment extends Fragment{
             tvOffer_4.setVisibility(View.GONE);
             tvOffer_5.setVisibility(View.GONE);
             tvOffer_6.setVisibility(View.GONE);
+            ivList.add(ivRed);
+            ivList.add(ivBlue);
+            ivList.add(ivCyan);
+            ivList.add(ivPurple);
+            ivList.add(ivYellow);
+            ivList.add(ivOrange);
             ivRed.setBackgroundResource(R.drawable.offer_red_animation_list);
-            ((AnimationDrawable) ivRed.getBackground()).start();
+            //((AnimationDrawable) ivRed.getBackground()).start();
             ivBlue.setBackgroundResource(R.drawable.offer_blue_animation_list);
-            ((AnimationDrawable) ivBlue.getBackground()).start();
+            //((AnimationDrawable) ivBlue.getBackground()).start();
             ivCyan.setBackgroundResource(R.drawable.offer_cyan_animation_list);
-            ((AnimationDrawable) ivCyan.getBackground()).start();
+            //((AnimationDrawable) ivCyan.getBackground()).start();
             ivPurple.setBackgroundResource(R.drawable.offer_purple_animation_list);
-            ((AnimationDrawable) ivPurple.getBackground()).start();
+            //((AnimationDrawable) ivPurple.getBackground()).start();
             ivYellow.setBackgroundResource(R.drawable.offer_yellow_animation_list);
-            ((AnimationDrawable) ivYellow.getBackground()).start();
+            //((AnimationDrawable) ivYellow.getBackground()).start();
             ivOrange.setBackgroundResource(R.drawable.offer_orange_animation_list);
-            ((AnimationDrawable) ivOrange.getBackground()).start();
+            //((AnimationDrawable) ivOrange.getBackground()).start();
 
             switch (offerBean.links.get(position).content.size()){
                 case 3:
@@ -181,6 +197,7 @@ public class OfferListFragment extends Fragment{
                     viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
                 }
             });
+            setIvOnclick(ivList,position);
             container.addView(v);
             return v;
         }
@@ -188,6 +205,29 @@ public class OfferListFragment extends Fragment{
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView((View) object);
+        }
+    }
+    private void setIvOnclick(ArrayList<ImageView> list, final int position){
+        int num = offerBean.links.get(position).content.size();
+        for(int i=0;i<num;i++){
+            final int finalI = i;
+            list.get(i).setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+                    int action = motionEvent.getAction();
+                    switch (action){
+                        case MotionEvent.ACTION_DOWN:
+                            ((AnimationDrawable) view.getBackground()).start();
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            ((AnimationDrawable) view.getBackground()).selectDrawable(0);
+                            ((AnimationDrawable) view.getBackground()).stop();
+                            listenter.viewClick(position,finalI);
+                            break;
+                    }
+                    return true;
+                }
+            });
         }
     }
 }

@@ -104,4 +104,6 @@
     <string name="weather">天气</string>
     <string name="season">季节</string>
     <string name="winter_fram">无冬季作物</string>
+    <string name="reward">奖励</string>
+    <string name="details">详情</string>
 </resources>

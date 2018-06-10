@@ -141,7 +141,7 @@
                 },
                 {
                     "name": "异域情调觅食收集包(9选5)",
-                    "image": "crafts_build",
+                    "image": "crafts_pick",
                     "reward": "秋日恩赐 (5)",
                     "reward_images": "autumn_bounty",
                     "offer_con": [
@@ -295,17 +295,17 @@
                         },
                         {
                             "name": "甜瓜(5)",
-                            "images": "melongold",
+                            "images": "melon",
                             "describe": "夏季的金星品质作物"
                         },
                         {
                             "name": "南瓜(5)",
-                            "images": "pumpkingold",
+                            "images": "pumpkin",
                             "describe": "秋季的金星品质作物"
                         },
                         {
                             "name": "玉米(5)",
-                            "images": "corngold",
+                            "images": "corn",
                             "describe": "夏季 / 秋季的金星品质作物"
                         }
                     ]
@@ -332,9 +332,9 @@
                             "describe": "鸡"
                         },
                         {
-                            "name": "",
+                            "name": "大瓶羊奶",
                             "images": "large_goat_milk",
-                            "describe": "大瓶羊奶 \t山羊"
+                            "describe": "山羊"
                         },
                         {
                             "name": "动物毛",
@@ -431,22 +431,22 @@
                         {
                             "name": "太阳鱼",
                             "images": "sunfish",
-                            "describe": "河流, 6:00 AM – 7:00 PM, 春季和夏季."
+                            "describe": "河流, 6:00 AM – 7:00 PM, 春季和夏季,"
                         },
                         {
                             "name": "鲶鱼",
                             "images": "catfish",
-                            "describe": "河流, 任意时间, 春季和秋季, 夏季的秘密森林池塘。仅在雨天出现。"
+                            "describe": "河流, 任意时间, 春季和秋季, 夏季的秘密森林池塘,仅在雨天出现。"
                         },
                         {
                             "name": "西鲱",
                             "images": "shad",
-                            "describe": "河流, 任意时间, 春季、夏季和秋季。仅在雨天出现。"
+                            "describe": "河流, 任意时间, 春季、夏季和秋季,仅在雨天出现。"
                         },
                         {
                             "name": "虎纹鳟鱼",
                             "images": "tiger_trout",
-                            "describe": "河流, 6:00 AM – 7:00 PM, 秋季和冬季."
+                            "describe": "河流, 6:00 AM – 7:00 PM, 秋季和冬季,"
                         }
                     ]
                 },
@@ -459,22 +459,22 @@
                         {
                             "name": "大嘴鲈鱼",
                             "images": "largemouth_bass",
-                            "describe": "湖泊, 6:00 AM – 7:00 PM, 所有季节"
+                            "describe": "湖泊, 6:00 AM – 7:00 PM, 所有季节,"
                         },
                         {
                             "name": "鲤鱼",
                             "images": "carp",
-                            "describe": "湖泊, 任意时间, 春季、夏季和秋季."
+                            "describe": "湖泊, 任意时间, 春季、夏季和秋季,"
                         },
                         {
                             "name": "大头鱼",
                             "images": "bullhead",
-                            "describe": "湖泊, 任意时间, 所有季节"
+                            "describe": "湖泊, 任意时间, 所有季节,"
                         },
                         {
                             "name": "鲟鱼",
                             "images": "sturgeon",
-                            "describe": "湖泊, 6:00 AM – 7:00 PM , 夏季和冬季."
+                            "describe": "湖泊, 6:00 AM – 7:00 PM , 夏季和冬季,"
                         }
                     ]
                 },
@@ -487,27 +487,27 @@
                         {
                             "name": "沙丁鱼",
                             "images": "sardine",
-                            "describe": "海洋, 6:00 AM – 7:00 PM, 春季、秋季和冬季."
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 春季、秋季和冬季,"
                         },
                         {
                             "name": "金枪鱼",
                             "images": "tuna",
-                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和冬季."
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和冬季,"
                         },
                         {
                             "name": "红鲷鱼",
                             "images": "red_snapper",
-                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和秋季。仅在雨天出现。"
+                            "describe": "海洋, 6:00 AM – 7:00 PM, 夏季和秋季,仅在雨天出现。"
                         },
                         {
                             "name": "罗非鱼",
                             "images": "tilapia",
-                            "describe": "海洋, 6:00 AM – 2:00 PM, 夏季和秋季."
+                            "describe": "海洋, 6:00 AM – 2:00 PM, 夏季和秋季,"
                         }
                     ]
                 },
                 {
-                    "name": "夜间垂钓收集包",
+                    "name": "夜间钓鱼收集包",
                     "image": "fish_night",
                     "reward": "小型光辉戒指 (1)",
                     "reward_images": "small_glow_ring",
@@ -515,17 +515,17 @@
                         {
                             "name": "大眼鱼",
                             "images": "walleye",
-                            "describe": "河流, 12:00 PM – 2:00 AM, 秋季。仅在雨天出现。"
+                            "describe": "河流, 12:00 PM – 2:00 AM, 秋季,仅在雨天出现。"
                         },
                         {
                             "name": "鲷鱼",
                             "images": "bream",
-                            "describe": "河流, 6:00 PM – 2:00 AM, 所有季节"
+                            "describe": "河流, 6:00 PM – 2:00 AM, 所有季节,"
                         },
                         {
                             "name": "鳗鱼",
                             "images": "eel",
-                            "describe": "海洋, 4:00 PM – 2:00 AM, 春季和秋季。仅在雨天出现。"
+                            "describe": "海洋, 4:00 PM – 2:00 AM, 春季和秋季,仅在雨天出现。"
                         }
                     ]
                 },
@@ -571,9 +571,9 @@
                             "describe": "用蟹笼捕获"
                         },
                         {
-                            "name": "",
+                            "name": "玉黍螺",
                             "images": "periwinkle",
-                            "describe": "玉黍螺 \t用蟹笼捕获"
+                            "describe": "用蟹笼捕获"
                         },
                         {
                             "name": "牡蛎",
@@ -596,22 +596,22 @@
                         {
                             "name": "河豚",
                             "images": "pufferfish",
-                            "describe": "海洋, 12:00 PM – 4:00 PM, 夏季."
+                            "describe": "海洋, 12:00 PM – 4:00 PM, 夏季,"
                         },
                         {
                             "name": "鬼鱼",
                             "images": "ghostfish",
-                            "describe": "矿洞, 任意时间,所有季节, 也可能从幽灵身上掉落"
+                            "describe": "矿洞, 任意时间,所有季节, 也可能从幽灵身上掉落,"
                         },
                         {
                             "name": "沙鱼",
                             "images": "sandfish",
-                            "describe": "沙漠的池塘, 6:00 AM – 8:00 PM, 所有季节"
+                            "describe": "沙漠的池塘, 6:00 AM – 8:00 PM, 所有季节,"
                         },
                         {
                             "name": "木跃鱼",
                             "images": "woodskip",
-                            "describe": "秘密森林, 任意时间,所有季节"
+                            "describe": "秘密森林, 任意时间,所有季节,"
                         }
                     ]
                 }
@@ -851,7 +851,7 @@
                         },
                         {
                             "name": "兔子的脚",
-                            "images": "rabbit's_foot",
+                            "images": "rabbit_foot",
                             "describe": "兔子, 在头骨山洞杀死巨蛇座(几率0.8%)"
                         },
                         {

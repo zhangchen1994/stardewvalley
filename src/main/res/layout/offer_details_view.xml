@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_offer_details_title"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/crafts_winter" />
+
+        <TextView
+            android:id="@+id/tv_offer_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_below="@id/iv_offer_details_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/offer_text_background"
+            android:gravity="center"
+            android:text="春季觅食收集包"
+            android:textColor="#ca8000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_offer_details_select"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_below="@id/iv_offer_details_title"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_offer_details_title"
+            android:gravity="center"
+            android:textColor="#ca8000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_offer_details_content"
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tv_offer_details_title"
+            android:layout_margin="20dp"
+            android:background="@drawable/offer_content_background"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <GridView
+                android:id="@+id/gv_offer_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="0dp"
+                android:numColumns="6"
+                android:verticalSpacing="0dp">
+
+            </GridView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_reward_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/ll_offer_details_content"
+            android:background="#c8e6c9"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/reward"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/ll_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_reward_title"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_offer_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/seed_maker" />
+
+            <TextView
+                android:id="@+id/tv_offer_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="种子生成器"
+                android:textColor="#ca8000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/ll_reward"
+            android:background="#c8e6c9"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/details"
+            android:textColor="#000" />
+
+        <com.chen.stardewvalley.view.ExcelView
+            android:id="@+id/ex_offer_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/tv_details_title">
+
+        </com.chen.stardewvalley.view.ExcelView>
+    </RelativeLayout>
+</ScrollView>
