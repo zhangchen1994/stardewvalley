@@ -25,6 +25,7 @@ import com.chen.stardewvalley.HousePopupWindow;
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.db.HouseDb;
 import com.chen.stardewvalley.domain.NewsBean;
+import com.chen.stardewvalley.utils.DarwerLayoutUtils;
 import com.chen.stardewvalley.utils.SpUtils;
 import com.chen.stardewvalley.utils.AppStringUtils;
 import com.scwang.smartrefresh.header.DropBoxHeader;
@@ -104,12 +105,8 @@ public class NewsActivity extends AppCompatActivity{
 
         lvNews.setAdapter(myAdapter);
         setRefash();
-        ivMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawerLayout.openDrawer(Gravity.START);
-            }
-        });
+        DarwerLayoutUtils.setDarewrClick(ivMenu,drawerLayout);
+        DarwerLayoutUtils.setNavigationViewMenu(drawerLayout,this);
         lvNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

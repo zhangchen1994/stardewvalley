@@ -106,4 +106,19 @@
     <string name="winter_fram">无冬季作物</string>
     <string name="reward">奖励</string>
     <string name="details">详情</string>
+    <string name="tree_child">树苗</string>
+    <string name="leave_1">阶段1</string>
+    <string name="leave_2">阶段2</string>
+    <string name="leave_3">阶段3</string>
+    <string name="leave_4">阶段4</string>
+    <string name="leave_5">春/夏/秋/冬</string>
+    <string name="harvest_title">收获</string>
+    <string name="time">时间</string>
+    <string name="work_tools">工匠物品</string>
+    <string name="other">其他</string>
+    <string name="cave_1">蝙蝠洞</string>
+    <string name="cave_2">蘑菇洞</string>
+    <string name="animal_1">畜栏动物</string>
+    <string name="animal_2">畜棚动物</string>
+    <string name="production">生产</string>
 </resources>

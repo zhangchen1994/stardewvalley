@@ -162,7 +162,6 @@ public class NewsContentActivity extends AppCompatActivity{
                     String url = element.toString().replace(SRC_HTTP,SRC_HTTP_REPLACE);
                     url = url.replace(SRC_PCONLINE_REPLACE,"");
                     html = "<html>" + HTML_HEAD + "<body>" + url + "</body></html>";
-                    //System.out.println(html);
                     handler.sendEmptyMessage(0);
                 } catch (IOException e) {
                     e.printStackTrace();

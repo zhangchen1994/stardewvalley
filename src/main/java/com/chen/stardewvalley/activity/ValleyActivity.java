@@ -3,12 +3,15 @@ package com.chen.stardewvalley.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 
 import com.chen.stardewvalley.R;
+import com.chen.stardewvalley.utils.DarwerLayoutUtils;
 import com.chen.stardewvalley.view.TouchImageView;
 import com.chen.stardewvalley.ValleyRegionPopupWindow;
 import com.chen.stardewvalley.fragment.ValleyDeailsFragment;
@@ -30,6 +33,8 @@ public class ValleyActivity extends AppCompatActivity{
     private int regionWigth;
     private int regionHeight;
     private boolean isShowDetails = false;
+    private DrawerLayout drawerLayout;
+    private ImageButton imageButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,10 @@ public class ValleyActivity extends AppCompatActivity{
 
         touchImageView = findViewById(R.id.my_image);
         toolbar = findViewById(R.id.valley_toolbar);
+        drawerLayout = findViewById(R.id.dr_valley);
+        imageButton = findViewById(R.id.im_but_menu);
+        DarwerLayoutUtils.setDarewrClick(imageButton,drawerLayout);
+        DarwerLayoutUtils.setNavigationViewMenu(drawerLayout,this);
 
 
         setSupportActionBar(toolbar);

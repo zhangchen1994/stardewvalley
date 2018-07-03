@@ -46,6 +46,36 @@
       "name": "游侠网",
       "label": "div.n_show",
       "id": "Content"
+    },
+    {
+      "name": "Game234",
+      "label": "div.main_box"
+    },
+    {
+      "name": "电玩巴士",
+      "label": "div.art-body"
+    },
+    {
+      "name": "it之家",
+      "label": "div.post_content",
+      "id": "paragraph"
+    },
+    {
+      "name": "网易游戏",
+      "label": "div.g-w1100.clearfix"
+    },
+    {
+      "name": "178游戏往",
+      "label": "div.bd"
+    },
+    {
+      "name": "腾讯",
+      "label": "div.wrapper-content"
+    },
+    {
+      "name": "站长之家",
+      "label": "div.detail",
+      "id": "ctrlfscont"
     }
   ]
 }

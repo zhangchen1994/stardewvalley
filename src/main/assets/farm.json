@@ -1,0 +1,782 @@
+﻿{
+    "main": [
+        {
+            "name": "农作物",
+            "images": [
+                {
+                    "name": "南瓜",
+                    "image": "giant_pumpkin"
+                },
+                {
+                    "name": "花椰菜",
+                    "image": "giant_cauliflower"
+                },
+                {
+                    "name": "甜瓜",
+                    "image": "giant_melon"
+                }
+            ]
+        },
+        {
+            "name": "果树",
+            "images": [
+                {
+                    "name": "杏树",
+                    "image": "apricot_stage"
+                },
+                {
+                    "name": "樱桃树",
+                    "image": "cherry_stage"
+                },
+                {
+                    "name": "橙子树",
+                    "image": "oange_stage"
+                },
+                {
+                    "name": "橙子树",
+                    "image": "oange_stage"
+                },
+                {
+                    "name": "桃树",
+                    "image": "peach_stage"
+                },
+                {
+                    "name": "苹果树",
+                    "image": "apple_stage"
+                },
+                {
+                    "name": "石榴树",
+                    "image": "pomegranate_stage"
+                },
+                {
+                    "name": "石榴树",
+                    "image": "pomegranate_stage"
+                }
+            ],
+            "des": [
+                {
+                    "tree1": [
+                        {
+                            "image": "apricot_sapling",
+                            "des": "杏树,皮埃尔的杂货店2,000g"
+                        },
+                        {
+                            "image": "apricot_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "apricot_stage_5_fruit",
+                            "des": "工匠物品收集包，水果沙拉"
+                        }
+                    ],
+                    "tree2": [
+                        {
+                            "image": "cherry_sapling",
+                            "des": "樱桃树,皮埃尔的杂货店,3,400g"
+                        },
+                        {
+                            "image": "cherry_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "cherry_stage_5_fruit",
+                            "des": "工匠物品收集包，水果沙拉"
+                        }
+                    ]
+                },
+                {
+                    "tree1": [
+                        {
+                            "image": "orange_sapling",
+                            "des": "橙子树,皮埃尔的杂货，4,000g"
+                        },
+                        {
+                            "image": "orange_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "orange_stage_5_fruit",
+                            "des": "工匠物品收集包"
+                        }
+                    ],
+                    "tree2": [
+                        {
+                            "image": "peach_sapling",
+                            "des": "桃树,皮埃尔的杂货店,6,000g"
+                        },
+                        {
+                            "image": "peach_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "peach_stage_5_fruit",
+                            "des": "工匠物品收集包"
+                        }
+                    ]
+                },
+                {
+                    "tree1": [
+                        {
+                            "image": "apple_sapling",
+                            "des": "苹果树,皮埃尔的杂货，4,000g"
+                        },
+                        {
+                            "image": "apple_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "apple_stage_5_fruit",
+                            "des": "工匠物品收集包，蔓越莓糖果，饲料收集包"
+                        }
+                    ],
+                    "tree2": [
+                        {
+                            "image": "pomegranate_sapling",
+                            "des": "石榴树,皮埃尔的杂货店,6,000g"
+                        },
+                        {
+                            "image": "pomegranate_stage_5",
+                            "des": "共：28天"
+                        },
+                        {
+                            "image": "pomegranate_stage_5_fruit",
+                            "des": "工匠物品收集包,魔法师收集包"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "工匠物品",
+            "images": [
+                {
+                    "name": "蜂巢屋",
+                    "image": "bee_house"
+                },
+                {
+                    "name": "罐头瓶",
+                    "image": "preserves_jar"
+                },
+                {
+                    "name": "奶酪压制机",
+                    "image": "cheese_press"
+                },
+                {
+                    "name": "小桶",
+                    "image": "keg"
+                },
+                {
+                    "name": "织布机",
+                    "image": "loom"
+                },
+                {
+                    "name": "蛋黄酱机",
+                    "image": "mayonnaise_machine"
+                },
+                {
+                    "name": "产油机",
+                    "image": "oil_maker"
+                }
+            ],
+            "des": [
+                {
+                    "title": "蜂巢屋",
+                    "content": [
+                        {
+                            "images": "honey",
+                            "name": "蜂蜜",
+                            "des": "由蜜蜂制作的甜味糖浆。",
+                            "time": "（3～4 天）",
+                            "price": "郁金香 (160g)，蓝调爵士 (200g)，夏季亮片 (280g)，罂粟 (380g)，玫瑰仙子 (680g)"
+                        }
+                    ]
+                },
+                {
+                    "title": "树液采集器",
+                    "content": [
+                        {
+                            "images": "maple_syrup",
+                            "name": "枫糖浆",
+                            "des": "有着独特味道的甜味糖浆",
+                            "time": "7-8 天",
+                            "price": "200g"
+                        },
+                        {
+                            "images": "oak_resin",
+                            "name": "橡树树脂",
+                            "des": "一种黏稠、芳香的物质，从橡树液里分离得出。",
+                            "time": "6-7天",
+                            "price": "150g"
+                        },
+                        {
+                            "images": "pine_tar",
+                            "name": "松焦油",
+                            "des": "一种有着刺激气味的物质，从松树液中分离得出",
+                            "time": "4-5 天",
+                            "price": "4-5 天"
+                        }
+                    ]
+                },
+                {
+                    "title": "奶酪压制机",
+                    "content": [
+                        {
+                            "images": "cheese",
+                            "name": "奶酪",
+                            "des": "基础奶酪。",
+                            "time": "3.3小时",
+                            "price": "普通：160g，银星：200g，金星：240g"
+                        },
+                        {
+                            "images": "goat_cheese",
+                            "name": "羊奶酪",
+                            "des": "羊奶做成的软质干酪",
+                            "time": "3.2小时",
+                            "price": "普通：300g，银星：375g，金星：450g"
+                        }
+                    ]
+                },
+                {
+                    "title": "小桶",
+                    "content": [
+                        {
+                            "images": "beer",
+                            "name": "啤酒",
+                            "des": "适度饮酒。",
+                            "time": "1~2 天",
+                            "price": "200g"
+                        },
+                        {
+                            "images": "pale_ale",
+                            "name": "淡啤酒",
+                            "des": "适度饮酒。",
+                            "time": "1~2 天",
+                            "price": "300g"
+                        },
+                        {
+                            "images": "coffee",
+                            "name": "咖啡",
+                            "des": "闻起来特别香，肯定会给让你精神焕发",
+                            "time": "2小时",
+                            "price": "150g"
+                        },
+                        {
+                            "images": "wine",
+                            "name": "果酒",
+                            "des": "适度饮酒。",
+                            "time": "约 7 天",
+                            "price": "3 x 水果的基础价格"
+                        },
+                        {
+                            "images": "juice",
+                            "name": "果汁",
+                            "des": "一种香甜又营养的饮料。",
+                            "time": "约 4 天",
+                            "price": "2.25 x 蔬菜的基础价格"
+                        },
+                        {
+                            "images": "mead",
+                            "name": "蜂蜜酒",
+                            "des": "用蜂蜜酿的酒。适度饮酒。",
+                            "time": "10小时",
+                            "price": "200g (2 x 蜂蜜的基础价格)"
+                        }
+                    ]
+                },
+                {
+                    "title": "织布机",
+                    "content": [
+                        {
+                            "images": "cloth",
+                            "name": "布料",
+                            "des": "一卷不错的毛纺面料。",
+                            "time": "4小时",
+                            "price": "470g"
+                        }
+                    ]
+                },
+                {
+                    "title": "蛋黄酱机器",
+                    "content": [
+                        {
+                            "images": "mayonnaise",
+                            "name": "蛋黄酱",
+                            "des": "看起来很容易涂开。",
+                            "time": "3小时",
+                            "price": "普通:190g,银星:238g,金星:285g"
+                        },
+                        {
+                            "images": "duck_mayonnaise",
+                            "name": "鸭黄酱",
+                            "des": "香醇的黄色蛋黄酱。",
+                            "time": "3小时",
+                            "price": "普通:375g,银星:469g,金星:563g"
+                        },
+                        {
+                            "images": "void_mayonnaise",
+                            "name": "虚空蛋黄酱",
+                            "des": "一种又厚又黑的酱，闻起来像是烧过的毛发",
+                            "time": "3小时",
+                            "price": "普通:275g,银星:344g,金星:413g"
+                        }
+                    ]
+                },
+                {
+                    "title": "产油机",
+                    "content": [
+                        {
+                            "images": "truffle_oil",
+                            "name": "松露油",
+                            "des": "烹饪美食必备的配料。",
+                            "time": "6小时",
+                            "price": "1,065g"
+                        },
+                        {
+                            "images": "oil",
+                            "name": "油",
+                            "des": "万能的食用油。",
+                            "time": "3小时",
+                            "price": "100g"
+                        }
+                    ]
+                },
+                {
+                    "title": "罐头瓶",
+                    "content": [
+                        {
+                            "images": "pickles",
+                            "name": "腌菜",
+                            "des": "一罐自产的腌菜。",
+                            "time": "2天",
+                            "price": "50g + 2 x 蔬菜的基础价格"
+                        },
+                        {
+                            "images": "jelly",
+                            "name": "果酱",
+                            "des": "胶状的。",
+                            "time": "2天",
+                            "price": "50g + 2 x 水果的基础价格"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "山洞",
+            "images": [
+                {
+                    "name": "紫蘑菇",
+                    "image": "purple_mushroom"
+                },
+                {
+                    "name": "龙葵",
+                    "image": "morel"
+                },
+                {
+                    "name": "鸡油菌",
+                    "image": "chanterelle"
+                },
+                {
+                    "name": "红蘑菇",
+                    "image": "red_mushroom"
+                },
+                {
+                    "name": "香料果",
+                    "image": "spice_berry"
+                },
+                {
+                    "name": "樱桃",
+                    "image": "cherry"
+                },
+                {
+                    "name": "苹果",
+                    "image": "apple"
+                },
+                {
+                    "name": "黑莓",
+                    "image": "blackberry"
+                }
+            ],
+            "des": [
+                {
+                    "cave_content": [
+                        {
+                            "images": "cherry",
+                            "name": "樱桃",
+                            "des": "很受欢迎，比大多数水果成熟得快。",
+                            "use": "工匠物品收集包,果酒，果冻"
+                        },
+                        {
+                            "images": "pomegranate",
+                            "name": "石榴",
+                            "des": "水果里满是脆脆的多汁种子。",
+                            "use": "工匠物品收集包,魔法师收集包,果酒，果冻"
+                        },
+                        {
+                            "images": "peach",
+                            "name": "桃子",
+                            "des": "摸上去都是绒毛。",
+                            "use": "工匠物品收集包,果酒，果冻"
+                        },
+                        {
+                            "images": "apple",
+                            "name": "苹果",
+                            "des": "一种香脆的水果，可做成果汁或果酒。",
+                            "use": "工匠物品收集包,果酒，果冻,蔓越莓糖果,饲料收集包"
+                        },
+                        {
+                            "images": "orange",
+                            "name": "橙子",
+                            "des": "多汁、酸甜，有着夏天的芬芳。",
+                            "use": "工匠物品收集包,果酒，果冻"
+                        },
+                        {
+                            "images": "spice_berry",
+                            "name": "香料果",
+                            "des": "夏天的空气中都充满了它刺鼻的香味",
+                            "use": "夏季觅食收集包,果酒，果冻"
+                        },
+                        {
+                            "images": "apricot",
+                            "name": "杏子",
+                            "des": "一种小个水果，果肉里是坚硬的核。",
+                            "use": "工匠物品收集包,水果沙拉"
+                        },
+                        {
+                            "images": "wild_plum",
+                            "name": "野梅",
+                            "des": "酸甜多汁，有刺鼻的香气。",
+                            "use": "秋季觅食收集包,秋季种子,葡萄干布丁"
+                        },
+                        {
+                            "images": "blackberry",
+                            "name": "黑莓",
+                            "des": "初秋的恩赐。",
+                            "use": "秋季觅食收集包,秋季种子,黑莓脆皮饼"
+                        }
+                    ]
+                },
+                {
+                    "cave_content": [
+                        {
+                            "images": "common_mushroom",
+                            "name": "普通蘑菇",
+                            "des": "一种好吃的蘑菇，有着水果的清香，掺杂着一丝辣味。",
+                            "use": "炒蘑菇,椰汁汤,蔬菜什锦盖饭,秋季种子"
+                        },
+                        {
+                            "images": "red_mushroom",
+                            "name": "红蘑菇",
+                            "des": "一种好吃的蘑菇，有着水果的清香，掺杂着一丝辣味。",
+                            "use": "染料收集包,异域情调觅食收集包,生命药剂"
+                        },
+                        {
+                            "images": "purple_mushroom",
+                            "name": "紫蘑菇",
+                            "des": "一种很少见的蘑菇，常在矿井深处出现。",
+                            "use": "异域情调觅食收集包,实调收集包，生命药剂"
+                        },
+                        {
+                            "images": "chanterelle",
+                            "name": "鸡油菌",
+                            "des": "一种好吃的蘑菇，有着水果的清香，掺杂着一丝辣味。",
+                            "use": "生命药剂"
+                        },
+                        {
+                            "images": "morel",
+                            "name": "龙葵",
+                            "des": "一种好吃的蘑菇，有着水果的清香，掺杂着一丝辣味。",
+                            "use": "炒蘑菇,异域情调觅食收集包，生命药剂"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "动物",
+            "images": [
+                {
+                    "name": "恐龙",
+                    "image": "dinosaur"
+                },
+                {
+                    "name": "白色奶牛",
+                    "image": "white_cow"
+                },
+                {
+                    "name": "棕色奶牛",
+                    "image": "brown_cow"
+                },
+                {
+                    "name": "山羊",
+                    "image": "goat"
+                },
+                {
+                    "name": "绵羊",
+                    "image": "sheep"
+                },
+                {
+                    "name": "猪",
+                    "image": "pig"
+                }
+            ],
+            "des": [
+                {
+                    "animal_content": [
+                        {
+                            "images": "white_chicken",
+                            "name": "鸡",
+                            "price": "800g ",
+                            "production": "鸡蛋"
+                        },
+                        {
+                            "images": "brown_chicken",
+                            "name": "鸡",
+                            "price": "800g ",
+                            "production": "鸡蛋"
+                        },
+                        {
+                            "images": "blue_chicken",
+                            "name": "鸡",
+                            "price": "800g ",
+                            "production": "鸡蛋"
+                        },
+                        {
+                            "images": "void_chicken",
+                            "name": "虚空鸡",
+                            "price": "N/A",
+                            "production": "虚空蛋"
+                        },
+                        {
+                            "images": "duck",
+                            "name": "鸭",
+                            "price": "4,000g",
+                            "production": "鸭蛋,鸭毛 "
+                        },
+                        {
+                            "images": "rabbit",
+                            "name": "兔子",
+                            "price": "8,000g",
+                            "production": "动物毛 ,兔子的脚"
+                        },
+                        {
+                            "images": "dinosaur",
+                            "name": "恐龙",
+                            "price": "N/A",
+                            "production": "恐龙蛋 "
+                        }
+                    ]
+                },
+                {
+                    "animal_content": [
+                        {
+                            "images": "white_cow",
+                            "name": "奶牛",
+                            "price": "1,500g ",
+                            "production": "牛奶 "
+                        },
+                        {
+                            "images": "brown_cow",
+                            "name": "奶牛",
+                            "price": "1,500g ",
+                            "production": "牛奶 "
+                        },
+                        {
+                            "images": "goat",
+                            "name": "山羊",
+                            "price": "4,000g",
+                            "production": "羊奶"
+                        },
+                        {
+                            "images": "sheep",
+                            "name": "绵羊",
+                            "price": "8,000g",
+                            "production": "动物毛 "
+                        },
+                        {
+                            "images": "pig",
+                            "name": "猪",
+                            "price": "16,000g",
+                            "production": "松露"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "温室",
+            "images": [
+                {
+                    "name": "修复前",
+                    "image": "broken_greenhouse"
+                },
+                {
+                    "name": "修复后",
+                    "image": "greenhouse"
+                },
+                {
+                    "name": "室内",
+                    "image": "empty_greenhouse"
+                }
+            ],
+            "des": [
+                {
+                    "images": "greenhouse_large",
+                    "des1": "温室 在游戏星露谷物语中是农场上的一处建筑，在游戏开始时是一处废墟，无法使用。玩家完成社区中心的茶水间收集包或从joja会员用35,000g购买来解锁。温室可以让你的农作物和水果树在全年所有季节生长。",
+                    "des2": "在温室里，有一片10x12的耕地，以及一个可以灌满喷壶的水槽。在温室中，无需使用稻草人来驱赶乌鸦。温室里的作物和树不会被闪电击中。温室里的肥料有效期为一季。果树可以在耕地旁边的地格里生长。蜂房在温室中并不会产蜜。"
+                }
+            ]
+        },
+        {
+            "name": "设备",
+            "images": [
+                {
+                    "name": "宝石复制机",
+                    "image": "crystalarium"
+                },
+                {
+                    "name": "避雷针",
+                    "image": "lightning_rod"
+                },
+                {
+                    "name": "史莱姆孵卵器",
+                    "image": "slime_incubator"
+                },
+                {
+                    "name": "史莱姆蛋压制机",
+                    "image": "slime_egg_press"
+                },
+                {
+                    "name": "熔炉",
+                    "image": "furnace"
+                },
+                {
+                    "name": "垃圾回收机",
+                    "image": "recycling_machine"
+                },
+                {
+                    "name": "炭窑",
+                    "image": "charcoal_kiln"
+                },
+                {
+                    "name": "虫箱",
+                    "image": "worm_bin"
+                }
+            ]
+        },
+        {
+            "name": "觅食",
+            "images": [
+                {
+                    "name": "雪山药",
+                    "image": "snow_yam"
+                },
+                {
+                    "name": "野山葵",
+                    "image": "wild_horseradish"
+                },
+                {
+                    "name": "冬根",
+                    "image": "winter_root"
+                },
+                {
+                    "name": "野莓",
+                    "image": "wild_plum"
+                },
+                {
+                    "name": "甜豌豆",
+                    "image": "sweet_pea"
+                },
+                {
+                    "name": "大葱",
+                    "image": "spring_onion"
+                },
+                {
+                    "name": "海胆",
+                    "image": "sea_urchin"
+                },
+                {
+                    "name": "彩虹贝壳",
+                    "image": "rainbow_shell"
+                },
+                {
+                    "name": "鹦鹉螺",
+                    "image": "nautilus_shell"
+                },
+                {
+                    "name": "韭葱",
+                    "image": "leek"
+                },
+                {
+                    "name": "榛子",
+                    "image": "hazelnut"
+                },
+                {
+                    "name": "蒲公英",
+                    "image": "dandelion"
+                },
+                {
+                    "name": "蒲公英",
+                    "image": "dandelion"
+                },
+                {
+                    "name": "水仙花",
+                    "image": "daffodil"
+                },
+                {
+                    "name": "水仙花",
+                    "image": "daffodil"
+                },
+                {
+                    "name": "水晶果",
+                    "image": "crystal_fruit"
+                },
+                {
+                    "name": "番红花",
+                    "image": "crocus"
+                },
+                {
+                    "name": "仙人掌",
+                    "image": "cactus_fruit"
+                }
+            ]
+        },
+        {
+            "name": "鱼类",
+            "images": [
+                {
+                    "name": "河豚",
+                    "image": "pufferfish"
+                },
+                {
+                    "name": "金枪鱼",
+                    "image": "tuna"
+                },
+                {
+                    "name": "海参",
+                    "image": "super_cucumber"
+                },
+                {
+                    "name": "乌贼",
+                    "image": "squid"
+                },
+                {
+                    "name": "河鲈",
+                    "image": "perch"
+                },
+                {
+                    "name": "岩浆鳗鱼",
+                    "image": "lava_eel"
+                },
+                {
+                    "name": "鳗鱼",
+                    "image": "eel"
+                },
+                {
+                    "name": "鲇鱼",
+                    "image": "catfish"
+                }
+            ]
+        }
+    ]
+}

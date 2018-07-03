@@ -3,11 +3,14 @@ package com.chen.stardewvalley.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageButton;
 
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.fragment.OfferDetailsFragment;
 import com.chen.stardewvalley.fragment.OfferListFragment;
+import com.chen.stardewvalley.utils.DarwerLayoutUtils;
 
 /**
  * Created by zc on 2018/6/1.
@@ -18,10 +21,16 @@ public class OfferActivity extends AppCompatActivity{
     private OfferDetailsFragment offerDetailsFragment;
     private FragmentManager fragmentManager;
     private boolean isShowDetails = false;
+    private DrawerLayout drawerLayout;
+    private ImageButton imageButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_offer);
+        drawerLayout = findViewById(R.id.drll_offer);
+        imageButton = findViewById(R.id.im_but_menu);
+        DarwerLayoutUtils.setDarewrClick(imageButton,drawerLayout);
+        DarwerLayoutUtils.setNavigationViewMenu(drawerLayout,this);
 
         initFragment();
     }

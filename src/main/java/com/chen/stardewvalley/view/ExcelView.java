@@ -26,12 +26,19 @@ import java.util.List;
  * Created by zc on 2018/5/22.
  */
 
-public class ExcelView extends LinearLayout{
+public class ExcelView extends LinearLayout {
     private ArrayList<ArrayList<String>> contentList;
     private ListView listView;
     private int[] weigthList;
     private int[] titleList;
     private LinearLayout llExcelTitle;
+    private ImageView lineTop;
+    private boolean isSetBackGround = false;
+    private int backGround;
+    private boolean isImageExcel = false;
+    private ArrayList<ArrayList<String>> contentImageList;
+    private ArrayList<ArrayList<String>> contentTextList;
+
     public ExcelView(Context context) {
         super(context);
         init();
@@ -51,23 +58,26 @@ public class ExcelView extends LinearLayout{
         super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
-    private void init(){
-        View view = View.inflate(getContext(),R.layout.excel_view,null);
+
+    private void init() {
+        View view = View.inflate(getContext(), R.layout.excel_view, null);
         addView(view);
         listView = findViewById(R.id.lv_excel);
         llExcelTitle = findViewById(R.id.ll_excel);
+        lineTop = findViewById(R.id.iv_excel_top_line);
     }
-    public void setLayouttTitle(){
-        for(int i=0;i<titleList.length;i++){
-            View v = View.inflate(getContext(),R.layout.excel_child_view,null);
+
+    public void setLayouttTitle() {
+        for (int i = 0; i < titleList.length; i++) {
+            View v = View.inflate(getContext(), R.layout.excel_child_view, null);
             llExcelTitle.addView(v);
             ImageView imageViewTitle = v.findViewById(R.id.iv_excel_child);
             imageViewTitle.setVisibility(GONE);
-            if(i != 0){
+            if (i != 0) {
                 ImageView imageView = v.findViewById(R.id.excel_child_line_1);
                 imageView.setVisibility(GONE);
             }
-            LinearLayout.LayoutParams layoutParams = new LayoutParams(0,LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams layoutParams = new LayoutParams(0, LayoutParams.MATCH_PARENT,
                     weigthList[i]);
             v.setLayoutParams(layoutParams);
             TextView textView = v.findViewById(R.id.tv_excel_child);
@@ -75,27 +85,62 @@ public class ExcelView extends LinearLayout{
             textView.setGravity(Gravity.CENTER);
         }
     }
-    public void setTitleList(int[] list){
+
+    public void setTitleList(int[] list) {
         titleList = list;
     }
-    public void setDataList(ArrayList<ArrayList<String>> list){
+
+    public void setDataList(ArrayList<ArrayList<String>> list) {
         contentList = list;
     }
-    public void setWeigthList(int[] list){
+
+    public void setDataImageList(ArrayList<ArrayList<String>> list) {
+        contentImageList = list;
+    }
+
+    public void setDataTextList(ArrayList<ArrayList<String>> list) {
+        contentTextList = list;
+    }
+
+    public void setWeigthList(int[] list) {
         weigthList = list;
     }
-    public void setAdapter(){
-        listView.setAdapter(new MyAdapter());
-        listView.setOverScrollMode(OVER_SCROLL_NEVER );
+
+    public void setLayouttTitleClear() {
+        llExcelTitle.removeAllViews();
     }
-    public void setListHeigh(){
+
+    public void setIsImagesExcel() {
+        isImageExcel = true;
+    }
+
+    public void setAdapter() {
+        listView.setAdapter(new MyAdapter());
+        listView.setOverScrollMode(OVER_SCROLL_NEVER);
+    }
+
+    public void setToplineGone() {
+        lineTop.setVisibility(GONE);
+    }
+
+    public void setIsListBackground(boolean isSetColor, int color) {
+        isSetBackGround = isSetColor;
+        backGround = color;
+    }
+
+    public void setListHeigh() {
         setListViewHeightBasedOnChildren(listView);
     }
-    class MyAdapter extends BaseAdapter{
+
+    class MyAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return contentList.get(0).size();
+            if (isImageExcel){
+                return contentImageList.get(0).size();
+            }else{
+                return contentList.get(0).size();
+            }
         }
 
         @Override
@@ -111,51 +156,94 @@ public class ExcelView extends LinearLayout{
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
             ViewHolder viewHolder;
-            if(view == null){
+            if (view == null) {
                 viewHolder = new ViewHolder();
-                view = View.inflate(getContext(), R.layout.excel_list_view,null);
+                view = View.inflate(getContext(), R.layout.excel_list_view, null);
                 viewHolder.linearLayout = view.findViewById(R.id.ll_excel_list);
 
                 view.setTag(viewHolder);
-            }else{
+            } else {
                 viewHolder = (ViewHolder) view.getTag();
             }
+            if (isSetBackGround) {
+                view.setBackgroundColor(backGround);
+            }
             viewHolder.linearLayout.removeAllViews();
-            for(int k=0;k<titleList.length;k++){
-                View v = View.inflate(getContext(),R.layout.excel_child_view,null);
-                viewHolder.linearLayout.addView(v);
-                ImageView imageViewTitle = v.findViewById(R.id.iv_excel_child);
-                TextView textView = v.findViewById(R.id.tv_excel_child);
-                LinearLayout.LayoutParams layoutParams = new LayoutParams(0,LayoutParams.MATCH_PARENT,
-                        weigthList[k]);
-                layoutParams.gravity = Gravity.CENTER;
-                v.setLayoutParams(layoutParams);
-                if(k != 0){
-                    ImageView imageView = v.findViewById(R.id.excel_child_line_1);
-                    imageView.setVisibility(GONE);
-                    imageViewTitle.setVisibility(GONE);
-                    textView.setVisibility(VISIBLE);
-                    textView.setText(contentList.get(k).get(i));
-                    textView.setGravity(Gravity.CENTER);
+            if (isImageExcel) {
+                for (int k = 0; k < titleList.length; k++) {
+                    View v = View.inflate(getContext(), R.layout.excel_child_view_image, null);
+                    viewHolder.linearLayout.addView(v);
+                    ImageView imageViewTitle = v.findViewById(R.id.iv_excel_child);
+                    TextView textView = v.findViewById(R.id.tv_excel_child);
+                    LinearLayout.LayoutParams layoutParams = new LayoutParams(0, LayoutParams.MATCH_PARENT,
+                            weigthList[k]);
+                    layoutParams.gravity = Gravity.CENTER;
+                    v.setLayoutParams(layoutParams);
+                    if (k != 0) {
+                        ImageView imageView = v.findViewById(R.id.excel_child_line_1);
+                        imageView.setVisibility(GONE);
 
-                }else{
-                    imageViewTitle.setVisibility(VISIBLE);
-                    textView.setVisibility(GONE);
-                    int imageId = GetImageIdByName.getImageId(contentList.get(k).get(i),getContext());
-                    if (imageId != 0){
-                        imageViewTitle.setImageResource(imageId);
+                    }
+                    if(contentImageList.get(k).get(i).equals("")){
+                        imageViewTitle.setVisibility(GONE);
+                        textView.setVisibility(VISIBLE);
+                        textView.setText(contentTextList.get(k).get(i));
+                        textView.setGravity(Gravity.CENTER);
+                    } else if(contentTextList.get(k).get(i).equals("")){
+                        textView.setVisibility(GONE);
+                        int imageId = GetImageIdByName.getImageId(contentImageList.get(k).get(i), getContext());
+                        if (imageId != 0) {
+                            imageViewTitle.setImageResource(imageId);
+                        }
+                    }else{
+                        imageViewTitle.setVisibility(VISIBLE);
+                        int imageId = GetImageIdByName.getImageId(contentImageList.get(k).get(i), getContext());
+                        if (imageId != 0) {
+                            imageViewTitle.setImageResource(imageId);
+                        }
+                        textView.setVisibility(VISIBLE);
+                        textView.setText(contentTextList.get(k).get(i));
+                        textView.setGravity(Gravity.CENTER);
                     }
                 }
+            } else {
+                for (int k = 0; k < titleList.length; k++) {
+                    View v = View.inflate(getContext(), R.layout.excel_child_view, null);
+                    viewHolder.linearLayout.addView(v);
+                    ImageView imageViewTitle = v.findViewById(R.id.iv_excel_child);
+                    TextView textView = v.findViewById(R.id.tv_excel_child);
+                    LinearLayout.LayoutParams layoutParams = new LayoutParams(0, LayoutParams.MATCH_PARENT,
+                            weigthList[k]);
+                    layoutParams.gravity = Gravity.CENTER;
+                    v.setLayoutParams(layoutParams);
+                    if (k != 0) {
+                        ImageView imageView = v.findViewById(R.id.excel_child_line_1);
+                        imageView.setVisibility(GONE);
+                        imageViewTitle.setVisibility(GONE);
+                        textView.setVisibility(VISIBLE);
+                        textView.setText(contentList.get(k).get(i));
+                        textView.setGravity(Gravity.CENTER);
 
+                    } else {
+                        imageViewTitle.setVisibility(VISIBLE);
+                        textView.setVisibility(GONE);
+                        int imageId = GetImageIdByName.getImageId(contentList.get(k).get(i), getContext());
+                        if (imageId != 0) {
+                            imageViewTitle.setImageResource(imageId);
+                        }
+                    }
+                }
             }
             return view;
         }
     }
-    class ViewHolder{
+
+    class ViewHolder {
         LinearLayout linearLayout;
 
     }
-    public void setListViewHeightBasedOnChildren(ListView listView){
+
+    public void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
         int listViewWidth = getAndroiodScreenPropertyWidth() - DisplayUtils.dp2px
                 (getContext(), 10);
@@ -184,8 +272,9 @@ public class ExcelView extends LinearLayout{
         listView.setLayoutParams(params);
 
     }
+
     public int getAndroiodScreenPropertyWidth() {
-        WindowManager wm = (WindowManager)getContext().getSystemService(Context.WINDOW_SERVICE);
+        WindowManager wm = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(dm);
         int width = dm.widthPixels;         // 屏幕宽度（像素）

@@ -1,5 +1,6 @@
 package com.chen.stardewvalley.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -77,7 +78,6 @@ public class SeasonFramFragment extends Fragment{
         progressBar = view.findViewById(R.id.pb_season_pick);
         tvPb = view.findViewById(R.id.tv_season_pb_pick);
         calendarBean = JsonParse.returnCalendar();
-
         new Thread(){
             @Override
             public void run() {

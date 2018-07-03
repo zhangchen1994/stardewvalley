@@ -31,6 +31,7 @@ import android.widget.Toast;
 import com.chen.stardewvalley.HomeNewsGet;
 import com.chen.stardewvalley.R;
 import com.chen.stardewvalley.domain.NewsBean;
+import com.chen.stardewvalley.utils.DarwerLayoutUtils;
 import com.sunfusheng.marqueeview.MarqueeView;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -128,12 +129,7 @@ public class HomeActivity extends AppCompatActivity{
         magicIndicator = findViewById(R.id.magic_indicator);
         imageButton = findViewById(R.id.im_but_menu);
         vpHomeNews = findViewById(R.id.vp_home_news);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawerLayout.openDrawer(Gravity.START);
-            }
-        });
+        DarwerLayoutUtils.setDarewrClick(imageButton,drawerLayout);
 
         homeNewsGet = new HomeNewsGet(this);
         imageViews = new ArrayList<>();
@@ -144,7 +140,7 @@ public class HomeActivity extends AppCompatActivity{
         gvHome.setAdapter(gvAdapter);
         setIndicator();
         ViewPagerHelper.bind(magicIndicator,vpHome);
-        setNavigationViewMenu();
+        DarwerLayoutUtils.setNavigationViewMenu(drawerLayout,this);
 
         gvHome.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -386,30 +382,6 @@ public class HomeActivity extends AppCompatActivity{
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView((View) object);
         }
-    }
-    private void setNavigationViewMenu(){
-        NavigationView navigationView = drawerLayout.findViewById(R.id.navigation_header_container);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                if(item.equals(getString(R.string.home_people))){
-
-                }else if(item.equals(getString(R.string.home_people))){
-
-                }else if(item.equals(getString(R.string.home_tools))){
-
-                }else if(item.equals(getString(R.string.home_farm))){
-
-                }else if(item.equals(getString(R.string.home_offer))){
-
-                }else if(item.equals(getString(R.string.home_valley))){
-
-                }else if(item.equals(getString(R.string.home_news))){
-
-                }
-                return false;
-            }
-        });
     }
 
     @Override

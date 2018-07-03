@@ -15,12 +15,16 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.chen.stardewvalley.R;
+import com.chen.stardewvalley.domain.FarmBean;
 import com.chen.stardewvalley.utils.DisplayUtils;
 import com.chen.stardewvalley.utils.FarmCardAnimation;
+import com.chen.stardewvalley.utils.GetImageIdByName;
+import com.chen.stardewvalley.utils.JsonParse;
 import com.chen.stardewvalley.utils.Rotate3dAnimation;
 
 import java.util.ArrayList;
@@ -43,17 +47,21 @@ public class FarmCardView extends RelativeLayout {
     private CardView cardView7;
     private CardView cardView8;
     private CardView cardView9;
+    public FarmCardListener listener;
+    public static interface FarmCardListener{
+        public void farmListclick(int i);
+    }
+    public void setOnFarmCardListener(FarmCardListener listener){
+        this.listener = listener;
+    }
     private ArrayList<CardView> cardList = new ArrayList<>();
+    private int[] mainNums = new int[9];
     private Timer timer = new Timer();
+    private FarmBean farmBean;
     private TimerTask timerTask;
-    private View view1;
-    private View view2;
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            setMyScaleAnimation(cardView2);
-            //setMyTranslation(cardView1);
-            setAlphaAnimation(cardView3);
             int viewNum = getRandom(5) + 1;
             ArrayList<CardView> list = new ArrayList<>();
             ArrayList<Integer> numList = new ArrayList<>();
@@ -78,22 +86,23 @@ public class FarmCardView extends RelativeLayout {
                 numList.add(listNum);
                 list.add(cardList.get(listNum));
             }
-            for (CardView view : list) {
-//                int animation = getRandom(4);
-//                switch (animation){
-//                    case 0:
-//                        setMyRotaAnmition(view);
-//                        break;
-//                    case 1:
-//                        setMyTranslation(view);
-//                        break;
-//                    case 2:
-//                        setAlphaAnimation(view);
-//                        break;
-//                    case 3:
-//                        setMyScaleAnimation(view);
-//                        break;
-//                }
+            for (int i=0;i<list.size();i++) {
+                CardView view = list.get(i);
+                int animation = getRandom(4);
+                switch (animation){
+                    case 0:
+                        setMyRotaAnmition(view,numList.get(i));
+                        break;
+                    case 1:
+                        setMyTranslation(view,numList.get(i));
+                        break;
+                    case 2:
+                        setAlphaAnimation(view,numList.get(i));
+                        break;
+                    case 3:
+                        setMyScaleAnimation(view,numList.get(i));
+                        break;
+                }
             }
         }
     };
@@ -130,6 +139,7 @@ public class FarmCardView extends RelativeLayout {
     private void init() {
         view = View.inflate(getContext(), R.layout.farm_card_view, null);
         addView(view);
+        farmBean = JsonParse.farmBean;
         cardView1 = view.findViewById(R.id.card_1);
         cardView2 = view.findViewById(R.id.card_2);
         cardView3 = view.findViewById(R.id.card_3);
@@ -148,14 +158,35 @@ public class FarmCardView extends RelativeLayout {
         cardList.add(cardView7);
         cardList.add(cardView8);
         cardList.add(cardView9);
-        for (CardView cardView : cardList) {
-            view1 = View.inflate(getContext(), R.layout.farm_card_view_child_view, null);
-            view2 = View.inflate(getContext(), R.layout.farm_card_view_child_view, null);
-            TextView tv1 = view1.findViewById(R.id.tv_lingshi);
-            TextView tv2 = view2.findViewById(R.id.tv_lingshi);
+        for (int i = 0; i < cardList.size(); i++) {
+            CardView cardView = cardList.get(i);
+            View view1 = View.inflate(getContext(), R.layout.farm_card_view_child_view, null);
+            View view2 = View.inflate(getContext(), R.layout.farm_card_view_child_view, null);
+            TextView textView1 = view1.findViewById(R.id.tv_name1);
+            TextView textView2 = view1.findViewById(R.id.tv_name2);
+            TextView textView3 = view1.findViewById(R.id.tv_name3);
+            if(i != 2&&i != 6){
+                ImageView imageView = view1.findViewById(R.id.iv_content);
+                textView1.setText(farmBean.main.get(i).name);
+                int num = getRandom(farmBean.main.get(i).images.size());
+                mainNums[i] = num;
+                textView2.setText(farmBean.main.get(i).images.get(num).name);
+                imageView.setImageResource(GetImageIdByName.getImageId(
+                        farmBean.main.get(i).images.get(num).image, getContext()
+                ));
+                textView3.setVisibility(GONE);
+            }else{
+                ImageView imageView = view1.findViewById(R.id.iv_content);
+                textView3.setText(farmBean.main.get(i).name);
+                int num = getRandom(farmBean.main.get(i).images.size());
+                mainNums[i] = num;
+                textView1.setText(farmBean.main.get(i).images.get(num).name);
+                imageView.setImageResource(GetImageIdByName.getImageId(
+                        farmBean.main.get(i).images.get(num).image, getContext()
+                ));
+                textView2.setVisibility(GONE);
+            }
             view2.setVisibility(GONE);
-            tv1.setText("布局1");
-            tv2.setText("布局2");
             cardView.addView(view2);
             cardView.addView(view1);
         }
@@ -167,10 +198,25 @@ public class FarmCardView extends RelativeLayout {
                 handler.sendEmptyMessage(0);
             }
         };
-        timer.schedule(timerTask, 3000, 3000);
+        timer.schedule(timerTask, 3000, 5000);
+
+        initFarmCardClick();
+    }
+    private void initFarmCardClick(){
+        for(int i=0;i<cardList.size();i++){
+            final int finalI = i;
+            cardList.get(i).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (listener != null){
+                        listener.farmListclick(finalI);
+                    }
+                }
+            });
+        }
     }
 
-    private void setMyRotaAnmition(final CardView v) {
+    private void setMyRotaAnmition(final CardView v, final int num) {
         post(new Runnable() {
             @Override
             public void run() {
@@ -181,11 +227,12 @@ public class FarmCardView extends RelativeLayout {
                     @Override
                     public void onAnimationEnd(int x, int y, int z) {
                         RelativeLayout relativeLayout;
-                        if(v.getChildAt(0).getVisibility() == GONE){
+                        if (v.getChildAt(0).getVisibility() == GONE) {
                             relativeLayout = (RelativeLayout) v.getChildAt(1);
-                        }else{
+                        } else {
                             relativeLayout = (RelativeLayout) v.getChildAt(0);
                         }
+                        setCardView(num, relativeLayout);
                         relativeLayout.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
                         Rotate3dAnimation rotateAnimation = new Rotate3dAnimation(90, 0,
                                 v.getWidth() / 2,
@@ -200,9 +247,9 @@ public class FarmCardView extends RelativeLayout {
         });
     }
 
-    private void setMyTranslation(final CardView view) {
-        view1 = view.getChildAt(1);
-        view2 = view.getChildAt(0);
+    private void setMyTranslation(final CardView view, final int num) {
+        View view1 = view.getChildAt(1);
+        View view2 = view.getChildAt(0);
         FarmCardAnimation farmCardAnimation = new FarmCardAnimation();
         final int color = cardColors[getRandom(cardColors.length)];
         if (view1.getVisibility() == GONE) {
@@ -211,25 +258,28 @@ public class FarmCardView extends RelativeLayout {
             view.removeAllViews();
             view.addView(view1);
             view.addView(view2);
+            final View finalView = view1;
+            final View finalView1 = view2;
             farmCardAnimation.setTranslationListener(new FarmCardAnimation.TranslationListener() {
                 @Override
                 public void onAnimationStart(TranslateAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view1.setVisibility(VISIBLE);
-                            view1.setBackgroundColor(color);
+                            setCardView(num, finalView);
+                            finalView.setVisibility(VISIBLE);
+                            finalView.setBackgroundColor(color);
                             TranslateAnimation translateAnimation = new TranslateAnimation(
                                     Animation.RELATIVE_TO_SELF, 1, Animation.RELATIVE_TO_SELF, 0,
                                     Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0
                             );
                             translateAnimation.setDuration(400);
-                            view1.setAnimation(translateAnimation);
+                            finalView.setAnimation(translateAnimation);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view2.setVisibility(GONE);
+                            finalView1.setVisibility(GONE);
                         }
 
                         @Override
@@ -241,25 +291,28 @@ public class FarmCardView extends RelativeLayout {
             });
             farmCardAnimation.setTranslation(view2);
         } else {
+            final View finalView2 = view2;
+            final View finalView3 = view1;
             farmCardAnimation.setTranslationListener(new FarmCardAnimation.TranslationListener() {
                 @Override
                 public void onAnimationStart(TranslateAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view2.setVisibility(VISIBLE);
-                            view2.setBackgroundColor(color);
+                            setCardView(num, finalView2);
+                            finalView2.setVisibility(VISIBLE);
+                            finalView2.setBackgroundColor(color);
                             TranslateAnimation translateAnimation = new TranslateAnimation(
                                     Animation.RELATIVE_TO_SELF, 1, Animation.RELATIVE_TO_SELF, 0,
                                     Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0
                             );
                             translateAnimation.setDuration(400);
-                            view2.setAnimation(translateAnimation);
+                            finalView2.setAnimation(translateAnimation);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view1.setVisibility(GONE);
+                            finalView3.setVisibility(GONE);
                         }
 
                         @Override
@@ -273,9 +326,9 @@ public class FarmCardView extends RelativeLayout {
         }
     }
 
-    private void setAlphaAnimation(CardView view) {
-        view1 = view.getChildAt(1);
-        view2 = view.getChildAt(0);
+    private void setAlphaAnimation(CardView view, final int num) {
+        View view1 = view.getChildAt(1);
+        View view2 = view.getChildAt(0);
         FarmCardAnimation farmCardAnimation = new FarmCardAnimation();
         if (view1.getVisibility() == GONE) {
             view1 = view.getChildAt(1);
@@ -283,19 +336,22 @@ public class FarmCardView extends RelativeLayout {
             view.removeAllViews();
             view.addView(view1);
             view.addView(view2);
+            final View finalView = view1;
+            final View finalView1 = view2;
             farmCardAnimation.setAlphaListener(new FarmCardAnimation.AlphaListener() {
                 @Override
                 public void onAnimationStart(AlphaAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view1.setVisibility(VISIBLE);
-                            view1.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
+                            setCardView(num, finalView);
+                            finalView.setVisibility(VISIBLE);
+                            finalView.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view2.setVisibility(GONE);
+                            finalView1.setVisibility(GONE);
                         }
 
                         @Override
@@ -307,19 +363,22 @@ public class FarmCardView extends RelativeLayout {
             });
             farmCardAnimation.setAlphaAnimation(view2);
         } else {
+            final View finalView2 = view2;
+            final View finalView3 = view1;
             farmCardAnimation.setAlphaListener(new FarmCardAnimation.AlphaListener() {
                 @Override
                 public void onAnimationStart(AlphaAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view2.setVisibility(VISIBLE);
-                            view2.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
+                            setCardView(num, finalView2);
+                            finalView2.setVisibility(VISIBLE);
+                            finalView2.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view1.setVisibility(GONE);
+                            finalView3.setVisibility(GONE);
                         }
 
                         @Override
@@ -333,9 +392,9 @@ public class FarmCardView extends RelativeLayout {
         }
     }
 
-    private void setMyScaleAnimation(CardView view) {
-        view1 = view.getChildAt(1);
-        view2 = view.getChildAt(0);
+    private void setMyScaleAnimation(CardView view, final int num) {
+        View view1 = view.getChildAt(1);
+        View view2 = view.getChildAt(0);
         FarmCardAnimation farmCardAnimation = new FarmCardAnimation();
         if (view1.getVisibility() == GONE) {
             view1 = view.getChildAt(1);
@@ -343,19 +402,22 @@ public class FarmCardView extends RelativeLayout {
             view.removeAllViews();
             view.addView(view1);
             view.addView(view2);
+            final View finalView = view1;
+            final View finalView1 = view2;
             farmCardAnimation.setScaleListener(new FarmCardAnimation.ScaleListener() {
                 @Override
                 public void onAnimationStart(ScaleAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view1.setVisibility(VISIBLE);
-                            view1.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
+                            setCardView(num, finalView);
+                            finalView.setVisibility(VISIBLE);
+                            finalView.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view2.setVisibility(GONE);
+                            finalView1.setVisibility(GONE);
                         }
 
                         @Override
@@ -367,19 +429,22 @@ public class FarmCardView extends RelativeLayout {
             });
             farmCardAnimation.setScaleAnimation(view2);
         } else {
+            final View finalView2 = view2;
+            final View finalView3 = view1;
             farmCardAnimation.setScaleListener(new FarmCardAnimation.ScaleListener() {
                 @Override
                 public void onAnimationStart(ScaleAnimation animation) {
                     animation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
-                            view2.setVisibility(VISIBLE);
-                            view2.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
+                            setCardView(num, finalView2);
+                            finalView2.setVisibility(VISIBLE);
+                            finalView2.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
                         }
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            view1.setVisibility(GONE);
+                            finalView3.setVisibility(GONE);
                         }
 
                         @Override
@@ -399,6 +464,45 @@ public class FarmCardView extends RelativeLayout {
             RelativeLayout relativeLayout = (RelativeLayout) cardView.getChildAt(1);
             relativeLayout.setBackgroundColor(cardColors[getRandom(cardColors.length)]);
         }
+    }
+
+    private void setCardView(int num, View view) {
+
+        TextView textView0 = view.findViewById(R.id.tv_name1);
+        TextView textView = view.findViewById(R.id.tv_name2);
+        TextView textView1 = view.findViewById(R.id.tv_name3);
+        ImageView imageView = view.findViewById(R.id.iv_content);
+        if(num != 2&&num != 6){
+            textView0.setText(farmBean.main.get(num).name);
+            int order_number = mainNums[num] + 1;
+            mainNums[num] = order_number;
+            if (order_number == farmBean.main.get(num).images.size()) {
+                order_number = 0;
+                mainNums[num] = 0;
+            }
+            textView.setText(farmBean.main.get(num).images.get(order_number).name);
+            imageView.setImageResource(
+                    GetImageIdByName.getImageId(farmBean.main.get(num).images.get(order_number)
+                            .image, getContext())
+            );
+            textView1.setVisibility(GONE);
+        }else{
+            textView1.setText(farmBean.main.get(num).name);
+            int order_number = mainNums[num] + 1;
+            mainNums[num] = order_number;
+            if (order_number == farmBean.main.get(num).images.size()) {
+                order_number = 0;
+                mainNums[num] = 0;
+            }
+            textView0.setText(farmBean.main.get(num).images.get(order_number).name);
+            imageView.setImageResource(
+                    GetImageIdByName.getImageId(farmBean.main.get(num).images.get(order_number)
+                            .image, getContext())
+            );
+            textView.setVisibility(GONE);
+        }
+
+
     }
 
     private void setMyLayout() {

@@ -7,6 +7,7 @@ import android.media.session.PlaybackState;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -19,6 +20,7 @@ import android.widget.AdapterView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
@@ -35,6 +37,7 @@ import com.chen.stardewvalley.fragment.SeasonFishFragment;
 import com.chen.stardewvalley.fragment.SeasonFramFragment;
 import com.chen.stardewvalley.fragment.SeasonMainFragment;
 import com.chen.stardewvalley.fragment.SeasonPickFragment;
+import com.chen.stardewvalley.utils.DarwerLayoutUtils;
 import com.chen.stardewvalley.utils.DisplayUtils;
 import com.chen.stardewvalley.utils.GetImageIdByName;
 import com.chen.stardewvalley.utils.JsonParse;
@@ -75,6 +78,8 @@ public class SeasonActivity extends AppCompatActivity{
     private int fragmentStatus = 0;
     private SeasonMenuPopupWindow mPopupWindow;
     private CalendarBean calendarBean;
+    private DrawerLayout drawerLayout;
+    private ImageButton imageButton;
     private int[] toolBarTitle = new int[]{
             R.string.spring,
             R.string.summer,
@@ -100,6 +105,10 @@ public class SeasonActivity extends AppCompatActivity{
         llSeasonMinMenu = findViewById(R.id.ll_season_min_menu);
         mPopupWindow = SeasonMenuPopupWindow.getInstance(this);
         calendarBean = JsonParse.returnCalendar();
+        drawerLayout = findViewById(R.id.drll_season);
+        imageButton = findViewById(R.id.im_but_menu);
+        DarwerLayoutUtils.setDarewrClick(imageButton,drawerLayout);
+        DarwerLayoutUtils.setNavigationViewMenu(drawerLayout,this);
 
         initFragment();
 
